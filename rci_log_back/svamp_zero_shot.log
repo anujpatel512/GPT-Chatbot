@@ -1,0 +1,2111 @@
+*****************************
+Namespace(random_seed=1, dataset='svamp', model='chatgpt', method='zero_shot', rci=False, nofeedback=False, max_length_cot=256, max_length_direct=256, limit_dataset_size=254, api_time_interval=0.25, dataset_path='./dataset/SVAMP/SVAMP.json', direct_answer_trigger='\nTherefore, the answer (arabic numerals) is', direct_answer_trigger_for_zeroshot='The answer (arabic numerals) is', direct_answer_trigger_for_zeroshot_cot='\nTherefore, the answer (arabic numerals) is', direct_answer_trigger_for_fewshot='The answer is', cot_trigger="Let's think step by step.")
+*****************************
+2023/04/06 11:40:02
+setup data loader ...
+worker_seed : 1
+dataloader_num_workers: 3
+dataset : svamp
+data size : 1000
+average num of words for each sample : 31.754
+2023/04/06 11:40:02
+*************************
+1st data
+Mary is baking a cake. The recipe calls for 12 cups of sugar and 14 cups of flour. She already put in 10 cups of sugar. How many more cups of flour than cups of sugar does she need to add now? The answer (arabic numerals) is
+4 cups of flour.
+(pred_after : 4.0)
+pred : 4.0
+GT : 12.0
+*************************
+*************************
+2st data
+Danny collects bottle caps and wrappers. He found 15 bottle caps and 18 wrappers at the park. Now he has 67 wrappers and 35 bottle caps in his collection. How many more wrappers than bottle caps does danny have now? The answer (arabic numerals) is
+32.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+3st data
+There are 7 baskets of peaches. Each basket has 10 red peaches and 2 green peaches. How many green peaches are in the baskets altogether? The answer (arabic numerals) is
+14 green peaches in total.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+4st data
+Julia played tag with 4 kids on wednesday. She had played with 6 kids on monday and 17 kids on tuesday. How many more kids did she play with on monday than on wednesday? The answer (arabic numerals) is
+Julia played with 2 more kids on Monday than on Wednesday.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+5st data
+Melissa scored a total of 21 points playing some games. Is she scored 7 points in each game. How many games did she play? The answer (arabic numerals) is
+Melissa played a total of 3 games.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+6st data
+Emily is making bead necklaces for her 44 friends. She made 26 necklaces and each necklace takes 2 beads. How many beads did Emily have? The answer (arabic numerals) is
+Emily made a total of 52 necklaces (44 friends x 1 necklace per friend + 8 extra necklaces). Since each necklace takes 2 beads, she would need 104 beads in total (52 necklaces x 2 beads per necklace).
+(pred_after : 2.0)
+pred : 2.0
+GT : 52.0
+*************************
+*************************
+7st data
+Mary is baking a cake. The recipe calls for 12 cups of flour 14 cups of sugar and 7 cups of salt. She already put in 2 cups of flour. How many more cups of flour than cups of salt does she need to add now? The answer (arabic numerals) is
+10.
+(pred_after : 10.0)
+pred : 10.0
+GT : 3.0
+*************************
+*************************
+8st data
+Bobby ate 33 pieces of candy. Then he ate 4 more. He also ate 14 pieces of chocolate. How many pieces of candy and chocolate did Bobby eat altogether? The answer (arabic numerals) is
+Bobby ate a total of 51 pieces of candy and chocolate.
+(pred_after : 51.0)
+pred : 51.0
+GT : 51.0
+*************************
+*************************
+9st data
+Rachel had to complete 9 pages of math homework, 11 pages of reading homework and 29 more pages of biology homework. How many pages of math and reading homework did she have to complete? The answer (arabic numerals) is
+Rachel had to complete a total of 20 pages of math and reading homework.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+10st data
+Frank had 42 pieces of candy. If he put them equally into 2 bags How many pieces of candy are in each bag? The answer (arabic numerals) is
+21 pieces of candy in each bag.
+(pred_after : 21.0)
+pred : 21.0
+GT : 21.0
+*************************
+*************************
+11st data
+After resting they decided to go for a swim. If the depth of the water is 10 times Dean's height and he stands at 9 feet How much deeper is the water than Dean's height? The answer (arabic numerals) is
+The depth of the water is 90 feet, which is 10 times Dean's height of 9 feet. Therefore, the water is 81 feet deeper than Dean's height.
+(pred_after : 81.0)
+pred : 81.0
+GT : 81.0
+*************************
+*************************
+12st data
+Robin has 21 packages of gum and 45 packages of candy. There are 9 pieces in each package. How many pieces of candies does Robin have? The answer (arabic numerals) is
+945 pieces of candy.
+(pred_after : 945.0)
+pred : 945.0
+GT : 405.0
+*************************
+*************************
+13st data
+For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad? The answer (arabic numerals) is
+3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+14st data
+Paul sold some books in a garage sale leaving him with 27 books. If he had 136 books initially How many books did he sell? The answer (arabic numerals) is
+Paul sold 109 books in the garage sale.
+(pred_after : 109.0)
+pred : 109.0
+GT : 109.0
+*************************
+*************************
+15st data
+Each Ferris wheel in paradise park has 19 seats. Each seat in a Ferris wheel can hold 15 people. How many people can ride 20 Ferris wheels at the same time? The answer (arabic numerals) is
+5700
+(pred_after : 5700.0)
+pred : 5700.0
+GT : 5700.0
+*************************
+*************************
+16st data
+The Razorback t-shirt shop makes $ 78 dollars off each t-shirt sold. During the Arkansas game and the Texas tech game they sold a total of 186 t-shirts. If they sold 172 t-shirts during the Arkansas game How much money did they make from selling the t-shirts during the Texas tech game? The answer (arabic numerals) is
+To find out how many t-shirts were sold during the Texas Tech game, we need to subtract the number of t-shirts sold during the Arkansas game from the total number of t-shirts sold: 
+
+186 total t-shirts - 172 t-shirts sold during Arkansas game = 14 t-shirts sold during Texas Tech game 
+
+To find out how much money they made from selling the t-shirts during the Texas Tech game, we can multiply the number of t-shirts sold by the profit per t-shirt: 
+
+14 t-shirts sold during Texas Tech game x $78 profit per t-shirt = $1,092 
+
+Therefore, they made $1,092 from selling the t-shirts during the Texas Tech game.
+(pred_after : 1092.0)
+pred : 1092.0
+GT : 1092.0
+*************************
+*************************
+17st data
+Frank had 33 pieces of candy. He lost 24 of them. If he put the remaining pieces into bags with 9 pieces in each bag How many bags would he have? The answer (arabic numerals) is
+Frank would have 1 bag of candy left.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+18st data
+Debby drinks 6 bottles a day. If she bought a total of 12 water bottles How many days would they last her? The answer (arabic numerals) is
+The 12 water bottles would last Debby for 2 days if she drinks 6 bottles a day.
+(pred_after : 6.0)
+pred : 6.0
+GT : 2.0
+*************************
+*************************
+19st data
+Rebecca wants to split a collection of eggs into groups of 5. Rebecca has 10 marbles and 15 eggs. How many groups will be created? The answer (arabic numerals) is
+Three groups will be created.
+(pred_after : )
+pred : 
+GT : 3.0
+*************************
+*************************
+20st data
+There are 10 different books and 11 different movies in the ' crazy silly school ' series. If you read 13 of the books and watched 12 of the movies How many more books than movies have you read? The answer (arabic numerals) is
+1.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+21st data
+The Ferris wheel in paradise park has 6 seats. Each seat can hold 14 people. If there are 16 people on the wheel right now How many more people can join the wheel? The answer (arabic numerals) is
+The Ferris wheel can hold a total of 6 x 14 = 84 people.
+If there are already 16 people on the wheel, then 84 - 16 = 68 more people can join the wheel.
+(pred_after : 68.0)
+pred : 68.0
+GT : 68.0
+*************************
+*************************
+22st data
+Baker made 13 cakes. He sold 91 of them and bought 154 new cakes. How many more cakes did baker buy than those he sold? The answer (arabic numerals) is
+Baker bought 63 more cakes than he sold.
+(pred_after : 63.0)
+pred : 63.0
+GT : 63.0
+*************************
+*************************
+23st data
+At the arcade Dave had won 18 tickets. If he used 5 to buy some toys and 11 more to buy some clothes How many tickets did Dave have left? The answer (arabic numerals) is
+2.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+24st data
+Because of the decision Sofia asked the students to suggest specific types of food. If 479 students suggested adding mashed potatoes while 489 suggested adding bacon to the menu How many more students suggested bacon than those that suggested mashed potatoes? The answer (arabic numerals) is
+10 students suggested bacon more than those that suggested mashed potatoes.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+25st data
+3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them. How many more storks than birds are sitting on the fence? The answer (arabic numerals) is
+There are now 9 storks and 5 birds sitting on the fence. Therefore, there are 4 more storks than birds sitting on the fence.
+(pred_after : 4.0)
+pred : 4.0
+GT : 1.0
+*************************
+*************************
+26st data
+The ring toss game at the carnival made the same amount of money each day. In total in 30 days they earned 420 dollars. Together with game they earned 22 dollars. How much did ring toss game make per day? The answer (arabic numerals) is
+The ring toss game made 12 dollars per day.
+(pred_after : 12.0)
+pred : 12.0
+GT : 14.0
+*************************
+*************************
+27st data
+Matthew gave equal numbers of crackers to his 18 friends. If he had 36 crackers How many crackers did each person eat? The answer (arabic numerals) is
+2 crackers per person.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+28st data
+Baker made 61 pastries and 167 cakes. If he sold 108 cakes and 44 pastries How many cakes would baker still have? The answer (arabic numerals) is
+Baker would still have 59 cakes left.
+(pred_after : 59.0)
+pred : 59.0
+GT : 59.0
+*************************
+*************************
+29st data
+Shirley sold 10 boxes of trefoils. How many boxes are in each case if she needs to deliver 5 cases of boxes? The answer (arabic numerals) is
+2 boxes in each case.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+30st data
+Paul had 134 books. After giving 39 books to his friend and selling some books in a garage sale he had 68 books left. How many books did he sell in the garage sale? The answer (arabic numerals) is
+Paul sold 27 books in the garage sale.
+(pred_after : 27.0)
+pred : 27.0
+GT : 27.0
+*************************
+*************************
+31st data
+There are 384 oranges and 192 bananas in Philip's collection. If the bananas are organized into 345 groups and oranges are organized into 16 groups How big is each group of oranges? The answer (arabic numerals) is
+24.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+32st data
+Robin has 43 packages of gum. There are 23 pieces in each package. Robin has 8 extra pieces of gum. How many pieces of gum does Robin have? The answer (arabic numerals) is
+989.
+(pred_after : 989.0)
+pred : 989.0
+GT : 997.0
+*************************
+*************************
+33st data
+Dan has $ 4. He bought a candy bar for $ 7 and a chocolate for $ 6. How much money did he spend buying the candy bar and chocolate? The answer (arabic numerals) is
+Dan spent a total of $13 buying the candy bar and chocolate.
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+34st data
+There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now How many birds had been sitting on the fence at the start? The answer (arabic numerals) is
+There were 1 bird sitting on the fence at the start.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+35st data
+Because of the decision Sofia asked the students to suggest specific types of food. 457 students suggested adding mashed potatoes while others suggested adding bacon to the menu. If 63 more students suggested adding mashed potatoes than those that suggested bacon How many students suggested bacon? The answer (arabic numerals) is
+197 students suggested adding bacon.
+(pred_after : 197.0)
+pred : 197.0
+GT : 394.0
+*************************
+*************************
+36st data
+Paco had 37 sweet cookies and 11 salty cookies. He ate 5 sweet cookies and 2 salty cookies. How many more sweet cookies than salty cookies did he eat? The answer (arabic numerals) is
+3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+37st data
+Danny collects bottle caps and wrappers. He found 71 bottle caps and 24 wrappers at the park. Now he has 28 bottle caps and 16 wrappers in his collection. How many more bottle caps than wrappers does danny have now? The answer (arabic numerals) is
+12.
+(pred_after : 12.0)
+pred : 12.0
+GT : 12.0
+*************************
+*************************
+38st data
+There are 270 students in a school. If the school has 5 students in each grades and each grade has the same number of students How many grades are there in total? The answer (arabic numerals) is
+There are 6 grades in total.
+(pred_after : 6.0)
+pred : 6.0
+GT : 54.0
+*************************
+*************************
+39st data
+Carol was sending out birthday invitations to her friends. Each package of invitations she bought had 10 invitations in it and she bought 7 packs. If she sends invitations to only 2 friends How many invitations will be left? The answer (arabic numerals) is
+56.
+(pred_after : 56.0)
+pred : 56.0
+GT : 68.0
+*************************
+*************************
+40st data
+The Razorback shop makes $ 210 dollars off each jersey and $ 240 off each t-shirt. During the Arkansas and Texas tech game they sold 177 t-shirts and 23 jerseys. How much more does a t-shirt cost than a jersey? The answer (arabic numerals) is
+$30.
+(pred_after : 30.0)
+pred : 30.0
+GT : 30.0
+*************************
+*************************
+41st data
+Last week Fred had 78 dollars and Jason had 31 dollars. Jason delivered newspapers and now has 57 dollars. Fred washed cars over the weekend and now has 90 dollars. How much money did Jason earn by delivering newspapers? The answer (arabic numerals) is
+Jason earned 26 dollars by delivering newspapers.
+(pred_after : 26.0)
+pred : 26.0
+GT : 26.0
+*************************
+*************************
+42st data
+Bryan took a look at his books as well. Each bookshelf contains 2 books. If he has a total of 38 books How many bookshelves does he have? The answer (arabic numerals) is
+Bryan has a total of 19 bookshelves.
+(pred_after : 19.0)
+pred : 19.0
+GT : 19.0
+*************************
+*************************
+43st data
+Paul got a box of 521 crayons and 66 erasers for his birthday. At the end of the school year he only had 154 left while not having lost a single erasers. How many crayons had been lost or given away? The answer (arabic numerals) is
+Paul lost or gave away 433 crayons.
+(pred_after : 433.0)
+pred : 433.0
+GT : 367.0
+*************************
+*************************
+44st data
+A book has 2 chapters. The first chapter is 37 pages long. The second chapter is 80 pages long. How many more pages does the second chapter have than the first chapter? The answer (arabic numerals) is
+43 pages.
+(pred_after : 43.0)
+pred : 43.0
+GT : 43.0
+*************************
+*************************
+45st data
+Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes. How many cakes would baker still have? The answer (arabic numerals) is
+111 cakes.
+(pred_after : 111.0)
+pred : 111.0
+GT : 111.0
+*************************
+*************************
+46st data
+Rachel had to complete 5 pages of math homework, 10 pages of reading homework and 6 more pages of biology homework. How many pages of reading and biology homework did she have to complete? The answer (arabic numerals) is
+16 pages.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+47st data
+Melissa scored 12 points in each game. If she scored a total of 36 points How many games did she play? The answer (arabic numerals) is
+Melissa played 3 games.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+48st data
+Jake has 3 fewer peaches and 10 more apples than Steven. Steven has 12 peaches and 15 apples. How many more apples than peaches does Steven have? The answer (arabic numerals) is
+Steven has 3 more apples than peaches.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+49st data
+23 children were riding on the bus. At the bus stop 24 children got on the bus while some got off the bus. Then there were 8 children altogether on the bus. How many more children got off the bus than those that got on? The answer (arabic numerals) is
+6 more children got off the bus than those that got on.
+(pred_after : 6.0)
+pred : 6.0
+GT : 15.0
+*************************
+*************************
+50st data
+Mary is baking a cake. The recipe calls for 3 cups of sugar 10 cups of flour and 15 cups of salt. She already put in 6 cups of flour. How many more cups of flour does she need to add? The answer (arabic numerals) is
+4.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+51st data
+At the arcade Dave had won 7 tickets. He used some tickets to buy toys. If he still has 2 tickets left How many tickets did Dave use to buy toys? The answer (arabic numerals) is
+The problem doesn't provide enough information to determine how many tickets Dave used to buy toys.
+(pred_after : )
+pred : 
+GT : 5.0
+*************************
+*************************
+52st data
+Josh had 20 marbles in his collection. He gave 2 marbles to Jack. How many marbles does Josh have now? The answer (arabic numerals) is
+18.
+(pred_after : 18.0)
+pred : 18.0
+GT : 18.0
+*************************
+*************************
+53st data
+Haley grew 9 trees in her backyard. After a typhoon 4 died. Then she grew 5 more trees. How many trees does she have left? The answer (arabic numerals) is
+10.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+54st data
+Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then? The answer (arabic numerals) is
+To find out how many marbles Doug had, we need to subtract the 10 marbles that Ed had more than him, so Doug had 45 - 10 = 35 marbles. After losing 11 marbles, Doug was left with 35 - 11 = 24 marbles. Therefore, Ed had 45 - 24 = 21 more marbles than Doug.
+(pred_after : 21.0)
+pred : 21.0
+GT : 21.0
+*************************
+*************************
+55st data
+Dave had 21 apps on his phone. He added 89 new apps. After deleting some he had 24 left. How many more apps did he add than he deleted? The answer (arabic numerals) is
+Dave added 86 more apps than he deleted.
+(pred_after : 86.0)
+pred : 86.0
+GT : 3.0
+*************************
+*************************
+56st data
+A book has 2 chapters across 23 pages. The first chapter is 10 pages long. How many pages are in the first chapter? The answer (arabic numerals) is
+The first chapter is 10 pages long.
+(pred_after : 10.0)
+pred : 10.0
+GT : 13.0
+*************************
+*************************
+57st data
+After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 512 visitors came to the Buckingham palace that day. If there were 471 visitors the previous day and 808 visitors the day before that How many visited the Buckingham palace within the past 89 days? The answer (arabic numerals) is
+not possible to determine with the given information.
+(pred_after : )
+pred : 
+GT : 1791.0
+*************************
+*************************
+58st data
+Zachary did 15 push-ups in gym class today. David did 39 more push-ups than Zachary. John did 9 push-ups less than David. How many more push-ups did Zachary do than John? The answer (arabic numerals) is
+6. 
+
+David did 15 + 39 = 54 push-ups.
+John did 54 - 9 = 45 push-ups.
+Therefore, Zachary did 15 - 45 = -30 push-ups more than John, which doesn't make sense. So we can say that Zachary did 6 push-ups more than John.
+(pred_after : 6.0)
+pred : 6.0
+GT : 30.0
+*************************
+*************************
+59st data
+An industrial machine can make 6 shirts a minute. It worked for 5 minutes yesterday and for 12 minutes today. How many shirts did machine make today? The answer (arabic numerals) is
+The machine worked for a total of 17 minutes (5 + 12). Therefore, it made a total of 6 x 17 = 102 shirts. However, since we only want to know how many shirts it made today, we need to subtract the number of shirts it made yesterday. 6 x 5 = 30 shirts. So the machine made 102 - 30 = 72 shirts today.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+60st data
+White t - shirts can be purchased in packages of 13. If mom buys 39 white t - shirts How many packages will she have? The answer (arabic numerals) is
+3 packages.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+61st data
+Dan has $ 2. He bought a candy bar for $ 6 and a chocolate for $ 3. How much money did he spend to buy candy bar than he did to buy chocolate? The answer (arabic numerals) is
+Dan spent $3 more to buy the candy bar than he did to buy the chocolate. He spent a total of $9 ($6 for the candy bar + $3 for the chocolate).
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+62st data
+There are 896 skittles in Steven's skittles collection. Steven also has 517 erasers and 90 scales. If the skittles are organized into 8 groups How big is each group? The answer (arabic numerals) is
+Each group would have 112 skittles.
+(pred_after : 112.0)
+pred : 112.0
+GT : 112.0
+*************************
+*************************
+63st data
+A grocery store had 79 bottles of regular soda, 53 bottles of diet soda and 42 apples. How many more bottles of regular soda than diet soda did they have? The answer (arabic numerals) is
+26.
+(pred_after : 26.0)
+pred : 26.0
+GT : 26.0
+*************************
+*************************
+64st data
+Debby bought 88 water bottles and 13 soda bottles when they were on sale. If she drank 4 water bottles and 87 soda bottles a day How many days would the water bottles last? The answer (arabic numerals) is
+84.
+(pred_after : 84.0)
+pred : 84.0
+GT : 22.0
+*************************
+*************************
+65st data
+Rachel had to complete 5 pages of math homework and yet more pages of reading homework. If she had to complete a total of 7 pages of homework How many pages of reading homework did she have to complete? The answer (arabic numerals) is
+Rachel had to complete 2 pages of reading homework.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+66st data
+Luke played a trivia game and scored 154 points. If he gained the 11 points in each round How many rounds did he play? The answer (arabic numerals) is
+Luke played 14 rounds of the trivia game.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+67st data
+Paco had 28 cookies. He ate some of them and had 7 cookies left. How many cookies did Paco eat? The answer (arabic numerals) is
+Paco ate 21 cookies.
+(pred_after : 21.0)
+pred : 21.0
+GT : 21.0
+*************************
+*************************
+68st data
+At the arcade Dave had won 19 tickets. If he used 12 to buy some toys and 7 more to buy some clothes How many more tickets did Dave use to buy toys than he did to buy clothes? The answer (arabic numerals) is
+Dave used 5 more tickets to buy toys than he did to buy clothes. (12 - 7 = 5)
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+69st data
+46 campers went rowing on a day. 43 campers went rowing in the morning and some more campers went rowing in the afternoon. How many campers went rowing in the afternoon? The answer (arabic numerals) is
+3 campers went rowing in the afternoon.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+70st data
+2 children were riding on the bus. At the bus stop some more children got on the bus. Then there were 10 children altogether on the bus. How many more children are on the bus now than there were before the bus stop? The answer (arabic numerals) is
+8 more children are on the bus now than there were before the bus stop.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+71st data
+Rachel had to complete 7 pages of math homework. If she had to complete 4 more pages of math homework than reading homework How many pages of reading homework did she have to complete? The answer (arabic numerals) is
+Rachel had to complete 3 pages of reading homework.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+72st data
+Because of the decision Sofia asked the students to suggest specific types of food. 182 students suggested adding mashed potatoes while others suggested adding bacon to the menu. If 166 more students suggested adding bacon than those that suggested mashed potatoes How many students suggested bacon? The answer (arabic numerals) is
+248 students suggested adding bacon.
+(pred_after : 248.0)
+pred : 248.0
+GT : 348.0
+*************************
+*************************
+73st data
+Julia played tag with 5 kids on monday, 9 kids on tuesday and 15 kids on wednesday. How many kids did she play with on monday and wednesday? The answer (arabic numerals) is
+Julia played with a total of 20 kids on Monday and Wednesday.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+74st data
+White t - shirts can be purchased in packages of 53. If mom buys 57 packages of white t - shirts and 34 trousers How many white t - shirts will she have? The answer (arabic numerals) is
+3,571 white t-shirts.
+(pred_after : 3571.0)
+pred : 3571.0
+GT : 3021.0
+*************************
+*************************
+75st data
+Jerry had 7 books and 3 action figures on a shelf in his room. Later he added 2 more action figures to the shelf. How many more books than action figures were on his shelf? The answer (arabic numerals) is
+4 more books than action figures. Jerry had a total of 7 + 3 = 10 items on the shelf before adding 2 more action figures. After adding the 2 action figures, he had a total of 10 + 2 = 12 items on the shelf. Since he had 7 books and added 2 more action figures, he had 7 + 2 = 9 books and 5 action figures. Therefore, there were 9 - 5 = 4 more books than action figures on his shelf.
+(pred_after : 4.0)
+pred : 4.0
+GT : 2.0
+*************************
+*************************
+76st data
+Nell collects baseball cards. She had 573 cards. She gave 195 cards to John and yet some more to Jeff. Now she has 210 cards left. How many cards did Nell give to Jeff? The answer (arabic numerals) is
+168 cards.
+(pred_after : 168.0)
+pred : 168.0
+GT : 168.0
+*************************
+*************************
+77st data
+Julia played tag with 2 kids on monday, 14 kids on tuesday and 16 kids on wednesday. How many kids did she play with on tuesday and wednesday? The answer (arabic numerals) is
+30 kids.
+(pred_after : 30.0)
+pred : 30.0
+GT : 30.0
+*************************
+*************************
+78st data
+Mary is baking a cake. The recipe calls for 9 cups of flour and 5 cups of sugar. She already put in 3 cups of flour and 62 cups of sugar. How many more cups of flour does she need to add? The answer (arabic numerals) is
+6.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+79st data
+Dave had 59 files and 15 apps on his phone. After deleting some apps and files he had 12 apps and 30 files left. How many apps did he delete? The answer (arabic numerals) is
+Dave deleted 3 apps.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+80st data
+19 red peaches, 11 yellow peaches and 12 green peaches are in the basket. How many more red peaches than yellow peaches are in the basket? The answer (arabic numerals) is
+8 more red peaches than yellow peaches are in the basket.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+81st data
+Jake has 6 fewer peaches and 8 more apples than Steven. Steven has 17 peaches and 16 apples. How many more peaches than apples does Steven have? The answer (arabic numerals) is
+1. 
+
+Jake has 11 peaches (17-6) and 24 apples (16+8). 
+
+Steven has 17 peaches and 16 apples. 
+
+Therefore, Steven has 1 more peach than apple.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+82st data
+He then went to see the oranges being harvested. He found out that they harvest 25 sacks of unripe oranges and 5 sacks of ripe oranges per day. How many sacks of ripe oranges will they have after 73 days of harvest? The answer (arabic numerals) is
+365 sacks of ripe oranges.
+(pred_after : 365.0)
+pred : 365.0
+GT : 365.0
+*************************
+*************************
+83st data
+Carol was sending out birthday invitations to 10 friends. If each package of invitations she bought had 2 invitations in it How many packs does she need so that no friend gets left out? The answer (arabic numerals) is
+5 packs.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+84st data
+Dan has $ 4. He had $ 3 left with him after he bought a candy bar. How much did the candy bar cost? The answer (arabic numerals) is
+The candy bar cost $1.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+85st data
+Frank was reading through his favorite book. The book had 392 pages and he read 14 pages per day. How many days did he take to finish the book? The answer (arabic numerals) is
+28 days.
+(pred_after : 28.0)
+pred : 28.0
+GT : 28.0
+*************************
+*************************
+86st data
+There were 7 roses in the vase. Jessica cut some more roses from her flower garden which had a total of 59 roses. There are now 20 roses in the vase. How many roses did she cut? The answer (arabic numerals) is
+Jessica cut 72 roses.
+(pred_after : 72.0)
+pred : 72.0
+GT : 13.0
+*************************
+*************************
+87st data
+Jessie currently weighs 9 kilograms. After she started to go jogging everyday she lost 62 kilograms in the first week and 140 kilograms in the second week. How much did she weigh before starting to jog? The answer (arabic numerals) is
+I'm sorry, but the question seems to be incorrect. It's not possible for someone to lose 62 or 140 kilograms in just one or two weeks, especially if their starting weight is only 9 kilograms. Please double-check the question and provide accurate information so I can assist you better.
+(pred_after : 9.0)
+pred : 9.0
+GT : 211.0
+*************************
+*************************
+88st data
+Allan brought 5 balloons and Jake brought 4 balloons to the park. Allan then bought 3 more balloons at the park. How many balloons did Allan bring to the park? The answer (arabic numerals) is
+Allan brought a total of 8 balloons to the park.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+89st data
+Because of the decision Sofia asked the students to suggest specific types of food. If 257 students suggested adding mashed potatoes 120 suggested adding bacon to the menu and 97 suggested adding tomatoes How many more students suggested mashed potatoes than those that suggested bacon? The answer (arabic numerals) is
+137 students suggested mashed potatoes more than those who suggested bacon.
+(pred_after : 137.0)
+pred : 137.0
+GT : 137.0
+*************************
+*************************
+90st data
+A book has 2 chapters. The first chapter is 60 pages long. If there are a total of 93 pages in the book How many pages are in the second chapter? The answer (arabic numerals) is
+The second chapter has 33 pages.
+(pred_after : 33.0)
+pred : 33.0
+GT : 33.0
+*************************
+*************************
+91st data
+Debby bought 153 water bottles when they were on sale. She drank the same number of bottles each day. If the bottles lasted for 17 days How many bottles did she drink each day? The answer (arabic numerals) is
+Debby drank 9 water bottles each day.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+92st data
+A grocery store had 57 bottles of regular soda, 26 bottles of diet soda and 27 bottles of lite soda. How many bottles did they have total? The answer (arabic numerals) is
+110 bottles in total.
+(pred_after : 110.0)
+pred : 110.0
+GT : 110.0
+*************************
+*************************
+93st data
+Next on his checklist is wax to stick the feathers together. He needs 159 g of wax more. If the feathers require a total of 628 g of wax How many grams of wax does he already have? The answer (arabic numerals) is
+The man already has 469 g of wax.
+(pred_after : 469.0)
+pred : 469.0
+GT : 469.0
+*************************
+*************************
+94st data
+Winter is almost here and most animals are migrating to warmer countries. There are 8 bird families living near the mountain. If 42 bird families flew away to africa and 31 bird families flew away to asia How many more bird families flew away to africa than those that flew away to asia? The answer (arabic numerals) is
+11 bird families flew away to Africa than those that flew away to Asia.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+95st data
+Matthew had 22 crackers and 34 cakes. If Matthew gave equal numbers of crackers and cakes to his 11 friends How many crackers did each person eat? The answer (arabic numerals) is
+Each person would eat 2 crackers.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+96st data
+For Gwen's birthday she received 2 dollars from her mom. Her dad gave her 4 more dollars. If she spent 3 dollars. How much money did she still have? The answer (arabic numerals) is
+3 dollars.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+97st data
+Marco and his dad went strawberry picking. Marco's strawberries weighed 30 pounds. If together their strawberries weighed 47 pounds. How much more did his strawberries weigh than his dad's? The answer (arabic numerals) is
+Marco's dad's strawberries weighed 17 pounds. Therefore, Marco's strawberries weighed 13 pounds more than his dad's.
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+98st data
+Lewis earns $ 368 every week during the 1359 weeks of harvest. If he has to pay $ 388 rent every week How much money does he pay as rent during the harvest season? The answer (arabic numerals) is
+$526,092.
+(pred_after : 526092.0)
+pred : 526092.0
+GT : 527292.0
+*************************
+*************************
+99st data
+Baker's friend bought 137 cakes from him. If he had made 169 cakes initially How many cakes would baker still have? The answer (arabic numerals) is
+32.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+100st data
+Mary is baking a cake. The recipe calls for 9 cups of flour and 11 cups of sugar. She already put in 4 cups of flour. How many more cups of sugar than cups of flour does she need to add now? The answer (arabic numerals) is
+7 cups of sugar.
+(pred_after : 7.0)
+pred : 7.0
+GT : 6.0
+*************************
+*************************
+101st data
+Dave had 16 apps and 77 files on his phone. After deleting some apps and files he had 5 apps and 23 files left. How many apps did he delete? The answer (arabic numerals) is
+Dave deleted 11 apps.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+102st data
+Mary is baking a cake. The recipe calls for 11 cups of sugar 6 cups of flour and 9 cups of salt. She already put in 12 cups of flour. How many more cups of sugar than cups of salt does she need to add now? The answer (arabic numerals) is
+5. Mary needs to add 11 cups of sugar and 9 cups of salt according to the recipe. She has already added 12 cups of flour, which is not relevant to the question. Therefore, to find the difference between the cups of sugar and salt she needs to add, you simply subtract: 
+
+11 cups of sugar - 9 cups of salt = 2 cups more sugar than salt
+
+So Mary needs to add 2 more cups of sugar than salt.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+103st data
+A book has 3 chapters. The first chapter is 53 pages long the second chapter is 75 pages long and the third chapter is 21 pages long. How many more pages does the first chapter have than the third chapter? The answer (arabic numerals) is
+32 pages.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+104st data
+Debby bought 360 soda bottles and 162 water bottles when they were on sale. If she drank 122 water bottles and 9 soda bottles a day How many days would the soda bottles last? The answer (arabic numerals) is
+To find out how many days the soda bottles would last, we need to first calculate the total number of soda bottles Debby has left after drinking 9 bottles a day. 
+
+Total soda bottles left = 360 - (9 x number of days)
+
+We can set this equal to zero to find the number of days it would take for Debby to finish all the soda bottles:
+
+360 - (9 x number of days) = 0
+
+Simplifying this equation, we get:
+
+Number of days = 360 / 9 = 40
+
+Therefore, the soda bottles would last Debby 40 days.
+(pred_after : 40.0)
+pred : 40.0
+GT : 40.0
+*************************
+*************************
+105st data
+After eating a hearty meal they went to see the Buckingham palace. There were 39 paintings in the Buckingham palace. There, Rachel learned that 661 visitors came to the Buckingham palace that day. If there were 600 visitors the previous day How many more visitors visited the Buckingham palace on that day than on the previous day? The answer (arabic numerals) is
+There were 61 more visitors on that day than on the previous day.
+(pred_after : 61.0)
+pred : 61.0
+GT : 61.0
+*************************
+*************************
+106st data
+Rachel has 3 apple trees. She picked 8 apples from each of her trees. Now the trees have a total 9 apples still on them. How many apples were there on all trees initially? The answer (arabic numerals) is
+There were 81 apples on all trees initially.
+(pred_after : 81.0)
+pred : 81.0
+GT : 33.0
+*************************
+*************************
+107st data
+The school is planning a field trip. The school has 67 classrooms. There are 66 students in each classroom in the school. If there are 6 seats on each school bus How many buses are needed to take the trip? The answer (arabic numerals) is
+100 buses are needed to take the trip.
+(pred_after : 100.0)
+pred : 100.0
+GT : 737.0
+*************************
+*************************
+108st data
+The Razorback shop makes $ 5 dollars off each jersey and $ 215 off each t-shirt. During the Arkansas and Texas tech game they sold 20 t-shirts and 64 jerseys. How much money did they make from selling the t-shirts? The answer (arabic numerals) is
+$430.
+(pred_after : 430.0)
+pred : 430.0
+GT : 4300.0
+*************************
+*************************
+109st data
+Danny collects bottle caps and wrappers. He found 58 bottle caps and 25 wrappers at the park. Now he has 11 wrappers and 12 bottle caps in his collection. How many more bottle caps than wrappers does danny have now? The answer (arabic numerals) is
+1 more bottle cap than wrapper.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+110st data
+Rebecca wants to split a collection of eggs into 3 groups. Rebecca has 4 marbles and 15 eggs. How many eggs will each group have? The answer (arabic numerals) is
+Each group will have 5 eggs.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+111st data
+A waiter had 14 customers. 5 customers left. How many customers does he still have? The answer (arabic numerals) is
+9.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+112st data
+Marco and his dad went strawberry picking. Marco's strawberries weighed 10 pounds. If together their strawberries weighed 26 pounds. How much more did his dad's strawberries weigh than his? The answer (arabic numerals) is
+If Marco's strawberries weighed 10 pounds and together they weighed 26 pounds, then his dad's strawberries must have weighed 16 pounds (26 - 10 = 16). Therefore, his dad's strawberries weighed 6 pounds more than Marco's (16 - 10 = 6).
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+113st data
+A book has 2 chapters. The second chapter is 36 pages long. If there are a total of 67 pages in the book How many pages are in the first chapter? The answer (arabic numerals) is
+31 pages.
+(pred_after : 31.0)
+pred : 31.0
+GT : 31.0
+*************************
+*************************
+114st data
+Debby bought 264 water bottles when they were on sale. If she drank 15 bottles a day for 11 days. How many bottles does she have left? The answer (arabic numerals) is
+129 bottles.
+(pred_after : 129.0)
+pred : 129.0
+GT : 99.0
+*************************
+*************************
+115st data
+Julia played tag with 18 kids on monday. She played tag with 10 kids on tuesday. How many more kids did she play with on monday than on tuesday? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+116st data
+Katie had 91 ds games and her new friends had 88 games and old friends had 53 games. How many games do her friends have in all? The answer (arabic numerals) is
+232 games in total.
+(pred_after : 232.0)
+pred : 232.0
+GT : 141.0
+*************************
+*************************
+117st data
+13 campers went rowing and 59 campers went hiking in the morning. 21 campers went rowing in the afternoon. How many campers went rowing in all? The answer (arabic numerals) is
+34 campers went rowing in all.
+(pred_after : 34.0)
+pred : 34.0
+GT : 34.0
+*************************
+*************************
+118st data
+Josh had some marbles in his collection. He lost 21 marbles. If he has 12 marbles now How many marbles did he have in his collection? The answer (arabic numerals) is
+Josh had 33 marbles in his collection.
+(pred_after : 33.0)
+pred : 33.0
+GT : 33.0
+*************************
+*************************
+119st data
+Mary is baking a cake. The recipe calls for 3 cups of sugar and 10 cups of flour. She already put in some cups of flour. If she still needs 5 more cups of flour than sugar How many cups of flour did she put in? The answer (arabic numerals) is
+7 cups of flour.
+(pred_after : 7.0)
+pred : 7.0
+GT : 2.0
+*************************
+*************************
+120st data
+6 red peaches, 90 yellow peaches and 16 green peaches are in the basket. How many red and green peaches are in the basket? The answer (arabic numerals) is
+22 red and green peaches are in the basket.
+(pred_after : 22.0)
+pred : 22.0
+GT : 22.0
+*************************
+*************************
+121st data
+Zachary did 51 push-ups in gym class today. David did 22 more push-ups than Zachary. John did 4 push-ups less than David. How many push-ups did John do? The answer (arabic numerals) is
+69.
+(pred_after : 69.0)
+pred : 69.0
+GT : 69.0
+*************************
+*************************
+122st data
+Danny collects bottle caps. He found 30 bottle caps at the park while he threw away 63 old ones. Now he has 42 bottle caps in his collection. How many more bottle caps did danny throw away than those he found at the park? The answer (arabic numerals) is
+Danny threw away 51 more bottle caps than those he found at the park.
+(pred_after : 51.0)
+pred : 51.0
+GT : 33.0
+*************************
+*************************
+123st data
+Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost? The answer (arabic numerals) is
+$2.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+124st data
+Robin has some packages of gum. There are 3 pieces in each package and a total of 42 pieces of gum. How many packages does Robin have? The answer (arabic numerals) is
+14 packages.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+125st data
+Jerry had 7 action figures and 2 books on a shelf in his room. Later he added 4 more books to the shelf. How many more action figures than books were on his shelf? The answer (arabic numerals) is
+5 more action figures than books were on Jerry's shelf. He had a total of 7 + 2 = 9 items on the shelf before adding the books. After adding the 4 books, he had a total of 9 + 4 = 13 items on the shelf. Since he had 7 action figures and 2 books before adding the books, he had 7 - 2 = 5 more action figures than books.
+(pred_after : 5.0)
+pred : 5.0
+GT : 1.0
+*************************
+*************************
+126st data
+Mary is baking a cake. The recipe calls for 6 cups of sugar and 14 cups of flour. She already put in 7 cups of flour and 60 cups of sugar. How many more cups of flour does she need to add? The answer (arabic numerals) is
+7 cups of flour have already been added, and the recipe calls for a total of 14 cups of flour. So Mary still needs to add 14 - 7 = 7 more cups of flour.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+127st data
+He then went to see the oranges being harvested. He found out that they harvest 5 sacks of ripe oranges and 74 sacks of unripe oranges per day. How many more sacks of unripe oranges than ripe oranges are harvested per day? The answer (arabic numerals) is
+69 more sacks of unripe oranges than ripe oranges are harvested per day.
+(pred_after : 69.0)
+pred : 69.0
+GT : 69.0
+*************************
+*************************
+128st data
+Danny has 12 bottle caps in his collection. He found 53 bottle caps at the park. How many bottle caps does he have now? The answer (arabic numerals) is
+65.
+(pred_after : 65.0)
+pred : 65.0
+GT : 65.0
+*************************
+*************************
+129st data
+Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days How many hours does he spend on learning english in all? The answer (arabic numerals) is
+Ryan spends a total of 12 hours on learning English in 2 days.
+(pred_after : 2.0)
+pred : 2.0
+GT : 12.0
+*************************
+*************************
+130st data
+3 birds and 4 storks were sitting on the fence. 6 more storks came to join them. How many birds and storks are sitting on the fence? The answer (arabic numerals) is
+The total number of birds and storks sitting on the fence is 13.
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+131st data
+Winter is almost here and most animals are migrating to warmer countries. There are 38 bird families living near the mountain. If 47 bird families flew away to africa and 94 bird families flew away to asia How many more bird families flew away to asia than those that flew away to africa? The answer (arabic numerals) is
+47 bird families flew away to Africa and 94 bird families flew away to Asia. Therefore, the difference between the number of bird families that flew away to Asia and those that flew away to Africa is:
+
+94 - 47 = 47
+
+So, 47 more bird families flew away to Asia than those that flew away to Africa.
+(pred_after : 47.0)
+pred : 47.0
+GT : 47.0
+*************************
+*************************
+132st data
+Frank had some pieces of candy. If he put them into 26 bags with 33 pieces in each bag How many pieces of candy did he have? The answer (arabic numerals) is
+858 pieces of candy.
+(pred_after : 858.0)
+pred : 858.0
+GT : 858.0
+*************************
+*************************
+133st data
+Josh had 22 marbles in his collection. Jack gave him 20 marbles. How many marbles does Josh have now? The answer (arabic numerals) is
+42.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+134st data
+In Haley's class 4 are boys who love to play marbles. If Haley has 23 marbles and wants to keep 15 marbles for herself How many will each of the boys receive? The answer (arabic numerals) is
+There are a couple of ways to approach this problem, but one possible method is:
+
+- Start by subtracting the marbles Haley wants to keep from the total marbles: 23 - 15 = 8.
+- Divide the remaining marbles equally among the 4 boys: 8 ÷ 4 = 2.
+- Therefore, each of the boys will receive 2 marbles.
+
+So the answer is: 2.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+135st data
+If they are already at 659 feet and the cave is 762 feet deep How much farther until they reach the end of the cave? The answer (arabic numerals) is
+103 feet.
+(pred_after : 103.0)
+pred : 103.0
+GT : 103.0
+*************************
+*************************
+136st data
+There are 62 different movies and 19 different books in the ' crazy silly school ' series. If you read 4 of the books and watched 34 of the movies How many more books do you still have to read? The answer (arabic numerals) is
+15 more books to read.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+137st data
+Nell collects cards. She had 438 baseball cards and 18 Ace cards. She gave some of her cards to Jeff and now has 55 Ace cards and 178 baseball cards left. How many more baseball cards than Ace cards does Nell have? The answer (arabic numerals) is
+Nell gave 263 baseball cards to Jeff. Therefore, she has 175 baseball cards more than Ace cards (178 - 55 = 123). So the answer is 175.
+(pred_after : 175.0)
+pred : 175.0
+GT : 123.0
+*************************
+*************************
+138st data
+Paco ate 36 cookies. If he had 37 cookies initially How many cookies did Paco have left? The answer (arabic numerals) is
+1 cookie.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+139st data
+Robin cut off 13 inches of his hair. If his hair was 14 inches long initially How long is his hair now? The answer (arabic numerals) is
+His hair is now 1 inch long.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+140st data
+Baker made 54 cakes. He sold some of them. If he still has 13 cakes left How many cakes did baker sell? The answer (arabic numerals) is
+Baker sold 41 cakes.
+(pred_after : 41.0)
+pred : 41.0
+GT : 41.0
+*************************
+*************************
+141st data
+Paige was helping her mom plant flowers and together they planted some seeds. They put 10 seeds in each flower bed. If there are 45 flowerbeds How many seeds did they plant? The answer (arabic numerals) is
+They planted a total of 450 seeds.
+(pred_after : 450.0)
+pred : 450.0
+GT : 450.0
+*************************
+*************************
+142st data
+He then went to see the oranges being harvested. He found out that they harvest 38 sacks per day and that each sack containes 42 oranges. How many sacks of oranges will they have after 49 days of harvest? The answer (arabic numerals) is
+The total number of oranges harvested per day is 38 x 42 = 1596 oranges. Therefore, the total number of oranges harvested in 49 days is 49 x 1596 = 78156 oranges. Since each sack contains 42 oranges, the total number of sacks harvested is 78156 / 42 = 1858 sacks. So, they will have 1858 sacks of oranges after 49 days of harvest.
+(pred_after : 49.0)
+pred : 49.0
+GT : 1862.0
+*************************
+*************************
+143st data
+Jack received 6 emails in the morning, 3 emails in the afternoon and 5 emails in the evening. How many emails did Jack receive in the day? The answer (arabic numerals) is
+Jack received a total of 14 emails in the day.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+144st data
+28 children were riding on the bus. At the bus stop 82 children got on the bus while some got off the bus. Then there were 30 children altogether on the bus. How many more children got on the bus than those that got off? The answer (arabic numerals) is
+54 children got on the bus than those that got off.
+(pred_after : 54.0)
+pred : 54.0
+GT : 2.0
+*************************
+*************************
+145st data
+There were 21 roses in the vase. Jessica threw away 34 roses from the vase and cut some more new roses from her flower garden to put in the vase. There are now 15 roses in the vase. How many more roses did she throw away than those she cut from her garden? The answer (arabic numerals) is
+Jessica threw away 40 roses from the vase and cut 34 new roses from her garden. Therefore, she threw away 6 more roses than those she cut from her garden.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+146st data
+Because of the decision Sofia asked 310 students to suggest specific types of food. 185 students suggested adding mashed potatoes while others suggested adding bacon to the menu. How many students suggested bacon? The answer (arabic numerals) is
+125 students suggested bacon.
+(pred_after : 125.0)
+pred : 125.0
+GT : 125.0
+*************************
+*************************
+147st data
+The Razorback shop makes $ 115 dollars off each jersey and $ 25 off each t-shirt. During the Arkansas and Texas tech game they sold 113 t-shirts and 78 jerseys. How much more does a jersey cost than a t-shirt? The answer (arabic numerals) is
+$90.
+(pred_after : 90.0)
+pred : 90.0
+GT : 90.0
+*************************
+*************************
+148st data
+Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack How much do you have to pay to buy each pack? The answer (arabic numerals) is
+51 dollars.
+(pred_after : 51.0)
+pred : 51.0
+GT : 51.0
+*************************
+*************************
+149st data
+Every day Ryan spends 7 hours on learning english and some more hours on learning chinese. If he spends 2 hours more on learning english than on learning chinese How many hours does he spend on learning chinese? The answer (arabic numerals) is
+5 hours.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+150st data
+Baker made 52 pastries and 84 cakes. If he sold 102 cakes and 94 pastries How many more cakes than pastries did baker make? The answer (arabic numerals) is
+Baker made 32 more cakes than pastries.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+151st data
+Ed had 12 more marbles than Doug. Ed lost 20 of his marbles at the playground. If Ed had 17 marbles How many marbles does Doug have now? The answer (arabic numerals) is
+5 marbles.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+152st data
+Jack received 5 emails in the morning, 8 emails in the afternoon and 72 emails in the evening. How many emails did Jack receive in the morning and afternoon? The answer (arabic numerals) is
+Jack received a total of 13 emails in the morning and afternoon.
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+153st data
+Winter is almost here and most animals are migrating to warmer countries. There are 49 bird families living near the mountain. 59 bird families flew away for winter and 24 new bird families came to live near the mountain from the arctic. How many bird families were left near the mountain? The answer (arabic numerals) is
+There were 34 bird families left near the mountain.
+(pred_after : 34.0)
+pred : 34.0
+GT : 14.0
+*************************
+*************************
+154st data
+Steven has 14 peaches. Jake has 6 fewer peaches than Steven and 3 more peaches than Jill. How many peaches does Jill have? The answer (arabic numerals) is
+Jill has 11 peaches.
+(pred_after : 11.0)
+pred : 11.0
+GT : 5.0
+*************************
+*************************
+155st data
+Mary is baking a cake. The recipe calls for 7 cups of sugar and 10 cups of flour. She already put in 4 cups of sugar. How many more cups of sugar does she need to add? The answer (arabic numerals) is
+3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+156st data
+Josh had 9 marbles in his collection. He lost some marbles. If he has 4 marbles now How many marbles did he lose? The answer (arabic numerals) is
+Josh lost 5 marbles.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+157st data
+In Haley's class 13 boys love to play marbles and 50 boys love to play cards. If Haley has 26 marbles How many will each of the boys receive? The answer (arabic numerals) is
+Sorry, but the number of marbles each boy will receive cannot be determined with the given information. We would need to know how many boys are in the class in total.
+(pred_after : )
+pred : 
+GT : 2.0
+*************************
+*************************
+158st data
+Allan and Jake brought 3 balloons to the park. If Allan brought 2 balloons How many balloons did Jake bring to the park? The answer (arabic numerals) is
+Jake brought 1 balloon to the park.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+159st data
+Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared? The answer (arabic numerals) is
+4 goldfish and 10 catfish disappeared.
+(pred_after : 10.0)
+pred : 10.0
+GT : 4.0
+*************************
+*************************
+160st data
+Lawrence county has 898051 kids. During summer break 629424 kids go to camp and the rest stay home. How many kids stay home? The answer (arabic numerals) is
+268627 kids stay home.
+(pred_after : 268627.0)
+pred : 268627.0
+GT : 268627.0
+*************************
+*************************
+161st data
+Paco had 26 salty cookies and 17 sweet cookies. He ate 14 sweet cookies and 9 salty cookies. How many salty cookies did Paco have left? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 17.0
+*************************
+*************************
+162st data
+White t - shirts can be purchased in packages. If mom buys 28 packages which contain 56 white t - shirts in total How many white t - shirts does each package have? The answer (arabic numerals) is
+2 white t-shirts per package.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+163st data
+The ring toss game at the carnival made 144 dollars per day. They were at the carnival for 22 days. How much money did they make? The answer (arabic numerals) is
+The total amount of money they made is 3,168 dollars.
+(pred_after : 3168.0)
+pred : 3168.0
+GT : 3168.0
+*************************
+*************************
+164st data
+Paul got a box of 531 crayons and 38 erasers for his birthday. At the end of the school year he only had 391 left while not having lost a single erasers. How many more crayons than erasers did he have left? The answer (arabic numerals) is
+Paul had 353 more crayons than erasers left.
+(pred_after : 353.0)
+pred : 353.0
+GT : 353.0
+*************************
+*************************
+165st data
+They decided to hold the party in their backyard. They have some sets of tables, each having the 3 chairs. If there are a total of 9 chairs in the backyard How many sets of tables do they have? The answer (arabic numerals) is
+They have 3 sets of tables.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+166st data
+There are 6 baskets of peaches. Each basket has 16 red peaches and 18 green peaches. How many red peaches are in the baskets altogether? The answer (arabic numerals) is
+96 red peaches.
+(pred_after : 96.0)
+pred : 96.0
+GT : 96.0
+*************************
+*************************
+167st data
+Nell collects cards. She had 239 baseball cards and 38 Ace cards. She gave some of her cards to Jeff and now has 376 Ace cards and 111 baseball cards left. How many more Ace cards than baseball cards does Nell have? The answer (arabic numerals) is
+Nell gave 101 baseball cards to Jeff and 38 Ace cards to Jeff. Therefore, she has 138 baseball cards left and 338 Ace cards left. Nell has 200 more Ace cards than baseball cards.
+(pred_after : 200.0)
+pred : 200.0
+GT : 265.0
+*************************
+*************************
+168st data
+Mom buys 70 white t - shirts in total. If white t - shirts can be purchased in packages and mom buys 14 packages How many white t - shirts does each package have? The answer (arabic numerals) is
+5. Each package contains 5 white t-shirts.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+169st data
+For the walls of the house he would use 13 large planks of wood. If each plank of wood needs 17 pieces of nails to be secured and in addition 8 nails are needed for some smaller planks. How many nails does John need for the house wall? The answer (arabic numerals) is
+221 nails.
+(pred_after : 221.0)
+pred : 221.0
+GT : 229.0
+*************************
+*************************
+170st data
+A farmer had 90 tomatoes in his garden. If he picked 154 of them yesterday and 50 today. How many tomatoes did he pick in all? The answer (arabic numerals) is
+204.
+(pred_after : 204.0)
+pred : 204.0
+GT : 204.0
+*************************
+*************************
+171st data
+Jesse's rooms are 19 feet long and 18 feet wide. If she has 20 rooms in all How much carpet does she need to cover the floors of all rooms? The answer (arabic numerals) is
+The total area of one room is 19 x 18 = 342 square feet. So, the total area of 20 rooms is 342 x 20 = 6,840 square feet. Therefore, Jesse needs 6,840 square feet of carpet to cover the floors of all rooms.
+(pred_after : 6840.0)
+pred : 6840.0
+GT : 6840.0
+*************************
+*************************
+172st data
+Julia played tag with 17 kids on monday, 15 kids on tuesday and 2 kids on wednesday. How many kids did she play with altogether? The answer (arabic numerals) is
+34.
+(pred_after : 34.0)
+pred : 34.0
+GT : 34.0
+*************************
+*************************
+173st data
+A book has 31 chapters. Each chapter is 61 pages long. How many pages does the book have altogether? The answer (arabic numerals) is
+The book has a total of 1891 pages.
+(pred_after : 1891.0)
+pred : 1891.0
+GT : 1891.0
+*************************
+*************************
+174st data
+Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 49 g of colors to paint them. If the feathers require 288 g of wax and right now he just needs 260 g How many grams of wax does he already have? The answer (arabic numerals) is
+He already has 28 g of wax.
+(pred_after : 28.0)
+pred : 28.0
+GT : 28.0
+*************************
+*************************
+175st data
+Mary is baking a cake. The recipe calls for 9 cups of flour and 6 cups of sugar. She already put in 4 cups of sugar. How many more cups of flour than cups of sugar does she need to add now? The answer (arabic numerals) is
+5.
+(pred_after : 5.0)
+pred : 5.0
+GT : 7.0
+*************************
+*************************
+176st data
+Adam has 10 apples. Jackie has 2 apples. How many more apples does Adam have than Jackie? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+177st data
+Allan brought 5 balloons and Jake brought 6 balloons to the park. Jake then bought 3 more balloons at the park. How many balloons did Jake bring to the park? The answer (arabic numerals) is
+Jake brought a total of 9 balloons to the park.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+178st data
+Jake has 7 fewer peaches than Steven and 8 more peaches than Jill. Steven has 17 peaches. How many peaches does Jill have? The answer (arabic numerals) is
+Jill has 9 peaches.
+(pred_after : 9.0)
+pred : 9.0
+GT : 2.0
+*************************
+*************************
+179st data
+Paul had 108 books. After selling some books in a garage sale and giving 35 books to his friend he had 62 books left. How many books did he sell in the garage sale? The answer (arabic numerals) is
+Paul sold 11 books in the garage sale.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+180st data
+Matthew had 8 crackers to give to friends. If Matthew gave 2 crackers to each his friends How many friends did he give crackers to? The answer (arabic numerals) is
+4 friends.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+181st data
+Rachel's tree had 4 apples. She picked 2 apples from her tree. Thereafter 3 new apples grew on the tree. How many apples are there on the tree now? The answer (arabic numerals) is
+5 apples.
+(pred_after : 5.0)
+pred : 5.0
+GT : 1.0
+*************************
+*************************
+182st data
+Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. How many more hours does he spend on learning chinese than he does on learning english? The answer (arabic numerals) is
+Ryan spends 1 more hour on learning Chinese than he does on learning English.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+183st data
+Mary is baking a cake. The recipe calls for 9 cups of sugar 14 cups of flour and 40 cups of salt. She already put in 4 cups of flour. How many more cups of flour than cups of sugar does she need to add now? The answer (arabic numerals) is
+10 cups of flour.
+(pred_after : 10.0)
+pred : 10.0
+GT : 1.0
+*************************
+*************************
+184st data
+The grasshopper and the frog had a jumping contest. The grasshopper jumped 9 inches and the frog jumped 12 inches. How much farther did the frog jump than the grasshopper? The answer (arabic numerals) is
+3 inches.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+185st data
+An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make? The answer (arabic numerals) is
+The machine made 20 shirts in 5 minutes.
+(pred_after : 5.0)
+pred : 5.0
+GT : 20.0
+*************************
+*************************
+186st data
+The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 25 inches. The frog jumped 18 inches farther than the grasshopper and the mouse jumped 2 inches farther than the frog. How far did the mouse jump? The answer (arabic numerals) is
+45 inches.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+187st data
+There were 9 roses and 6 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 13 orchids and 3 roses in the vase. How many more orchids than roses are there in the vase now? The answer (arabic numerals) is
+There are 10 more orchids than roses in the vase now.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+188st data
+The Ferris wheel in paradise park has 18 seats. Each seat can hold 15 people. If 10 seats are broken How many people can ride the Ferris wheel at the same time? The answer (arabic numerals) is
+The Ferris wheel in paradise park can hold a total of 18 x 15 = 270 people.
+If 10 seats are broken, then the number of seats available is 18 - 10 = 8 seats.
+Therefore, the number of people that can ride the Ferris wheel at the same time is 8 x 15 = 120 people.
+(pred_after : 120.0)
+pred : 120.0
+GT : 120.0
+*************************
+*************************
+189st data
+A farmer had 175 tomatoes and 77 potatoes in his garden. If he picked 172 potatoes How many tomatoes and potatoes does he have left? The answer (arabic numerals) is
+3 tomatoes and 5 potatoes.
+(pred_after : 5.0)
+pred : 5.0
+GT : 80.0
+*************************
+*************************
+190st data
+Baker made 8 cakes. He bought 139 new cakes and sold 145 cakes. How many more cakes did baker sell than those he bought? The answer (arabic numerals) is
+6.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+191st data
+Josh had 21 marbles in his collection. He found 7 marbles. How many marbles does he have now? The answer (arabic numerals) is
+28.
+(pred_after : 28.0)
+pred : 28.0
+GT : 28.0
+*************************
+*************************
+192st data
+18 red peaches, 14 yellow peaches and 17 green peaches are in the basket. How many red and yellow peaches are in the basket? The answer (arabic numerals) is
+32.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+193st data
+Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 519 chocolate chip cookies and 300 raisin cookies yesterday. And she baked 280 raisin cookies and 359 chocolate chip cookies this morning. How many more raisin cookies did Helen bake yesterday compared to today? The answer (arabic numerals) is
+20 more raisin cookies were baked yesterday compared to today.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+194st data
+David did 51 push-ups in gym class today. David did 49 more push-ups than Zachary. How many push-ups did Zachary and David do altogether? The answer (arabic numerals) is
+100 push-ups.
+(pred_after : 100.0)
+pred : 100.0
+GT : 53.0
+*************************
+*************************
+195st data
+The Razorback shop makes $ 76 dollars off each jersey and $ 204 off each t-shirt. During the Arkansas and Texas tech game they sold 158 t-shirts and 2 jerseys. How much money did they make from selling the jerseys? The answer (arabic numerals) is
+$152.
+(pred_after : 152.0)
+pred : 152.0
+GT : 152.0
+*************************
+*************************
+196st data
+5 red peaches, 14 yellow peaches and 6 green peaches are in the basket. How many green and yellow peaches are in the basket? The answer (arabic numerals) is
+20.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+197st data
+Dan had $ 3 left with him after he bought a candy bar. If he had $ 4 at the start How much did the candy bar cost? The answer (arabic numerals) is
+The candy bar cost $1.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+198st data
+The grasshopper and the frog had a jumping contest. The grasshopper jumped 35 inches. The grasshopper jumped 4 inches farther than the frog. How much did they jump altogether? The answer (arabic numerals) is
+The frog jumped 31 inches (35 - 4 = 31). Together, they jumped 66 inches (35 + 31 = 66).
+(pred_after : 66.0)
+pred : 66.0
+GT : 66.0
+*************************
+*************************
+199st data
+A grocery store had 22 bottles of regular soda and 61 bottles of diet soda. How many more bottles of diet soda than regular soda did they have? The answer (arabic numerals) is
+39.
+(pred_after : 39.0)
+pred : 39.0
+GT : 39.0
+*************************
+*************************
+200st data
+Winter is almost here and most animals are migrating to warmer countries. There are some bird families living near the mountain. 20 bird families flew away for winter while 14 bird families stayed behind. How many bird families were living near the mountain at the start? The answer (arabic numerals) is
+34 bird families were living near the mountain at the start.
+(pred_after : 34.0)
+pred : 34.0
+GT : 34.0
+*************************
+*************************
+201st data
+Jerry had some action figures on a shelf in his room. Later he added 2 more action figures to the shelf and removed 7 of the old ones. If there are 10 action figures on his shelf now How many action figures did he have initially on the shelf? The answer (arabic numerals) is
+To solve this problem, we can use algebra. Let x be the initial number of action figures on the shelf. 
+
+After Jerry added 2 more action figures, the total number of action figures on the shelf became x + 2. 
+
+Then, Jerry removed 7 of the old ones, which means there were x - 7 old action figures left on the shelf. 
+
+Finally, we know that the total number of action figures on the shelf now is 10. 
+
+Putting it all together, we can write an equation: 
+
+x - 7 + 2 = 10 
+
+Simplifying, we get: 
+
+x - 5 = 10 
+
+Adding 5 to both sides, we get: 
+
+x = 15 
+
+Therefore, Jerry initially had 15 action figures on the shelf.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+202st data
+Brenda's mother made cookies for 14. If each of them had 30 cookies How many cookies did she prepare? The answer (arabic numerals) is
+Brenda's mother prepared a total of 420 cookies (14 x 30 = 420).
+(pred_after : 420.0)
+pred : 420.0
+GT : 420.0
+*************************
+*************************
+203st data
+Kelly has 106 nintendo games. How many will she have left if she gives away 64 games? The answer (arabic numerals) is
+42.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+204st data
+Dan has $ 4. He bought a candy bar for $ 8. Then his friend have him $ 5 How much money is left? The answer (arabic numerals) is
+-4. Dan spent more money than he had, so he has a negative balance of $4. When his friend gave him $5, it brought his balance up to $1, but he still owes $3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 1.0
+*************************
+*************************
+205st data
+Bryan took a look at his books and magazines. If he has 9 books and 46 magazines in each of his 10 bookshelves How many magazines does he have in total? The answer (arabic numerals) is
+Bryan has a total of 20,700 magazines.
+(pred_after : 20700.0)
+pred : 20700.0
+GT : 460.0
+*************************
+*************************
+206st data
+In a school there are 308 girls and 318 boys. There are also 36 teachers How many pupils are there in that school? The answer (arabic numerals) is
+626 pupils in total.
+(pred_after : 626.0)
+pred : 626.0
+GT : 626.0
+*************************
+*************************
+207st data
+33 campers went rowing in the morning 34 campers went rowing in the afternoon and 10 campers went rowing in the evening. How many more campers went rowing in the afternoon than in the evening? The answer (arabic numerals) is
+24 campers went rowing in the afternoon, and 10 campers went rowing in the evening. Therefore, 24 - 10 = 14 more campers went rowing in the afternoon than in the evening.
+(pred_after : 14.0)
+pred : 14.0
+GT : 24.0
+*************************
+*************************
+208st data
+Jesse's room is 7 feet long. If she needs a carpet of size 14 square feet What is the width of her room? The answer (arabic numerals) is
+2 feet.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+209st data
+Baker made 54 cakes and 143 pastries. If he sold 68 cakes and 92 pastries How many more pastries than cakes did baker sell? The answer (arabic numerals) is
+Baker sold 24 more pastries than cakes.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+210st data
+Baker made 99 cakes. He bought 167 new cakes and sold 89 cakes. How many more cakes did baker buy than those he sold? The answer (arabic numerals) is
+79.
+(pred_after : 79.0)
+pred : 79.0
+GT : 78.0
+*************************
+*************************
+211st data
+They decided to hold the party in their backyard. They have 2 sets of tables, each having the same number of chairs. If there are a total of 12 chairs in the backyard How many chairs are there for each table? The answer (arabic numerals) is
+6 chairs for each table.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+212st data
+Last week Fred had 60 dollars and Jason had 19 dollars. Jason washed cars over the weekend and now has 33 dollars. How much money did Jason make washing cars? The answer (arabic numerals) is
+Jason made 14 dollars washing cars.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+213st data
+He then went to see the oranges being harvested. He found out that they harvest 71 sacks of unripe oranges and 60 sacks of ripe oranges per day. How many more sacks of unripe oranges than ripe oranges are harvested per day? The answer (arabic numerals) is
+11 more sacks of unripe oranges than ripe oranges are harvested per day.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+214st data
+Tiffany was collecting cans for recycling. On monday she had 8 bags of cans. The next day she found 7 more bags worth of cans. How many more bags did she have on monday than she found on the next day? The answer (arabic numerals) is
+1.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+215st data
+Paco had 25 cookies. He ate 5 of them. Then he bought 3 more cookies How many more cookies did he eat than those he bought? The answer (arabic numerals) is
+Paco ate 20 cookies in total (25 - 5 = 20). Then he bought 3 more, so he ate 17 more cookies than he bought (20 - 3 = 17).
+(pred_after : 17.0)
+pred : 17.0
+GT : 2.0
+*************************
+*************************
+216st data
+Baker made 157 cakes and 169 pastries. If he sold 158 cakes and 147 pastries How many more cakes than pastries did baker sell? The answer (arabic numerals) is
+Baker sold 11 more cakes than pastries.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+217st data
+Faye was placing 12 pencils equally into 3 rows. How many pencils did she place in each row? The answer (arabic numerals) is
+4 pencils in each row.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+218st data
+Adam could fit 8 action figures and 10 cabinets on each shelf in his room. His room has 4 shelves. How many total items could his shelves hold? The answer (arabic numerals) is
+The shelves in Adam's room could hold a total of 320 items.
+(pred_after : 320.0)
+pred : 320.0
+GT : 72.0
+*************************
+*************************
+219st data
+Bobby ate 38 pieces of candy. Then he ate 36 more. He also ate 16 pieces of chocolate. How many more pieces of candy than chocolate did Bobby eat? The answer (arabic numerals) is
+58.
+(pred_after : 58.0)
+pred : 58.0
+GT : 58.0
+*************************
+*************************
+220st data
+Baker sold 44 cakes. If he had made 48 cakes initially How many cakes would baker still have? The answer (arabic numerals) is
+4 cakes.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+221st data
+Being his favorite, he saved checking on the grapevines after 57 stops. He was told by 252 of the pickers that they fill 108 drums of grapes per day. How many drums of grapes would be filled in 58 days? The answer (arabic numerals) is
+6,264 drums of grapes would be filled in 58 days.
+(pred_after : 58.0)
+pred : 58.0
+GT : 6264.0
+*************************
+*************************
+222st data
+Julia played tag with 13 kids on monday and 10 kids on tuesday. She played cards with 15 kids on wednesday. How many kids did she play with altogether? The answer (arabic numerals) is
+38.
+(pred_after : 38.0)
+pred : 38.0
+GT : 38.0
+*************************
+*************************
+223st data
+Randy has 37 blocks. He uses 33 blocks to build a tower and 13 blocks to build a house. How many more blocks did he use to build the tower than he did to build the house? The answer (arabic numerals) is
+20.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+224st data
+Edward spent $ 6 to buy 2 books each book costing him the same amount of money. Now he has $ 12. How much did each book cost? The answer (arabic numerals) is
+$3. Each book cost $3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+225st data
+If each pack costs 81 dollars How much will it cost to buy 33 packs of dvds? The answer (arabic numerals) is
+2673 dollars.
+(pred_after : 2673.0)
+pred : 2673.0
+GT : 2673.0
+*************************
+*************************
+226st data
+After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet How deep was the water? The answer (arabic numerals) is
+195 feet.
+(pred_after : 195.0)
+pred : 195.0
+GT : 255.0
+*************************
+*************************
+227st data
+Bobby ate 28 pieces of candy. Then he ate 42 more. He also ate 63 pieces of chocolate. How many pieces of candy did Bobby eat? The answer (arabic numerals) is
+Bobby ate a total of 70 pieces of candy.
+(pred_after : 70.0)
+pred : 70.0
+GT : 70.0
+*************************
+*************************
+228st data
+Zachary did 51 push-ups and David did 44 push-ups in gym class today. How many more push-ups did Zachary do than David? The answer (arabic numerals) is
+Zachary did 7 more push-ups than David.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+229st data
+3 red peaches, and some more green peaches are in the basket. If there are 10 more green peaches than red peaches in the basket How many green peaches are in the basket? The answer (arabic numerals) is
+13 green peaches.
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+230st data
+Dave had 11 apps and 3 files on his phone. After deleting some apps and files he had 24 files and 2 apps left. How many more files than apps does he have left on the phone? The answer (arabic numerals) is
+22.
+(pred_after : 22.0)
+pred : 22.0
+GT : 22.0
+*************************
+*************************
+231st data
+Nell collects baseball cards. She had 242 cards. She gave 136 of her cards to Jeff. How many cards does Nell have left? The answer (arabic numerals) is
+106 cards.
+(pred_after : 106.0)
+pred : 106.0
+GT : 106.0
+*************************
+*************************
+232st data
+For Gwen's birthday she received 7 dollars. She spent some money and has 5 dollars left with her. How much money did she spend? The answer (arabic numerals) is
+Gwen spent 2 dollars.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+233st data
+David did 56 more push-ups than Zachary in gym class today. If David did 38 push-ups How many push-ups did Zachary and David do altogether? The answer (arabic numerals) is
+94 push-ups.
+(pred_after : 94.0)
+pred : 94.0
+GT : 20.0
+*************************
+*************************
+234st data
+Baker made 7 cakes and 148 pastries. If he sold 15 cakes and 103 pastries How many pastries would baker still have? The answer (arabic numerals) is
+45 pastries.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+235st data
+Rachel had to complete 9 pages of math homework, 2 pages of reading homework and 96 more pages of biology homework. How many more pages of math homework than reading homework did she have? The answer (arabic numerals) is
+7 pages.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+236st data
+In a school there are 732 girls and 761 boys. 682 more girls and 8 more boys joined the school. How many girls are there in the school now? The answer (arabic numerals) is
+1414.
+(pred_after : 1414.0)
+pred : 1414.0
+GT : 1414.0
+*************************
+*************************
+237st data
+Paige was helping her mom plant flowers and they put 10 seeds in each flower bed. If they planted 60 seeds altogther How many flower beds did they have? The answer (arabic numerals) is
+They had 6 flower beds.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+238st data
+David did 36 more push-ups but 33 less crunches than Zachary in gym class today. If Zachary did 58 push-ups and 33 crunches How many more push-ups than crunches did Zachary do? The answer (arabic numerals) is
+Zachary did 25 more push-ups than crunches.
+(pred_after : 25.0)
+pred : 25.0
+GT : 25.0
+*************************
+*************************
+239st data
+Edward spent $ 17. Then he received $ 10 from his friend. Now he has $ 7. How much did Edward have before he spent his money? The answer (arabic numerals) is
+24.
+(pred_after : 24.0)
+pred : 24.0
+GT : 14.0
+*************************
+*************************
+240st data
+Every day Ryan spends 6 hours on learning english 7 hours on learning chinese and 3 hours on learning spanish. How many hours does he spend on learning english, chinese and spanish in all? The answer (arabic numerals) is
+16 hours.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+241st data
+The school is planning a field trip. The school has 84 classrooms. 95 school buses are fully filled with 118 seats on each school bus. How many students are in the school? The answer (arabic numerals) is
+The school has a total of 11,130 students.
+(pred_after : 11130.0)
+pred : 11130.0
+GT : 11210.0
+*************************
+*************************
+242st data
+Rebecca wants to split a collection of eggs into groups of 6. Rebecca has 18 eggs 72 bananas and 66 marbles. How many groups will be created? The answer (arabic numerals) is
+3 groups will be created.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+243st data
+There are 4 different books and 17 different movies in the ' crazy silly school ' series. If you read 19 of the books and watched 7 of the movies How many more movies do you still have to watch? The answer (arabic numerals) is
+You still have to watch 10 more movies.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+244st data
+He then went to see the oranges being harvested. He found out that they harvest 41 sacks of unripe oranges and 86 sacks of ripe oranges per day. How many more sacks of ripe oranges than unripe oranges are harvested per day? The answer (arabic numerals) is
+45 more sacks of ripe oranges than unripe oranges are harvested per day.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+245st data
+Julia played tag with 5 kids on monday. She played tag with some more kids on tuesday. If she played with a total of 15 kids How many kids did she play with on tuesday? The answer (arabic numerals) is
+Julia played with 10 kids on Tuesday.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+246st data
+Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left? The answer (arabic numerals) is
+94.
+(pred_after : 94.0)
+pred : 94.0
+GT : 66.0
+*************************
+*************************
+247st data
+4 birds and 46 storks were sitting on the fence. 6 more birds came to join them. How many birds are sitting on the fence? The answer (arabic numerals) is
+50.
+(pred_after : 50.0)
+pred : 50.0
+GT : 10.0
+*************************
+*************************
+248st data
+The ring toss game at the carnival made 325 dollars in the first 154 days and 114 dollars in the remaining 57 days. How much did they make per day in the remaining 57 days at the carnival? The answer (arabic numerals) is
+$2 per day.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+249st data
+Every day Ryan spends 2 hours on learning english, 5 hours on learning chinese and 4 hours on learning spanish. How many more hours does he spend on learning chinese than he does on learning spanish? The answer (arabic numerals) is
+Ryan spends 1 hour more on learning Chinese than he does on learning Spanish.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+250st data
+There are 8 different movies and 21 different books in the ' crazy silly school ' series. If you read 7 of the books and watched 4 of the movies How many more movies do you still have to watch? The answer (arabic numerals) is
+17.
+(pred_after : 17.0)
+pred : 17.0
+GT : 4.0
+*************************
+*************************
+251st data
+Paul got a box of 253 crayons for his birthday. By the end of the school year he had either lost or given away 70 of them. How many crayons did he have left by the end of the school year? The answer (arabic numerals) is
+183.
+(pred_after : 183.0)
+pred : 183.0
+GT : 183.0
+*************************
+*************************
+252st data
+After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 45 visitors came to the Buckingham palace on the previous day. If 829 people visited the Buckingham palace within the past 85 days How many visitors visited the Buckingham palace on that day? The answer (arabic numerals) is
+9.
+(pred_after : 9.0)
+pred : 9.0
+GT : 784.0
+*************************
+*************************
+253st data
+Last week Fred had 114 dollars and Jason had 22 dollars. They washed cars over the weekend and now Fred has 21 dollars and Jason has 78 dollars. How much money did Jason make over the weekend? The answer (arabic numerals) is
+Jason made $56 over the weekend.
+(pred_after : 56.0)
+pred : 56.0
+GT : 56.0
+*************************
+*************************
+254st data
+Every day Ryan spends 7 hours on learning english, 2 hours on learning chinese and 4 hours on learning spanish. How many more hours does he spend on learning english than he does on learning spanish? The answer (arabic numerals) is
+3 hours.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+accuracy : 73.22834645669292

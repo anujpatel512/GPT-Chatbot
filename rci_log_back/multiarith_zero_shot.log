@@ -1,0 +1,2123 @@
+*****************************
+Namespace(random_seed=1, dataset='multiarith', model='chatgpt', method='zero_shot', rci=False, nofeedback=False, max_length_cot=256, max_length_direct=256, limit_dataset_size=254, api_time_interval=0.25, dataset_path='./dataset/MultiArith/MultiArith.json', direct_answer_trigger='\nTherefore, the answer (arabic numerals) is', direct_answer_trigger_for_zeroshot='The answer (arabic numerals) is', direct_answer_trigger_for_zeroshot_cot='\nTherefore, the answer (arabic numerals) is', direct_answer_trigger_for_fewshot='The answer is', cot_trigger="Let's think step by step.")
+*****************************
+2023/04/06 03:32:45
+setup data loader ...
+worker_seed : 1
+dataloader_num_workers: 3
+dataset : multiarith
+data size : 600
+average num of words for each sample : 31.821666666666665
+2023/04/06 03:32:45
+*************************
+1st data
+For Halloween Megan received 11 pieces of candy from neighbors and 5 pieces from her older sister. If she only ate 8 pieces a day, how long would the candy last her? The answer (arabic numerals) is
+16 days.
+(pred_after : 16.0)
+pred : 16.0
+GT : 2.0
+*************************
+*************************
+2st data
+Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have? The answer (arabic numerals) is
+They had 25 bad carrots.
+(pred_after : 25.0)
+pred : 25.0
+GT : 25.0
+*************************
+*************************
+3st data
+Paige and her friends were recycling paper for their class. For every 4 pounds they recycled they earned one point. If Paige recycled 14 pounds and her friends recycled 2 pounds, how many points did they earn? The answer (arabic numerals) is
+They earned 3 points.
+(pred_after : 3.0)
+pred : 3.0
+GT : 4.0
+*************************
+*************************
+4st data
+In fourth grade there were 4 students at the start of the year. During the year 3 students left and 42 new students came to school. How many students were in fourth grade at the end? The answer (arabic numerals) is
+43 students were in fourth grade at the end of the year.
+(pred_after : 43.0)
+pred : 43.0
+GT : 43.0
+*************************
+*************************
+5st data
+A toy store had 4 giant stuffed bears in stock when they got another shipment with 10 bears in it. The put the bears onto shelves with 7 on each shelf. How many shelves did they use? The answer (arabic numerals) is
+2 shelves.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+6st data
+Bianca was organizing her book case making sure each of the shelves had exactly 8 books on it. If she had 5 shelves of mystery books and 4 shelves of picture books, how many books did she have total? The answer (arabic numerals) is
+Bianca had a total of 72 books.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+7st data
+Megan baked 68 cupcakes for her school's bake sale. If her brother, Todd, ate 32 of them how many packages could she make if she put 6 cupcake in each package? The answer (arabic numerals) is
+Megan would have 6 packages of cupcakes left, as Todd ate 32 out of the 68 cupcakes she baked, leaving her with 36 cupcakes. Dividing 36 by 6 cupcakes per package gives us 6 packages.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+8st data
+A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+9st data
+Billy was organizing his baseball cards in a binder with 5 on each page. If he had 3 new cards and 42 old cards to put in the binder, how many pages would he use? The answer (arabic numerals) is
+Billy would use 9 pages in total.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+10st data
+Adam bought 2 boxes of chocolate candy and 5 boxes of caramel candy. If each box has 4 pieces inside it, how much candy did he have total? The answer (arabic numerals) is
+38. Adam had a total of 38 pieces of candy.
+(pred_after : 38.0)
+pred : 38.0
+GT : 28.0
+*************************
+*************************
+11st data
+Wendy picked 103 flowers for her friend’s wedding. She was making bouquets with 8 flowers in each one. If 47 of the flowers wilted before the wedding, how many bouquets could she still make? The answer (arabic numerals) is
+She could still make 12 bouquets.
+(pred_after : 12.0)
+pred : 12.0
+GT : 7.0
+*************************
+*************************
+12st data
+Edward and his friend were buying trick decks from the magic shop for 6 dollars each. How much did they spend if Edward bought 3 decks and his friend bought 6 decks? The answer (arabic numerals) is
+Edward spent 18 dollars and his friend spent 36 dollars, so together they spent 54 dollars.
+(pred_after : 54.0)
+pred : 54.0
+GT : 54.0
+*************************
+*************************
+13st data
+A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left? The answer (arabic numerals) is
+54.
+(pred_after : 54.0)
+pred : 54.0
+GT : 54.0
+*************************
+*************************
+14st data
+Wendy was playing a video game where she scores 5 points for each treasure she finds. If she found 4 treasures on the first level and 3 on the second, what would her score be? The answer (arabic numerals) is
+Wendy's score would be 35 points. (5 x 4 = 20 points on the first level, and 5 x 3 = 15 points on the second level. Adding those together gives a total of 35 points.)
+(pred_after : 35.0)
+pred : 35.0
+GT : 35.0
+*************************
+*************************
+15st data
+The school cafeteria ordered 6 red apples and 15 green apples for students lunches. But, if only 5 students wanted fruit, how many extra did the cafeteria end up with? The answer (arabic numerals) is
+The cafeteria ordered a total of 21 apples. If only 5 students wanted fruit, they would need a total of 5 apples. Therefore, the cafeteria would end up with 16 extra apples (21 - 5 = 16).
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+16st data
+Paul had saved up 3 dollars. If he received another 7 dollars for his allowance, how many 5 dollar toys could he buy? The answer (arabic numerals) is
+2.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+17st data
+Victor was helping the cafeteria workers pick up lunch trays, but he could only carry 7 trays at a time. If he had to pick up 23 trays from one table and 5 trays from another, how many trips will he make? The answer (arabic numerals) is
+Victor will make 4 trips.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+18st data
+Kaleb bought 14 boxes of chocolate candy and gave 5 to his little brother. If each box has 6 pieces inside it, how many pieces did Kaleb still have? The answer (arabic numerals) is
+Kaleb originally had 14 boxes x 6 pieces per box = 84 pieces of chocolate candy. After giving 5 boxes to his brother, he had 9 boxes x 6 pieces per box = 54 pieces of chocolate candy left.
+(pred_after : 54.0)
+pred : 54.0
+GT : 54.0
+*************************
+*************************
+19st data
+In a video game, each enemy defeated gives you 8 points. If a level has 7 enemies total and you destroy all but 2 of them, how many points would you earn? The answer (arabic numerals) is
+48 points.
+(pred_after : 48.0)
+pred : 48.0
+GT : 40.0
+*************************
+*************************
+20st data
+Nancy was planting vegetables in her garden. She started with 52 seeds and planted 28 of them in the big garden and in each of her small gardens put 4 seeds each. How many small gardens did Nancy have? The answer (arabic numerals) is
+Nancy planted 28 seeds in the big garden, so she has 52 - 28 = 24 seeds left for the small gardens. Each small garden has 4 seeds, so Nancy has 24 / 4 = 6 small gardens. Therefore, Nancy had 6 small gardens.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+21st data
+A store had 120 coloring books in stock. They ended up putting them on sale and getting rid of 39 of them. The put the ones they still had onto shelves with 9 on each shelf. How many shelves did they use? The answer (arabic numerals) is
+9 shelves.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+22st data
+John had 5 action figures, but needed 7 total for a complete collection. If each one costs $5, how much money would he need to finish his collection? The answer (arabic numerals) is
+John would need to spend $10 to finish his collection.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+23st data
+George was working as a sacker at a grocery store where he made 5 dollars an hour. On Monday he worked 7 hours and on Tuesday he worked 2 hours. How much money did George make in those two days? The answer (arabic numerals) is
+George made a total of  $37 in those two days.
+(pred_after : 37.0)
+pred : 37.0
+GT : 45.0
+*************************
+*************************
+24st data
+Will invited 9 friends to a birthday party, but 4 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 8, how many should he buy? The answer (arabic numerals) is
+He should buy 40 cupcakes.
+(pred_after : 40.0)
+pred : 40.0
+GT : 40.0
+*************************
+*************************
+25st data
+Bianca had 45 coloring books. If she gave away 6 of them, but then bought 20 more, how many would she have total? The answer (arabic numerals) is
+59 coloring books.
+(pred_after : 59.0)
+pred : 59.0
+GT : 59.0
+*************************
+*************************
+26st data
+Kaleb had 12 dollars. If he spent 8 bucks on a new game, how many 2 dollar toys could he buy with the money he had left? The answer (arabic numerals) is
+Kaleb would have 4 dollars left after buying the new game. He could buy 2 two-dollar toys with the money he has left.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+27st data
+The school cafeteria had 12 apples. If they used 8 to make lunch for the students and then bought 19 more, how many apples would they have? The answer (arabic numerals) is
+23 apples.
+(pred_after : 23.0)
+pred : 23.0
+GT : 23.0
+*************************
+*************************
+28st data
+In fourth grade there were 33 students at the start of the year. During the year 18 students left and 14 new students came to school. How many students were in fourth grade at the end? The answer (arabic numerals) is
+29 students were in fourth grade at the end of the year.
+(pred_after : 29.0)
+pred : 29.0
+GT : 29.0
+*************************
+*************************
+29st data
+A new building needed 9 windows. The builder had already installed 6 of them. If it takes 6 hours to install each window, how long will it take him to install the rest? The answer (arabic numerals) is
+The builder needs to install 3 more windows. Therefore, it will take him 18 hours to install the rest of the windows (3 windows x 6 hours per window).
+(pred_after : 6.0)
+pred : 6.0
+GT : 18.0
+*************************
+*************************
+30st data
+There were 10 friends playing a video game online when 7 players quit. If each player left had 8 lives, how many lives did they have total? The answer (arabic numerals) is
+56 lives.
+(pred_after : 56.0)
+pred : 56.0
+GT : 24.0
+*************************
+*************************
+31st data
+Faye was selling her necklaces at a garage sale. She sold 3 bead necklaces and 7 gem stone necklaces. If each necklace cost 7 dollars, how much money did she earn? The answer (arabic numerals) is
+Faye earned 70 dollars.
+(pred_after : 70.0)
+pred : 70.0
+GT : 70.0
+*************************
+*************************
+32st data
+There were 8 friends playing a video game online when 5 players quit. If each player left had 5 lives, how many lives did they have total? The answer (arabic numerals) is
+20 lives.
+(pred_after : 20.0)
+pred : 20.0
+GT : 15.0
+*************************
+*************************
+33st data
+Edward made 37 dollars mowing lawns over the summer. If he spent 21 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+34st data
+Isabel had 72 homework problems. She finished 32 of them but still had 5 pages of problems to do. If each page has the same number of problems on it, how many problems are on each page? The answer (arabic numerals) is
+8 problems per page.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+35st data
+Robin was making baggies of cookies with 6 cookies in each bag. If she had 23 chocolate chip cookies and 25 oatmeal cookies, how many baggies could she make? The answer (arabic numerals) is
+Robin could make 7 baggies of chocolate chip cookies (with 1 cookie left over) and 8 baggies of oatmeal cookies. So in total, she could make 15 baggies.
+(pred_after : 15.0)
+pred : 15.0
+GT : 8.0
+*************************
+*************************
+36st data
+Olivia and her mom were picking carrots from their garden. Olivia picked 20 and her mother picked 14. If only 19 of the carrots were good, how many bad carrots did they have? The answer (arabic numerals) is
+They had 15 bad carrots.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+37st data
+For homework Nancy had 17 math problems and 15 spelling problems. If she can finish 8 problems in an hour how long will it take her to finish all the problems? The answer (arabic numerals) is
+Nancy has a total of 17 + 15 = 32 problems to finish.
+If she can finish 8 problems in an hour, then it will take her 32 / 8 = 4 hours to finish all the problems. Therefore, the answer is 4.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+38st data
+A trivia team had 12 members total, but during a game 4 members didn't show up. If each member that did show up scored 8 points, how many points were scored total? The answer (arabic numerals) is
+The number of members who showed up is 12 - 4 = 8. So, the total number of points scored is 8 x 8 = 64.
+(pred_after : 64.0)
+pred : 64.0
+GT : 64.0
+*************************
+*************************
+39st data
+Frank made 5 dollars mowing lawns and 58 dollars weed eating. If he only spent 7 dollar a week, how long would the money last him? The answer (arabic numerals) is
+63. 
+
+To get this answer, you would add the amounts Frank made: 
+
+5 + 58 = 63 
+
+Then, you would divide the total amount by the amount he spends each week: 
+
+63 ÷ 7 = 9 
+
+So the money would last Frank 9 weeks.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+40st data
+Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework? The answer (arabic numerals) is
+15.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+41st data
+Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now? The answer (arabic numerals) is
+19. Roger had 16 dollars, got 28 more dollars, which makes a total of 44 dollars. Then he spent 25 dollars on a new game, so he has 19 dollars left.
+(pred_after : 19.0)
+pred : 19.0
+GT : 19.0
+*************************
+*************************
+42st data
+Kaleb was collecting cans for recycling. On Saturday he filled 4 bags up and on Sunday he filled 6 more bags. If each bag had 4 cans in it, how many cans did he pick up total? The answer (arabic numerals) is
+Kaleb picked up a total of 40 cans. (4 bags on Saturday x 4 cans per bag = 16 cans, and 6 bags on Sunday x 4 cans per bag = 24 cans. Adding 16 and 24 together gives a total of 40 cans.)
+(pred_after : 40.0)
+pred : 40.0
+GT : 40.0
+*************************
+*************************
+43st data
+Paige had 11 songs on her mp3 player. If she deleted 9 old songs from it and then added 8 new songs, how many songs does she have on her mp3 player? The answer (arabic numerals) is
+10 songs.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+44st data
+Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? The answer (arabic numerals) is
+35.
+(pred_after : 35.0)
+pred : 35.0
+GT : 35.0
+*************************
+*************************
+45st data
+A pet store had 56 puppies. In one day they sold 24 of them and put the rest into cages with 4 in each cage. How many cages did they use? The answer (arabic numerals) is
+The pet store had 32 puppies left after selling 24 of them. To find out how many cages they used, we need to divide the number of puppies by the number of puppies in each cage: 
+
+32 ÷ 4 = 8 
+
+So the pet store used 8 cages.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+46st data
+There were 16 friends playing a video game online when 7 players quit. If each player left had 8 lives, how many lives did they have total? The answer (arabic numerals) is
+56 lives.
+(pred_after : 56.0)
+pred : 56.0
+GT : 72.0
+*************************
+*************************
+47st data
+For the school bake sale Amy made pastries. She baked 15 cupcakes and 48 cookies. After the sale she had 12 to take back home. How many pastries did she sell? The answer (arabic numerals) is
+Amy sold 51 pastries.
+(pred_after : 51.0)
+pred : 51.0
+GT : 51.0
+*************************
+*************************
+48st data
+While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have? The answer (arabic numerals) is
+2. Megan had 2 pictures from her vacation after deleting 31.
+(pred_after : 31.0)
+pred : 31.0
+GT : 2.0
+*************************
+*************************
+49st data
+A pet store had 102 puppies. In one day they sold 21 of them and put the rest into cages with 9 in each cage. How many cages did they use? The answer (arabic numerals) is
+81 cages.
+(pred_after : 81.0)
+pred : 81.0
+GT : 9.0
+*************************
+*************************
+50st data
+Emily was playing a video game and had 42 lives. In a hard part of the game she lost 25 lives. If she got 24 more lives in the next level, how many lives would she have? The answer (arabic numerals) is
+41 lives.
+(pred_after : 41.0)
+pred : 41.0
+GT : 41.0
+*************************
+*************************
+51st data
+Jerry is at the library helping put away books. There are 34 book to put away total but a librarian takes 7 of them and leaves Jerry with the rest. If he can fit 3 books on a shelf, how many shelves will he need? The answer (arabic numerals) is
+Jerry is left with 27 books to put away. To determine how many shelves he will need, we can divide the number of books by the number of books that can fit on each shelf: 
+
+27 books ÷ 3 books per shelf = 9 shelves 
+
+Therefore, Jerry will need 9 shelves to put away the remaining books.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+52st data
+A waiter had 14 customers to wait on. If 3 customers left and he got another 39 customers, how many customers would he have? The answer (arabic numerals) is
+50 customers.
+(pred_after : 50.0)
+pred : 50.0
+GT : 50.0
+*************************
+*************************
+53st data
+At the fair there were 9 people in line for the bumper cars. If 6 of them got tired of waiting and left and 3 more got in line, how many people would be in line? The answer (arabic numerals) is
+There would be 6 people in line.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+54st data
+Wendy was playing a video game and had 43 lives. In a hard part of the game she lost 8 lives. If she got 39 more lives in the next level, how many lives would she have? The answer (arabic numerals) is
+74.
+(pred_after : 74.0)
+pred : 74.0
+GT : 74.0
+*************************
+*************************
+55st data
+There are 58 students trying out for the school's trivia teams. If 10 of them didn't get picked for the team and the rest were put into 8 groups, how many students would be in each group? The answer (arabic numerals) is
+48 students would be put into 8 groups, so each group would have 6 students.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+56st data
+Edward and his friend were buying trick decks from the magic shop for 9 dollars each. How much did they spend if Edward bought 4 decks and his friend bought 4 decks? The answer (arabic numerals) is
+The total cost would be 72 dollars.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+57st data
+A pet store had 88 puppies. In one day they sold 34 of them and put the rest into cages with 6 in each cage. How many cages did they use? The answer (arabic numerals) is
+54 cages.
+(pred_after : 54.0)
+pred : 54.0
+GT : 9.0
+*************************
+*************************
+58st data
+Will had 83 dollars. If he spent 47 bucks on a new game, how many 4 dollar toys could he buy with the money he had left? The answer (arabic numerals) is
+He would have 36 dollars left after buying the new game. Therefore, he could buy 9 four dollar toys with the money he had left.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+59st data
+Zoe had 6 songs on her mp3 player. If she deleted 3 old songs from it and then added 20 new songs, how many songs does she have on her mp3 player? The answer (arabic numerals) is
+23.
+(pred_after : 23.0)
+pred : 23.0
+GT : 23.0
+*************************
+*************************
+60st data
+While shopping for music online, Zoe bought 3 country albums and 5 pop albums. Each album came with a lyric sheet and had 3 songs. How many songs did Zoe buy total? The answer (arabic numerals) is
+24 songs.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+61st data
+A worksheet had 4 problems on it. If a teacher had 16 worksheets to grade and had already graded 8 of them, how many more problems does she have to grade? The answer (arabic numerals) is
+48 problems.
+(pred_after : 48.0)
+pred : 48.0
+GT : 32.0
+*************************
+*************************
+62st data
+A book store had 41 books in the bargin bin. If they sold 33 books, but then put 2 more in the bin, how many books would be in the bin? The answer (arabic numerals) is
+42.
+(pred_after : 42.0)
+pred : 42.0
+GT : 10.0
+*************************
+*************************
+63st data
+The cafeteria had 96 apples. For lunch they handed out 42 to students and decided to use the rest to make pies. If each pie takes 6 apples, how many pies could they make? The answer (arabic numerals) is
+9 pies.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+64st data
+For the school bake sale Bianca made 14 cupcakes. If she sold 6 of them and then made 17 more, how many cupcakes would she have? The answer (arabic numerals) is
+25 cupcakes.
+(pred_after : 25.0)
+pred : 25.0
+GT : 25.0
+*************************
+*************************
+65st data
+Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need? The answer (arabic numerals) is
+Isabel still needs 10 cups of flour.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+66st data
+Kaleb was selling his old games. He started out with 76 but sold 46 of them. He packed the rest up putting 5 games into each box. How many boxes did he have to use? The answer (arabic numerals) is
+He had 30 games left after selling 46. To find out how many boxes he needed, we can divide 30 by 5: 
+
+30 ÷ 5 = 6 
+
+So Kaleb had to use 6 boxes to pack up his remaining games.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+67st data
+Gwen and her friends were recycling paper for their class. For every 3 pounds they recycled they earned one point. If Gwen recycled 5 pounds and her friends recycled 13 pounds, how many points did they earn? The answer (arabic numerals) is
+6 points.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+68st data
+There were 11 friends playing a video game online when 5 players quit. If each player left had 5 lives, how many lives did they have total? The answer (arabic numerals) is
+25 lives.
+(pred_after : 25.0)
+pred : 25.0
+GT : 30.0
+*************************
+*************************
+69st data
+A pet shelter had 3 puppies when another 3 were brought in. If 3 puppies a day are adopted, how long would it take for all of them to be adopted? The answer (arabic numerals) is
+There are a total of 6 puppies in the shelter now. If 3 puppies are adopted each day, it would take 2 days to adopt all of them.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+70st data
+At the fair Adam bought 13 tickets. After riding the ferris wheel he had 4 tickets left. If each ticket cost 9 dollars, how much money did Adam spend riding the ferris wheel? The answer (arabic numerals) is
+Adam spent 81 dollars riding the ferris wheel.
+(pred_after : 81.0)
+pred : 81.0
+GT : 81.0
+*************************
+*************************
+71st data
+A chef needs to cook 9 potatoes. He has already cooked 7. If each potato takes 3 minutes to cook, how long will it take him to cook the rest? The answer (arabic numerals) is
+There are 2 potatoes left to cook. So, it will take 6 minutes to cook the rest of the potatoes (2 potatoes x 3 minutes per potato).
+(pred_after : 3.0)
+pred : 3.0
+GT : 6.0
+*************************
+*************************
+72st data
+At Oliver's Restaurant a group with 2 adults and 4 children came in to eat. If each meal cost 3 dollars, how much was the bill? The answer (arabic numerals) is
+The bill would be 18 dollars.
+(pred_after : 18.0)
+pred : 18.0
+GT : 18.0
+*************************
+*************************
+73st data
+There school's baseball team had 31 new players and 4 returning players. If the coach put them into groups with 7 players in each group, how many groups would there be? The answer (arabic numerals) is
+There would be 5 groups.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+74st data
+Nancy had 80 files on her computer. She deleted 31 of them and put the rest into folders with 7 files in each one. How many folders did Nancy end up with? The answer (arabic numerals) is
+7 folders.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+75st data
+Roger is at the library helping put away books. There are 14 book to put away total but a librarian takes 2 of them and leaves Roger with the rest. If he can fit 3 books on a shelf, how many shelves will he need? The answer (arabic numerals) is
+Roger is left with 12 books to put away. To determine how many shelves he will need, we can divide the number of books by the number of books that can fit on each shelf: 
+
+12 books ÷ 3 books per shelf = 4 shelves 
+
+Therefore, Roger will need 4 shelves to put away the remaining books.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+76st data
+Janet picked 4 tulips and 11 roses to make flower bouquets. If she only used 11 of the flowers though, how many extra flowers did Janet pick? The answer (arabic numerals) is
+Janet picked a total of 15 flowers. Therefore, she has 4 extra flowers.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+77st data
+At lunch a waiter had 9 customers and 5 of them didn't leave a tip. If he got $8 each from the ones who did tip, how much money did he earn? The answer (arabic numerals) is
+The waiter earned $32 in total.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+78st data
+Janet was playing a video game and had 38 lives. In a hard part of the game she lost 16 lives. If she got 32 more lives in the next level, how many lives would she have? The answer (arabic numerals) is
+54 lives.
+(pred_after : 54.0)
+pred : 54.0
+GT : 54.0
+*************************
+*************************
+79st data
+Tom bought 14 boxes of chocolate candy and gave 8 to his little brother. If each box has 3 pieces inside it, how many pieces did Tom still have? The answer (arabic numerals) is
+Tom originally had 42 pieces of chocolate candy (14 boxes x 3 pieces per box). After giving 8 boxes to his brother, he had 28 pieces left.
+(pred_after : 28.0)
+pred : 28.0
+GT : 18.0
+*************************
+*************************
+80st data
+In fourth grade there were 11 students at the start of the year. During the year 6 students left and 42 new students came to school. How many students were in fourth grade at the end? The answer (arabic numerals) is
+47 students were in fourth grade at the end of the year.
+(pred_after : 47.0)
+pred : 47.0
+GT : 47.0
+*************************
+*************************
+81st data
+Maria was making baggies of cookies with 8 cookies in each bag. If she had 5 chocolate chip cookies and 19 oatmeal cookies, how many baggies could she make? The answer (arabic numerals) is
+Maria could make 3 baggies of cookies.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+82st data
+Haley baked 20 cupcakes for her school's bake sale. If her brother, Todd, ate 11 of them how many packages could she make if she put 3 cupcake in each package? The answer (arabic numerals) is
+After Todd ate 11 cupcakes, Haley was left with 20 - 11 = 9 cupcakes.
+She can make 9 / 3 = 3 packages of cupcakes.
+So the answer is 3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+83st data
+John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with? The answer (arabic numerals) is
+John ended up with 6 good games.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+84st data
+Ned was helping the cafeteria workers pick up lunch trays, but he could only carry 5 trays at a time. If he had to pick up 5 trays from one table and 5 trays from another, how many trips will he make? The answer (arabic numerals) is
+Ned will make 2 trips.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+85st data
+A magician was selling magic card decks for 9 dollars each. If he started with 12 decks and by the end of the day he had 7 left, how much money did he earn? The answer (arabic numerals) is
+The magician earned 45 dollars.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+86st data
+A group of 3 friends went into a restaurant. The chef already had 6 chicken wings cooked but cooked 3 more for the group. If they each got the same amount how many would each person get? The answer (arabic numerals) is
+Each person would get 3 chicken wings.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+87st data
+Oliver had 11 socks. If he threw away 4 old ones that didn't fit and bought 26 new ones, how many socks would he have? The answer (arabic numerals) is
+33 socks.
+(pred_after : 33.0)
+pred : 33.0
+GT : 33.0
+*************************
+*************************
+88st data
+Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now? The answer (arabic numerals) is
+15.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+89st data
+At the arcade Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, how many would he have? The answer (arabic numerals) is
+9 - 4 + 4 = 9 tickets.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+90st data
+The school cafeteria had 38 apples. If they used 20 to make lunch for the students and then bought 28 more, how many apples would they have? The answer (arabic numerals) is
+46 apples.
+(pred_after : 46.0)
+pred : 46.0
+GT : 46.0
+*************************
+*************************
+91st data
+The school cafeteria had 23 apples. If they used 20 to make lunch for the students and then bought 6 more, how many apples would they have? The answer (arabic numerals) is
+9.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+92st data
+A waiter had 9 tables he was waiting on, with 4 women and 3 men at each table. How many customers total did the waiter have? The answer (arabic numerals) is
+63 customers in total.
+(pred_after : 63.0)
+pred : 63.0
+GT : 63.0
+*************************
+*************************
+93st data
+Edward earned 4 dollars for each lawn he mowed. If he had 17 lawns to mow, but forgot to mow 9 of them, how much money did he actually earn? The answer (arabic numerals) is
+Edward earned money for 8 lawns because 17 - 9 = 8. 
+So, he earned 4 dollars per lawn for 8 lawns, which is 4 x 8 = 32 dollars. 
+Therefore, Edward actually earned 32 dollars.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+94st data
+Zoe had 42 bottles of water in her fridge. If she drank 25 of them and then bought 30 more, how many bottles would she have? The answer (arabic numerals) is
+47 bottles.
+(pred_after : 47.0)
+pred : 47.0
+GT : 47.0
+*************************
+*************************
+95st data
+A pet shelter had 5 puppies when another 35 were brought in. If 8 puppies a day are adopted, how long would it take for all of them to be adopted? The answer (arabic numerals) is
+40 days.
+(pred_after : 40.0)
+pred : 40.0
+GT : 5.0
+*************************
+*************************
+96st data
+Emily was planting vegetables in her garden. She started with 41 seeds and planted 29 of them in the big garden and in each of her small gardens put 4 seeds each. How many small gardens did Emily have? The answer (arabic numerals) is
+Emily planted 29 seeds in the big garden, so she has 41 - 29 = 12 seeds left for the small gardens.
+Each small garden has 4 seeds, so Emily has 12 / 4 = 3 small gardens. Therefore, the answer is 3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+97st data
+April's discount flowers was having a sale where each flower was 6 dollars. If Katie bought 5 roses and 5 daisies, how much did she spend? The answer (arabic numerals) is
+Katie spent 60 dollars.
+(pred_after : 60.0)
+pred : 60.0
+GT : 60.0
+*************************
+*************************
+98st data
+A trivia team had 14 members total, but during a game 7 members didn't show up. If each member that did show up scored 5 points, how many points were scored total? The answer (arabic numerals) is
+The number of members that showed up is 14 - 7 = 7. So, the total number of points scored is 7 x 5 = 35.
+(pred_after : 35.0)
+pred : 35.0
+GT : 35.0
+*************************
+*************************
+99st data
+At the arcade Dave won 25 tickets. If he spent 22 tickets on a beanie and later won 15 more tickets, how many would he have? The answer (arabic numerals) is
+18 tickets.
+(pred_after : 18.0)
+pred : 18.0
+GT : 18.0
+*************************
+*************************
+100st data
+While playing a trivia game, George answered 6 questions correct in the first half and 4 questions correct in the second half. If each question was worth 3 points, what was his final score? The answer (arabic numerals) is
+30.
+(pred_after : 30.0)
+pred : 30.0
+GT : 30.0
+*************************
+*************************
+101st data
+Edward bought 79 tickets at the state fair. He spent 23 tickets at the 'dunk a clown' booth and decided to use the rest on rides. If each ride cost 7 tickets, how many rides could he go on? The answer (arabic numerals) is
+Edward can go on 8 rides.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+102st data
+Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? The answer (arabic numerals) is
+1 dollar. 
+
+Oliver had 35 dollars, then he got 50 more dollars for his birthday, which gave him a total of 85 dollars. However, he spent 84 dollars on a new game, leaving him with only 1 dollar remaining.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+103st data
+Roger was putting his spare change into piles. He had 3 piles of quarters and 3 piles of dimes. If each pile had 7 coins in it, how many coins did he have total? The answer (arabic numerals) is
+Roger had a total of 42 coins.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+104st data
+John made 6 dollars mowing lawns and 18 dollars weed eating. If he only spent 3 dollar a week, how long would the money last him? The answer (arabic numerals) is
+To find out how long the money would last John, we need to add up his earnings and then divide by his weekly spending: 
+
+6 + 18 = 24 
+
+24 ÷ 3 = 8 
+
+So the money would last John 8 weeks.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+105st data
+Wendy uploaded 79 pictures to Facebook. She put 44 pics into one album and put the rest into 5 different albums. How many pictures were in each album? The answer (arabic numerals) is
+The 5 different albums contained a total of 79 - 44 = 35 pictures.
+Therefore, each of the 5 different albums contained 35/5 = 7 pictures.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+106st data
+Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game? The answer (arabic numerals) is
+1 point. 
+
+I'm sorry, but that is not correct. Emily would have had a negative score if she ended with only 1 point. 
+
+To find out how many points Emily had at the end of the game, we need to add up her scores from the first two rounds and then subtract the points she lost in the last round. 
+
+16 + 33 - 48 = 1 
+
+So Emily ended the game with 1 point.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+107st data
+There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut? The answer (arabic numerals) is
+17 students didn't make the cut.
+(pred_after : 17.0)
+pred : 17.0
+GT : 17.0
+*************************
+*************************
+108st data
+Kaleb had 34 books. If he sold 17 of them and used the money he earned to buy 7 new books, how many books would Kaleb have? The answer (arabic numerals) is
+Kaleb would have 24 books.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+109st data
+Nancy picked 12 carrots from her garden. If she threw out 2 of them and then picked 21 more the next day, how many carrots would she have total? The answer (arabic numerals) is
+31 carrots.
+(pred_after : 31.0)
+pred : 31.0
+GT : 31.0
+*************************
+*************************
+110st data
+Edward was selling his old games. He started out with 35 but sold 19 of them. He packed the rest up putting 8 games into each box. How many boxes did he have to use? The answer (arabic numerals) is
+Edward had 16 games left after selling 19. To pack them up, he needed 2 boxes.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+111st data
+Olivia was playing a video game where she scores 8 points for each treasure she finds. If she found 2 treasures on the first level and 2 on the second, what would her score be? The answer (arabic numerals) is
+32.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+112st data
+For Halloween Haley scored 33 pieces of candy. She ate 17 pieces the first night and then her sister gave her 19 more pieces. How many pieces of candy does Haley have now? The answer (arabic numerals) is
+35 pieces of candy.
+(pred_after : 35.0)
+pred : 35.0
+GT : 35.0
+*************************
+*************************
+113st data
+Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have? The answer (arabic numerals) is
+They had 16 bad carrots.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+114st data
+A pet store had 15 siamese cats and 49 house cats. During a sale they sold 19 cats. How many cats do they have left? The answer (arabic numerals) is
+45.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+115st data
+At a restaurant each adult meal costs $5 and kids eat free. If a group of 15 people came in and 8 were kids, how much would it cost for the group to eat? The answer (arabic numerals) is
+The cost for the group to eat would be $25.
+(pred_after : 25.0)
+pred : 25.0
+GT : 35.0
+*************************
+*************************
+116st data
+Roger had 25 books. If he sold 21 of them and used the money he earned to buy 30 new books, how many books would Roger have? The answer (arabic numerals) is
+4 books.
+(pred_after : 4.0)
+pred : 4.0
+GT : 34.0
+*************************
+*************************
+117st data
+Lana's favorite band was holding a concert where tickets were 6 dollars each. Lana bought 8 tickets for herself and her friends and 2 extra tickets in case anyone else wanted to go. How much did she spend? The answer (arabic numerals) is
+Lana spent 48 dollars on the 8 tickets for herself and her friends, and an additional 12 dollars on the 2 extra tickets, for a total of 60 dollars.
+(pred_after : 60.0)
+pred : 60.0
+GT : 60.0
+*************************
+*************************
+118st data
+Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have? The answer (arabic numerals) is
+There were 7 bad carrots.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+119st data
+The school cafeteria ordered 37 red apples and 45 green apples for students lunches. But, if only 51 students wanted fruit, how many extra did the cafeteria end up with? The answer (arabic numerals) is
+The cafeteria ordered a total of 82 apples (37 + 45). If only 51 students wanted fruit, then there were 31 extra apples (82 - 51).
+(pred_after : 51.0)
+pred : 51.0
+GT : 31.0
+*************************
+*************************
+120st data
+Sam invited 9 friends to a birthday party, but 6 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 2, how many should he buy? The answer (arabic numerals) is
+Sam invited 9 - 6 = 3 friends to the party.
+So, there will be a total of 3 + 1 (Sam) = 4 people at the party.
+If each person should have exactly 2 cupcakes, then Sam should buy 4 x 2 = 8 cupcakes.
+(pred_after : 8.0)
+pred : 8.0
+GT : 6.0
+*************************
+*************************
+121st data
+There were 5 friends playing a video game online when 2 more players joined the game. If each player had 8 lives, how many lives did they have total? The answer (arabic numerals) is
+There were a total of 7 players in the game, so they had a total of 56 lives (7 players x 8 lives per player = 56 lives).
+(pred_after : 56.0)
+pred : 56.0
+GT : 56.0
+*************************
+*************************
+122st data
+Mike invited 13 friends to a birthday party, but 7 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 4, how many should he buy? The answer (arabic numerals) is
+Mike would need to buy 36 cupcakes.
+(pred_after : 36.0)
+pred : 36.0
+GT : 24.0
+*************************
+*************************
+123st data
+While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have? The answer (arabic numerals) is
+4.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+124st data
+Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total? The answer (arabic numerals) is
+79.
+(pred_after : 79.0)
+pred : 79.0
+GT : 79.0
+*************************
+*************************
+125st data
+Will was working as a sacker at a grocery store where he made 8 dollars an hour. On Monday he worked 8 hours and on Tuesday he worked 2 hours. How much money did Will make in those two days? The answer (arabic numerals) is
+Will made a total of $72 in those two days.
+(pred_after : 72.0)
+pred : 72.0
+GT : 80.0
+*************************
+*************************
+126st data
+Jerry was helping the cafeteria workers pick up lunch trays, but he could only carry 8 trays at a time. If he had to pick up 9 trays from one table and 7 trays from another, how many trips will he make? The answer (arabic numerals) is
+Jerry will make 2 trips.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+127st data
+Wendy uploaded 45 pictures to Facebook. She put 27 pics into one album and put the rest into 9 different albums. How many pictures were in each album? The answer (arabic numerals) is
+There were 3 pictures in each of the 9 different albums (45 - 27 = 18, 18/9 = 2).
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+128st data
+At the fair there were 12 people in line for the bumper cars. If 10 of them got tired of waiting and left and 15 more got in line, how many people would be in line? The answer (arabic numerals) is
+There would be 17 people in line.
+(pred_after : 17.0)
+pred : 17.0
+GT : 17.0
+*************************
+*************************
+129st data
+While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have? The answer (arabic numerals) is
+22.
+(pred_after : 22.0)
+pred : 22.0
+GT : 22.0
+*************************
+*************************
+130st data
+Oliver had 33 dollars in January. By March he had spent 4 dollars. If he got another 32 dollars from his mom, how much money would he have? The answer (arabic numerals) is
+61 dollars.
+(pred_after : 61.0)
+pred : 61.0
+GT : 61.0
+*************************
+*************************
+131st data
+At the arcade Victor won 46 tickets. If he spent 27 tickets on a beanie and later won 39 more tickets, how many would he have? The answer (arabic numerals) is
+58 tickets.
+(pred_after : 58.0)
+pred : 58.0
+GT : 58.0
+*************************
+*************************
+132st data
+A group of 3 friends went into a restaurant. The chef already had 8 chicken wings cooked but cooked 10 more for the group. If they each got the same amount how many would each person get? The answer (arabic numerals) is
+Each person would get 6 chicken wings.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+133st data
+Luke had 47 pieces of clothing to wash. He put 17 of them in one load, but decided to split the rest into 5 equal loads. How many pieces of clothing could go in each of the small loads? The answer (arabic numerals) is
+6 pieces of clothing could go in each of the small loads.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+134st data
+Adam had 5 dollars. At the store he spent $2 on a new game. If he got another 5 dollars for his allowance, how much money does he have now? The answer (arabic numerals) is
+Adam now has 8 dollars.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+135st data
+A pet store has 4 bird cages. If each cage has 8 parrots and 2 parakeets in it, how many birds does the pet store have total? The answer (arabic numerals) is
+The pet store has a total of 40 birds.
+(pred_after : 40.0)
+pred : 40.0
+GT : 40.0
+*************************
+*************************
+136st data
+Isabel baked 39 cupcakes for her school's bake sale. If her brother, Todd, ate 21 of them how many packages could she make if she put 3 cupcake in each package? The answer (arabic numerals) is
+After Todd ate 21 cupcakes, Isabel was left with 39 - 21 = 18 cupcakes.
+She can make 6 packages of cupcakes because 18 / 3 = 6. 
+So the answer is 6.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+137st data
+Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick? The answer (arabic numerals) is
+Katie picked a total of 12 flowers (3 tulips + 9 roses). If she only used 10 of them, then she has 2 extra flowers.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+138st data
+A pet store had 36 siamese cats and 18 house cats. During a sale they sold 26 cats. How many cats do they have left? The answer (arabic numerals) is
+28 cats.
+(pred_after : 28.0)
+pred : 28.0
+GT : 28.0
+*************************
+*************************
+139st data
+Katie had 7 pages of math homework and 3 pages of reading homework. If each page had 9 problems on it, how many problems did she have to complete total? The answer (arabic numerals) is
+Katie had to complete a total of 90 problems.
+(pred_after : 90.0)
+pred : 90.0
+GT : 90.0
+*************************
+*************************
+140st data
+Gwen had 18 math problems and 11 science problems for homework. If she finished 24 of the problems at school, how many problems did she have to do for homework? The answer (arabic numerals) is
+5.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+141st data
+Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color? The answer (arabic numerals) is
+11 pictures.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+142st data
+There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut? The answer (arabic numerals) is
+56 students didn't make the cut.
+(pred_after : 56.0)
+pred : 56.0
+GT : 56.0
+*************************
+*************************
+143st data
+Emily was planting vegetables in her garden. She started with 42 seeds and planted 36 of them in the big garden and in each of her small gardens put 2 seeds each. How many small gardens did Emily have? The answer (arabic numerals) is
+Emily planted 36 seeds in the big garden, so she has 42 - 36 = 6 seeds left for the small gardens.
+Each small garden received 2 seeds, so Emily must have had 6 / 2 = 3 small gardens.
+Therefore, the answer is 3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+144st data
+A new building needed 10 windows. The builder had already installed 6 of them. If it takes 5 hours to install each window, how long will it take him to install the rest? The answer (arabic numerals) is
+The builder still needs to install 4 windows. Therefore, it will take him 4 x 5 = 20 hours to install the rest of the windows.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+145st data
+The schools debate team had 26 boys and 46 girls on it. If they were split into groups of 9 how many groups could they make? The answer (arabic numerals) is
+9 groups.
+(pred_after : 9.0)
+pred : 9.0
+GT : 8.0
+*************************
+*************************
+146st data
+Haley picked 28 carrots from her garden. If she threw out 11 of them and then picked 9 more the next day, how many carrots would she have total? The answer (arabic numerals) is
+Haley would have 26 carrots total.
+(pred_after : 26.0)
+pred : 26.0
+GT : 26.0
+*************************
+*************************
+147st data
+For a birthday party Jerry bought 41 regular sodas and 22 diet sodas. If his fridge would only hold 9 on each shelf, how many shelves would he fill up? The answer (arabic numerals) is
+7 shelves.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+148st data
+Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash? The answer (arabic numerals) is
+He did not wash 66 shirts.
+(pred_after : 66.0)
+pred : 66.0
+GT : 66.0
+*************************
+*************************
+149st data
+A new building needed 12 windows. The builder had already installed 6 of them. If it takes 4 hours to install each window, how long will it take him to install the rest? The answer (arabic numerals) is
+The builder needs to install 6 more windows. So, 6 x 4 = 24 hours. It will take him 24 hours to install the rest of the windows.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+150st data
+For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell? The answer (arabic numerals) is
+Paige sold 41 pastries.
+(pred_after : 41.0)
+pred : 41.0
+GT : 41.0
+*************************
+*************************
+151st data
+A waiter had 47 customers to wait on. If 41 customers left and he got another 20 customers, how many customers would he have? The answer (arabic numerals) is
+26 customers.
+(pred_after : 26.0)
+pred : 26.0
+GT : 26.0
+*************************
+*************************
+152st data
+There are 36 students trying out for the school's trivia teams. If 9 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group? The answer (arabic numerals) is
+There are 27 students left after 9 didn't get picked. If they are put into 3 groups, there would be 9 students in each group.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+153st data
+A florist had 6 roses. If she sold 5 of them and then later picked 12 more, how many roses would she have? The answer (arabic numerals) is
+13
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+154st data
+Each chocolate bar in a box cost $4. If a box had 8 bars total and Emily sold all but 3 bars, how much money would she have made? The answer (arabic numerals) is
+Emily would have made $29.
+(pred_after : 29.0)
+pred : 29.0
+GT : 20.0
+*************************
+*************************
+155st data
+Sam was collecting cans for recycling. On Saturday he filled 4 bags up and on Sunday he filled 3 more bags. If each bag had 6 cans in it, how many cans did he pick up total? The answer (arabic numerals) is
+Sam picked up a total of 42 cans.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+156st data
+Gwen was organizing her book case making sure each of the shelves had exactly 9 books on it. If she had 3 shelves of mystery books and 5 shelves of picture books, how many books did she have total? The answer (arabic numerals) is
+She had a total of 72 books.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+157st data
+For homework Faye had 13 math problems and 2 spelling problems. If she can finish 3 problems in an hour how long will it take her to finish all the problems? The answer (arabic numerals) is
+Faye has a total of 13 + 2 = 15 problems.
+If she can finish 3 problems in an hour, then it will take her 15 / 3 = 5 hours to finish all the problems.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+158st data
+A pet store has 9 bird cages. If each cage has 2 parrots and 6 parakeets in it, how many birds does the pet store have total? The answer (arabic numerals) is
+The pet store has a total of 54 birds.
+(pred_after : 54.0)
+pred : 54.0
+GT : 72.0
+*************************
+*************************
+159st data
+Oliver is at the library helping put away books. There are 46 book to put away total but a librarian takes 10 of them and leaves Oliver with the rest. If he can fit 4 books on a shelf, how many shelves will he need? The answer (arabic numerals) is
+He will need to put away 36 books (46 - 10 = 36). To figure out how many shelves he needs, we can divide the number of books by the number of books that can fit on each shelf: 36 ÷ 4 = 9. So Oliver will need 9 shelves to put away all the books.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+160st data
+For a birthday party George bought 10 regular sodas and 22 diet sodas. If his fridge would only hold 4 on each shelf, how many shelves would he fill up? The answer (arabic numerals) is
+8 shelves.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+161st data
+Mike is at the library helping put away books. There are 82 book to put away total but a librarian takes 10 of them and leaves Mike with the rest. If he can fit 9 books on a shelf, how many shelves will he need? The answer (arabic numerals) is
+Mike is left with 72 books to put away. To find out how many shelves he needs, we can divide the number of books by the number of books that can fit on each shelf: 
+
+72 ÷ 9 = 8 
+
+So Mike will need 8 shelves to put away all the books.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+162st data
+April's discount flowers was having a sale where each flower was 3 dollars. If Zoe bought 8 roses and 2 daisies, how much did she spend? The answer (arabic numerals) is
+Zoe spent 26 dollars.
+(pred_after : 26.0)
+pred : 26.0
+GT : 30.0
+*************************
+*************************
+163st data
+Oliver was organizing his baseball cards in a binder with 3 on each page. If he had 2 new cards and 10 old cards to put in the binder, how many pages would he use? The answer (arabic numerals) is
+He would use 4 pages.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+164st data
+At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel? The answer (arabic numerals) is
+Kaleb spent 27 dollars riding the ferris wheel.
+(pred_after : 27.0)
+pred : 27.0
+GT : 27.0
+*************************
+*************************
+165st data
+A painter needed to paint 10 rooms in a building. Each room takes 8 hours to paint. If he already painted 8 rooms, how much longer will he take to paint the rest? The answer (arabic numerals) is
+The painter has already painted 8 rooms, so he has 2 rooms left to paint. Each room takes 8 hours to paint, so he will need 16 more hours to finish painting the remaining 2 rooms. Therefore, the answer is 16.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+166st data
+Janet was playing a video game and had 47 lives. In a hard part of the game she lost 23 lives. If she got 46 more lives in the next level, how many lives would she have? The answer (arabic numerals) is
+70.
+(pred_after : 70.0)
+pred : 70.0
+GT : 70.0
+*************************
+*************************
+167st data
+Sam had 10 socks. If he threw away 3 old ones that didn't fit and bought 36 new ones, how many socks would he have? The answer (arabic numerals) is
+43 socks.
+(pred_after : 43.0)
+pred : 43.0
+GT : 43.0
+*************************
+*************************
+168st data
+While shopping for music online, Faye bought 2 country albums and 3 pop albums. Each album came with a lyric sheet and had 6 songs. How many songs did Faye buy total? The answer (arabic numerals) is
+Faye bought a total of 30 songs. (2 country albums x 6 songs per album) + (3 pop albums x 6 songs per album) = 12 + 18 = 30.
+(pred_after : 30.0)
+pred : 30.0
+GT : 30.0
+*************************
+*************************
+169st data
+A florist had 5 roses. If she sold 3 of them and then later picked 34 more, how many roses would she have? The answer (arabic numerals) is
+36.
+(pred_after : 36.0)
+pred : 36.0
+GT : 36.0
+*************************
+*************************
+170st data
+Billy was putting his spare change into piles. He had 2 piles of quarters and 3 piles of dimes. If each pile had 4 coins in it, how many coins did he have total? The answer (arabic numerals) is
+Billy had a total of 20 coins.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+171st data
+Ned bought 14 boxes of chocolate candy and gave 7 to his little brother. If each box has 6 pieces inside it, how many pieces did Ned still have? The answer (arabic numerals) is
+Ned had 72 pieces of chocolate candy left.
+(pred_after : 72.0)
+pred : 72.0
+GT : 42.0
+*************************
+*************************
+172st data
+A waiter had 6 tables he was waiting on, with 3 women and 5 men at each table. How many customers total did the waiter have? The answer (arabic numerals) is
+48 customers in total.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+173st data
+Frank and his friend were buying trick decks from the magic shop for 7 dollars each. How much did they spend if Frank bought 3 decks and his friend bought 2 decks? The answer (arabic numerals) is
+Frank and his friend spent 35 dollars in total.
+(pred_after : 35.0)
+pred : 35.0
+GT : 35.0
+*************************
+*************************
+174st data
+There were 8 friends playing a video game online when 2 more players joined the game. If each player had 6 lives, how many lives did they have total? The answer (arabic numerals) is
+There were a total of 10 players in the game, so the total number of lives would be 10 players x 6 lives per player = 60 lives.
+(pred_after : 60.0)
+pred : 60.0
+GT : 60.0
+*************************
+*************************
+175st data
+Katie was selling her necklaces at a garage sale. She sold 4 bead necklaces and 3 gem stone necklaces. If each necklace cost 3 dollars, how much money did she earn? The answer (arabic numerals) is
+Katie earned 21 dollars.
+(pred_after : 21.0)
+pred : 21.0
+GT : 21.0
+*************************
+*************************
+176st data
+A pet shelter had 9 puppies when another 12 were brought in. If 3 puppies a day are adopted, how long would it take for all of them to be adopted? The answer (arabic numerals) is
+There are a couple of ways to approach this problem, but one possible method is:
+
+- Start with the total number of puppies: 9 + 12 = 21
+- Subtract the number of puppies adopted each day: 21 - 3 = 18
+- Divide the remaining number of puppies by the number of puppies adopted each day: 18 ÷ 3 = 6
+- The answer is 6 days.
+
+Therefore, it would take 6 days for all the puppies to be adopted.
+(pred_after : 6.0)
+pred : 6.0
+GT : 7.0
+*************************
+*************************
+177st data
+At lunch a waiter had 7 customers and 5 of them didn't leave a tip. If he got $3 each from the ones who did tip, how much money did he earn? The answer (arabic numerals) is
+The waiter earned $15.
+(pred_after : 15.0)
+pred : 15.0
+GT : 6.0
+*************************
+*************************
+178st data
+Dave bought 12 boxes of chocolate candy and gave 5 to his little brother. If each box has 3 pieces inside it, how many pieces did Dave still have? The answer (arabic numerals) is
+Dave had 31 pieces of chocolate candy left.
+(pred_after : 31.0)
+pred : 31.0
+GT : 21.0
+*************************
+*************************
+179st data
+John had 5 dollars. At the store he spent $2 on a new game. If he got another 26 dollars for his allowance, how much money does he have now? The answer (arabic numerals) is
+John now has 29 dollars.
+(pred_after : 29.0)
+pred : 29.0
+GT : 29.0
+*************************
+*************************
+180st data
+Luke made 9 dollars mowing lawns and 18 dollars weed eating. If he only spent 3 dollar a week, how long would the money last him? The answer (arabic numerals) is
+27.
+(pred_after : 27.0)
+pred : 27.0
+GT : 9.0
+*************************
+*************************
+181st data
+For Halloween Robin scored 23 pieces of candy. She ate 7 pieces the first night and then her sister gave her 21 more pieces. How many pieces of candy does Robin have now? The answer (arabic numerals) is
+37.
+(pred_after : 37.0)
+pred : 37.0
+GT : 37.0
+*************************
+*************************
+182st data
+Debby's class is going on a field trip to the zoo. If each van can hold 4 people and there are 2 students and 6 adults going, how many vans will they need? The answer (arabic numerals) is
+2 vans.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+183st data
+Paige's team won their dodgeball game and scored 41 points total. If Paige scored 11 of the points and everyone else scored 6 points each, how many players were on her team? The answer (arabic numerals) is
+There were 5 players on Paige's team.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+184st data
+John had 33 socks. If he threw away 19 old ones that didn't fit and bought 13 new ones, how many socks would he have? The answer (arabic numerals) is
+27 socks.
+(pred_after : 27.0)
+pred : 27.0
+GT : 27.0
+*************************
+*************************
+185st data
+Tiffany had 6 pages of math homework and 4 pages of reading homework. If each page had 3 problems on it, how many problems did she have to complete total? The answer (arabic numerals) is
+Tiffany had to complete a total of 30 problems.
+(pred_after : 30.0)
+pred : 30.0
+GT : 30.0
+*************************
+*************************
+186st data
+Frank made 19 dollars mowing lawns over the summer. If he spent 11 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? The answer (arabic numerals) is
+4.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+187st data
+A chef needs to cook 15 potatoes. He has already cooked 6. If each potato takes 8 minutes to cook, how long will it take him to cook the rest? The answer (arabic numerals) is
+The chef needs to cook 9 more potatoes. So, it will take him 9 x 8 = 72 minutes to cook the rest.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+188st data
+In fourth grade there were 8 students at the start of the year. During the year 5 students left and 8 new students came to school. How many students were in fourth grade at the end? The answer (arabic numerals) is
+11 students were in fourth grade at the end of the year.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+189st data
+Will had 59 pieces of clothing to wash. He put 32 of them in one load, but decided to split the rest into 9 equal loads. How many pieces of clothing could go in each of the small loads? The answer (arabic numerals) is
+3 pieces of clothing could go in each of the small loads.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+190st data
+Debby bought two coloring books. One had 16 pictures and the other had 40. After one week she had already colored 33 of the pictures. How many pictures does she still have to color? The answer (arabic numerals) is
+23.
+(pred_after : 23.0)
+pred : 23.0
+GT : 23.0
+*************************
+*************************
+191st data
+While shopping for music online, Nancy bought 3 country albums and 5 pop albums. Each album came with a lyric sheet and had 8 songs. How many songs did Nancy buy total? The answer (arabic numerals) is
+Nancy bought a total of 64 songs. (3 country albums x 8 songs per album = 24 country songs, 5 pop albums x 8 songs per album = 40 pop songs, 24 country songs + 40 pop songs = 64 total songs)
+(pred_after : 64.0)
+pred : 64.0
+GT : 64.0
+*************************
+*************************
+192st data
+Chloe was unboxing some of her old winter clothes. She found 4 boxes of clothing and inside each box there were 2 scarves and 6 mittens. How many pieces of winter clothing did Chloe have total? The answer (arabic numerals) is
+Chloe had a total of 32 pieces of winter clothing.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+193st data
+A teacher had 34 worksheets to grade. If she graded 7, but then another 36 were turned in, how many worksheets would she have to grade? The answer (arabic numerals) is
+37.
+(pred_after : 37.0)
+pred : 37.0
+GT : 63.0
+*************************
+*************************
+194st data
+Roger earned 9 dollars for each lawn he mowed. If he had 14 lawns to mow, but forgot to mow 8 of them, how much money did he actually earn? The answer (arabic numerals) is
+Roger earned money for 6 lawns because 14 - 8 = 6. Therefore, he earned 54 dollars because 6 x 9 = 54.
+(pred_after : 54.0)
+pred : 54.0
+GT : 54.0
+*************************
+*************************
+195st data
+Robin had 30 songs on her mp3 player. If she deleted 8 old songs from it and then added 10 new songs, how many songs does she have on her mp3 player? The answer (arabic numerals) is
+32 songs.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+196st data
+Henry earned 5 dollars for each lawn he mowed. If he had 12 lawns to mow, but forgot to mow 7 of them, how much money did he actually earn? The answer (arabic numerals) is
+Henry earned money for 5 lawns, since he forgot to mow 7 out of 12. Therefore, he earned 5 x 5 = 25 dollars.
+(pred_after : 25.0)
+pred : 25.0
+GT : 25.0
+*************************
+*************************
+197st data
+There were 8 friends playing a video game online when 3 players quit. If each player left had 3 lives, how many lives did they have total? The answer (arabic numerals) is
+The three players who quit had a total of 9 lives (3 lives each x 3 players).
+(pred_after : 3.0)
+pred : 3.0
+GT : 15.0
+*************************
+*************************
+198st data
+Each chocolate bar in a box cost $3. If a box had 9 bars total and Wendy sold all but 3 bars, how much money would she have made? The answer (arabic numerals) is
+Wendy would have made $24.
+(pred_after : 24.0)
+pred : 24.0
+GT : 18.0
+*************************
+*************************
+199st data
+Will bought 7 boxes of chocolate candy and gave 3 to his little brother. If each box has 4 pieces inside it, how many pieces did Will still have? The answer (arabic numerals) is
+Will bought a total of 28 pieces of chocolate candy (7 boxes x 4 pieces per box). After giving 3 boxes to his little brother, he was left with 4 boxes, which is a total of 16 pieces of chocolate candy (4 boxes x 4 pieces per box). Therefore, Will still had 16 pieces of chocolate candy left.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+200st data
+Edward started his own lawn mowing business. In the spring he made 2 dollars mowing lawns and in the summer he made 27 dollars. If he had to spend 5 dollars buying supplies, how much money did he end up with? The answer (arabic numerals) is
+Edward ended up with 24 dollars.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+201st data
+Nancy's class is going on a field trip to the zoo. If each van can hold 5 people and there are 12 students and 3 adults going, how many vans will they need? The answer (arabic numerals) is
+3 vans will be needed.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+202st data
+Cody bought 7 boxes of chocolate candy and 3 boxes of caramel candy. If each box has 8 pieces inside it, how much candy did he have total? The answer (arabic numerals) is
+Cody had a total of 80 pieces of chocolate candy (7 boxes x 8 pieces per box = 56 pieces) and 24 pieces of caramel candy (3 boxes x 8 pieces per box = 24 pieces). Therefore, he had 104 pieces of candy in total (80 + 24 = 104).
+(pred_after : 104.0)
+pred : 104.0
+GT : 80.0
+*************************
+*************************
+203st data
+For a birthday party Tom bought 4 regular sodas and 52 diet sodas. If his fridge would only hold 7 on each shelf, how many shelves would he fill up? The answer (arabic numerals) is
+10 shelves.
+(pred_after : 10.0)
+pred : 10.0
+GT : 8.0
+*************************
+*************************
+204st data
+While shopping for music online, Janet bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Janet buy total? The answer (arabic numerals) is
+54 songs.
+(pred_after : 54.0)
+pred : 54.0
+GT : 72.0
+*************************
+*************************
+205st data
+There are 17 students trying out for the school's trivia teams. If 5 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group? The answer (arabic numerals) is
+12 students would be put into 3 groups, with 4 students in each group.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+206st data
+While shopping for music online, Isabel bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Isabel buy total? The answer (arabic numerals) is
+54 songs in total.
+(pred_after : 54.0)
+pred : 54.0
+GT : 72.0
+*************************
+*************************
+207st data
+Wendy bought 4 new chairs and 4 new tables for her house. If she spent 6 minutes on each piece furniture putting it together, how many minutes did it take her to finish? The answer (arabic numerals) is
+It would take Wendy a total of 48 minutes to put together all 8 pieces of furniture.
+(pred_after : 8.0)
+pred : 8.0
+GT : 48.0
+*************************
+*************************
+208st data
+At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? The answer (arabic numerals) is
+Sam bought a total of 30 books (13 + 17). If 15 of them were used, then he bought 15 new books.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+209st data
+A florist had 50 roses. If she sold 15 of them and then later picked 21 more, how many roses would she have? The answer (arabic numerals) is
+56.
+(pred_after : 56.0)
+pred : 56.0
+GT : 56.0
+*************************
+*************************
+210st data
+There were 9 girls and 14 boys trying out for the schools basketball team. If only 2 of them got called back, how many students didn't make the cut? The answer (arabic numerals) is
+21 students didn't make the cut.
+(pred_after : 21.0)
+pred : 21.0
+GT : 21.0
+*************************
+*************************
+211st data
+Rachel bought 7 new chairs and 3 new tables for her house. If she spent 4 minutes on each piece furniture putting it together, how many minutes did it take her to finish? The answer (arabic numerals) is
+Rachel bought a total of 10 pieces of furniture. If she spent 4 minutes on each piece, it would take her a total of 40 minutes to finish putting them all together.
+(pred_after : 40.0)
+pred : 40.0
+GT : 40.0
+*************************
+*************************
+212st data
+There school's baseball team had 48 new players and 6 returning players. If the coach put them into groups with 6 players in each group, how many groups would there be? The answer (arabic numerals) is
+There would be a total of 9 groups.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+213st data
+Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color? The answer (arabic numerals) is
+She still has to color 68 pictures.
+(pred_after : 68.0)
+pred : 68.0
+GT : 68.0
+*************************
+*************************
+214st data
+For the school bake sale Katie made 26 cupcakes. If she sold 20 of them and then made 20 more, how many cupcakes would she have? The answer (arabic numerals) is
+26 - 20 + 20 = 26. Therefore, Katie would have 26 cupcakes.
+(pred_after : 26.0)
+pred : 26.0
+GT : 26.0
+*************************
+*************************
+215st data
+At Tom's Restaurant a group with 2 adults and 5 children came in to eat. If each meal cost 8 dollars, how much was the bill? The answer (arabic numerals) is
+The bill would be 56 dollars.
+(pred_after : 56.0)
+pred : 56.0
+GT : 56.0
+*************************
+*************************
+216st data
+In fourth grade there were 10 students at the start of the year. During the year 4 students left and 42 new students came to school. How many students were in fourth grade at the end? The answer (arabic numerals) is
+48 students were in fourth grade at the end of the year.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+217st data
+Isabel uploaded 2 pictures from her phone and 4 from her camera to facebook. If she sorted the pics into 3 different albums with the same amount of pics in each album, how many pictures were in each of the albums? The answer (arabic numerals) is
+2 + 4 = 6 pictures in total. If Isabel sorted them into 3 albums with the same amount of pictures in each album, she would have put 2 pictures in each album and then 2 more pictures in each album, for a total of 4 pictures in each album. Therefore, there were 4 pictures in each of the albums.
+(pred_after : 4.0)
+pred : 4.0
+GT : 2.0
+*************************
+*************************
+218st data
+There are 25 students trying out for the school's trivia teams. If 15 of them didn't get picked for the team and the rest were put into 2 groups, how many students would be in each group? The answer (arabic numerals) is
+There are 10 students who got picked for the team (25 - 15 = 10). If they were put into 2 groups, each group would have 5 students (10 ÷ 2 = 5).
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+219st data
+Rachel was playing a video game where she scores 9 points for each treasure she finds. If she found 5 treasures on the first level and 2 on the second, what would her score be? The answer (arabic numerals) is
+Rachel's score would be 63 points. (9 x 5 = 45 points for the first level, and 9 x 2 = 18 points for the second level. Adding them together gives a total of 63 points.)
+(pred_after : 63.0)
+pred : 63.0
+GT : 63.0
+*************************
+*************************
+220st data
+Katie uploaded 30 pictures from her phone and 51 from her camera to facebook. If she sorted the pics into 9 different albums with the same amount of pics in each album, how many pictures were in each of the albums? The answer (arabic numerals) is
+10 pictures were in each of the albums.
+(pred_after : 10.0)
+pred : 10.0
+GT : 9.0
+*************************
+*************************
+221st data
+Edward was working as a sacker at a grocery store where he made 6 dollars an hour. On Monday he worked 3 hours and on Tuesday he worked 5 hours. How much money did Edward make in those two days? The answer (arabic numerals) is
+Edward made a total of 48 dollars in those two days.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+222st data
+Emily had 7 coloring books. If she gave away 2 of them, but then bought 14 more, how many would she have total? The answer (arabic numerals) is
+19 coloring books.
+(pred_after : 19.0)
+pred : 19.0
+GT : 19.0
+*************************
+*************************
+223st data
+A new building needed 14 windows. The builder had already installed 8 of them. If it takes 8 hours to install each window, how long will it take him to install the rest? The answer (arabic numerals) is
+The builder still needs to install 6 windows. Therefore, it will take him 6 x 8 = 48 hours to install the rest of the windows.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+224st data
+A company invited 24 people to a luncheon, but 10 of them didn't show up. If the tables they had held 7 people each, how many tables do they need? The answer (arabic numerals) is
+2 tables.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+225st data
+Luke was organizing his baseball cards in a binder with 3 on each page. If he had 3 new cards and 9 old cards to put in the binder, how many pages would he use? The answer (arabic numerals) is
+Luke would use 4 pages in total.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+226st data
+Will made 104 dollars mowing lawns over the summer. If he spent 41 dollars buying new mower blades, how many 9 dollar games could he buy with the money he had left? The answer (arabic numerals) is
+He would have 63 dollars left after buying the new mower blades. Therefore, he could buy 7 nine dollar games with the money he had left.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+227st data
+Maria was making baggies of cookies with 3 cookies in each bag. If she had 2 chocolate chip cookies and 16 oatmeal cookies, how many baggies could she make? The answer (arabic numerals) is
+Maria could make 6 baggies of cookies.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+228st data
+A company invited 47 people to a luncheon, but 7 of them didn't show up. If the tables they had held 5 people each, how many tables do they need? The answer (arabic numerals) is
+There were 40 people who showed up, so they need 8 tables (40 divided by 5).
+(pred_after : 5.0)
+pred : 5.0
+GT : 8.0
+*************************
+*************************
+229st data
+At the fair there were 30 people in line for the bumper cars. If 10 of them got tired of waiting and left and 5 more got in line, how many people would be in line? The answer (arabic numerals) is
+25 people would be in line.
+(pred_after : 25.0)
+pred : 25.0
+GT : 25.0
+*************************
+*************************
+230st data
+Dave was working as a sacker at a grocery store where he made 6 dollars an hour. On Monday he worked 6 hours and on Tuesday he worked 2 hours. How much money did Dave make in those two days? The answer (arabic numerals) is
+Dave made 48 dollars in those two days.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+231st data
+At a restaurant each adult meal costs $2 and kids eat free. If a group of 9 people came in and 2 were kids, how much would it cost for the group to eat? The answer (arabic numerals) is
+$16
+(pred_after : 16.0)
+pred : 16.0
+GT : 14.0
+*************************
+*************************
+232st data
+A teacher had 29 worksheets to grade. If she graded 25, but then another 29 were turned in, how many worksheets would she have to grade? The answer (arabic numerals) is
+83.
+(pred_after : 83.0)
+pred : 83.0
+GT : 33.0
+*************************
+*************************
+233st data
+Luke was selling his old games. He started out with 57 but sold 39 of them. He packed the rest up putting 2 games into each box. How many boxes did he have to use? The answer (arabic numerals) is
+9 boxes.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+234st data
+Paul was collecting cans for recycling. On Saturday he filled 6 bags up and on Sunday he filled 3 more bags. If each bag had 8 cans in it, how many cans did he pick up total? The answer (arabic numerals) is
+The total number of cans that Paul picked up is 72.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+235st data
+A teacher had 7 worksheets to grade. If she graded 2, but then another 46 were turned in, how many worksheets would she have to grade? The answer (arabic numerals) is
+51.
+(pred_after : 51.0)
+pred : 51.0
+GT : 51.0
+*************************
+*************************
+236st data
+Emily bought 4 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece furniture putting it together, how many minutes did it take her to finish? The answer (arabic numerals) is
+Emily bought a total of 6 pieces of furniture. Therefore, it took her 6 x 8 = 48 minutes to put them all together.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+237st data
+At the fair there were 10 people in line for the bumper cars. If 2 of them got tired of waiting and left and 2 more got in line, how many people would be in line? The answer (arabic numerals) is
+There would be 10 - 2 + 2 = 10 people in line for the bumper cars.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+238st data
+Luke was helping the cafeteria workers pick up lunch trays, but he could only carry 4 trays at a time. If he had to pick up 20 trays from one table and 16 trays from another, how many trips will he make? The answer (arabic numerals) is
+Luke will make 9 trips.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+239st data
+Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? The answer (arabic numerals) is
+1 dollar. 
+
+Oliver had 35 dollars, then he got 50 more dollars for his birthday, which gave him a total of 85 dollars. However, he spent 84 dollars on a new game, leaving him with only 1 dollar remaining.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+240st data
+Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with? The answer (arabic numerals) is
+Luke ended up with 2 good games.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+241st data
+For Halloween Sarah received 66 pieces of candy from neighbors and 15 pieces from her older sister. If she only ate 9 pieces a day, how long would the candy last her? The answer (arabic numerals) is
+81 pieces of candy in total. If Sarah eats 9 pieces a day, the candy will last her 9 days.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+242st data
+A pet store has 6 bird cages. If each cage has 2 parrots and 7 parakeets in it, how many birds does the pet store have total? The answer (arabic numerals) is
+The pet store has a total of 48 birds.
+(pred_after : 48.0)
+pred : 48.0
+GT : 54.0
+*************************
+*************************
+243st data
+Haley's favorite band was holding a concert where tickets were 4 dollars each. Haley bought 3 tickets for herself and her friends and 5 extra tickets in case anyone else wanted to go. How much did she spend? The answer (arabic numerals) is
+Haley spent 32 dollars.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+244st data
+April's discount flowers was having a sale where each flower was 8 dollars. If Vanessa bought 3 roses and 3 daisies, how much did she spend? The answer (arabic numerals) is
+Vanessa spent 48 dollars.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+245st data
+April's discount flowers was having a sale where each flower was 6 dollars. If Maria bought 7 roses and 3 daisies, how much did she spend? The answer (arabic numerals) is
+Maria spent 54 dollars.
+(pred_after : 54.0)
+pred : 54.0
+GT : 60.0
+*************************
+*************************
+246st data
+There were 2 friends playing a video game online when 2 more players joined the game. If each player had 8 lives, how many lives did they have total? The answer (arabic numerals) is
+32 lives total.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+247st data
+In a video game, each enemy defeated gives you 3 points. If a level has 6 enemies total and you destroy all but 2 of them, how many points would you earn? The answer (arabic numerals) is
+18.
+(pred_after : 18.0)
+pred : 18.0
+GT : 12.0
+*************************
+*************************
+248st data
+Wendy's old washing machine could only wash 8 pieces of clothing at a time. If she had to wash 39 shirts and 33 sweaters how many loads would she have to do? The answer (arabic numerals) is
+Wendy would have to do 9 loads of laundry.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+249st data
+Zoe and her friends were recycling paper for their class. For every 8 pounds they recycled they earned one point. If Zoe recycled 25 pounds and her friends recycled 23 pounds, how many points did they earn? The answer (arabic numerals) is
+6 points.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+250st data
+Paul made 68 dollars mowing lawns and 13 dollars weed eating. If he only spent 9 dollar a week, how long would the money last him? The answer (arabic numerals) is
+81. 
+
+To get this answer, you would add the amount of money Paul made from mowing lawns and weed eating: 
+
+68 + 13 = 81 
+
+Then, you would divide the total amount of money by the amount he spends each week: 
+
+81 ÷ 9 = 9 
+
+So the money would last Paul 9 weeks.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+251st data
+Chloe baked 7 brownies, but needed 16 total for her party. If she used 6 cups of flour on each one, how much cups of flour does she still need? The answer (arabic numerals) is
+Chloe still needs 54 cups of flour.
+(pred_after : 54.0)
+pred : 54.0
+GT : 54.0
+*************************
+*************************
+252st data
+Tom bought 40 tickets at the state fair. He spent 28 tickets at the 'dunk a clown' booth and decided to use the rest on rides. If each ride cost 4 tickets, how many rides could he go on? The answer (arabic numerals) is
+Tom would be able to go on 3 rides with the remaining 12 tickets.
+(pred_after : 12.0)
+pred : 12.0
+GT : 3.0
+*************************
+*************************
+253st data
+A trivia team had 5 members total, but during a game 2 members didn't show up. If each member that did show up scored 6 points, how many points were scored total? The answer (arabic numerals) is
+15 points were scored total.
+(pred_after : 15.0)
+pred : 15.0
+GT : 18.0
+*************************
+*************************
+254st data
+A toy store had 6 giant stuffed bears in stock when they got another shipment with 18 bears in it. The put the bears onto shelves with 6 on each shelf. How many shelves did they use? The answer (arabic numerals) is
+4 shelves.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+accuracy : 79.13385826771653

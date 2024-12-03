@@ -1,0 +1,2046 @@
+*****************************
+Namespace(random_seed=1, dataset='strategyqa', model='chatgpt', method='zero_shot', rci=False, nofeedback=False, max_length_cot=256, max_length_direct=256, limit_dataset_size=254, api_time_interval=0.25, dataset_path='./dataset/StrategyQA/task.json', direct_answer_trigger='\nTherefore, the answer (Yes or No) is', direct_answer_trigger_for_zeroshot='The answer (Yes or No) is', direct_answer_trigger_for_zeroshot_cot='\nTherefore, the answer (Yes or No) is', direct_answer_trigger_for_fewshot='The answer is', cot_trigger="Let's think step by step.")
+*****************************
+2023/04/06 10:51:30
+setup data loader ...
+worker_seed : 1
+dataloader_num_workers: 3
+dataset : strategyqa
+data size : 2290
+average num of words for each sample : 9.605240174672488
+2023/04/06 10:51:30
+*************************
+1st data
+Would a baby gray whale fit in a tractor-trailer? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+2st data
+Are Scottish people Albidosi? The answer (Yes or No) is
+No. Scottish people are not Albidosi.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+3st data
+Could a chipmunk fit 100 chocolate chips in his mouth? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+4st data
+Did mercenaries fight for England in the Glorious Revolution? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+5st data
+Do giraffes require special facilities at zoos? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+6st data
+Does a sea otter eat spiders? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+7st data
+Can Hulk's alter ego explain atomic events? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+8st data
+Will Oasis cruise boat traverse the Lincoln Tunnel? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+9st data
+Is Tange Sazen hypothetically an ideal choice for a secretary job? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+10st data
+Is a paleo dieter unlikely to color beverages green for St. Patrick's Day? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+11st data
+Do the telescopes at Goldstone Deep Space Communications Complex work the night shift? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+12st data
+Are the majority of Reddit users familiar with the Pledge of Allegiance? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+13st data
+Does the cuisine of Hawaii embrace foods considered gross in the continental US? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+14st data
+Would a goblin shark eat at Crossroads Kitchen? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+15st data
+Would a Dodo hypothetically tower over Ma Petite? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+16st data
+Is Saturn named after king of gods in Greek mythology? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+17st data
+Did Modern Family win a Slammy award? The answer (Yes or No) is
+No. 
+
+Note: The Slammy Awards are not related to Modern Family. They are an annual awards event held by WWE to recognize their wrestlers and other personalities for their achievements in the industry.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+18st data
+Would JPEG be a good format for saving an image of Da Vinci's Vitruvian Man? The answer (Yes or No) is
+Yes, JPEG would be a good format for saving an image of Da Vinci's Vitruvian Man.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+19st data
+Are people more likely than normal to get sunburn at Burning Man? The answer (Yes or No) is
+Yes, people are more likely to get sunburn at Burning Man due to the high altitude and intense sun exposure. It is important to wear protective clothing and sunscreen to prevent sunburn.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+20st data
+Do women often need new shoes during their pregnancy? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+21st data
+Are honey badgers and hyenas anatomically dissimilar? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+22st data
+Did Gauss have a normal brain structure? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+23st data
+If he were poor, would Christopher Reeve have lived? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+24st data
+Do shrimp taste best when cooked for a long time? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+25st data
+Are looks the easiest way to tell rosemary from lavender? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+26st data
+Are most mall Santa Claus actors white? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+27st data
+Is Oculudentavis more dangerous than Allosaurus? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+28st data
+Is the QWERTY keyboard layout meant to be slow? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+29st data
+Was the Carnation Revolution the deadliest revolution in Europe? The answer (Yes or No) is
+No. The Carnation Revolution in Portugal in 1974 was not the deadliest revolution in Europe.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+30st data
+Did the crew of Apollo 15 take pictures of Mount Sharp? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+31st data
+Do people watching Coen brothers films in Guinea Bissau need subtitles? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+32st data
+Did Ice make people rich? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+33st data
+Is popular science used to peer review papers? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+34st data
+Was the British car, the Mini, the first car manufactured? The answer (Yes or No) is
+No. The Mini was not the first car manufactured.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+35st data
+Would Gordon Ramsey use uranium as a seasoning? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+36st data
+Did the butler Eugene Allen retire the same year a centuries-old war ended? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+37st data
+Could William Franklyn-Miller win a 2020 Nascar Cup Series race? The answer (Yes or No) is
+No, William Franklyn-Miller is not a professional race car driver and has not competed in the Nascar Cup Series.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+38st data
+Is Mickey Mouse hypothetically unlikely to make a purchase at Zazzle? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+39st data
+Can a banana get a virus? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+40st data
+Could Johnny Carson's children fill out a water polo team? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+41st data
+Were Walkman's used in the Kingdom of Hungary? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+42st data
+Do Jews believe in any New Testament angels? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+43st data
+Would the 10th doctor enjoy a dish of stuffed pears? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+44st data
+Does the Pixar film Brave feature Scottish people? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+45st data
+Are thetan levels found in the New Testament? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+46st data
+Does an organ donor need to be dead to donate a kidney? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+47st data
+Can soup be eaten with the hands? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+48st data
+Was the first Vice President of the United States an Ottoman descendant? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+49st data
+Did anyone in the 1912 election take a majority of the popular vote? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+50st data
+Are the colors on Marlboro package found on French flag? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+51st data
+Does the Eighth Amendment to the United States Constitution protect freedom of speech? The answer (Yes or No) is
+No. The Eighth Amendment to the United States Constitution protects against excessive bail and fines, and cruel and unusual punishment.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+52st data
+Was The Canterbury Tales written before One Thousand and One Nights? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+53st data
+Is number of different US President's in 1800s a lucky number in Hong Kong? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+54st data
+Does Düsseldorf have only a small number of smoggy days each year? The answer (Yes or No) is
+Yes, Düsseldorf has only a small number of smoggy days each year.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+55st data
+Could the Jackson 5 play a full game of rugby with each other? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+56st data
+Would Woodrow Wilson support Plessy v. Ferguson decision? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+57st data
+Would a triples tandem bike support Apollo 15 crew? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+58st data
+Is Issac Newton often associated with a red fruit? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+59st data
+Does Coast to Coast AM have more longevity than the Rush Limbaugh show? The answer (Yes or No) is
+unclear as it depends on various factors such as audience size, listener loyalty, and market demand.
+(pred_after : )
+pred : 
+GT : yes
+*************************
+*************************
+60st data
+Would a TMNT coloring book have pizza in it? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+61st data
+Did Osama bin Laden likely abstain from alcohol? The answer (Yes or No) is
+Yes, Osama bin Laden was known to abstain from alcohol.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+62st data
+Can an elite runner circle the Pyrenees in one day? The answer (Yes or No) is
+No, an elite runner cannot circle the Pyrenees in one day.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+63st data
+Is Jack Black's height enough to satisfy Coronavirus distancing? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+64st data
+Is Dungeons and Dragons a game well suited for solo play? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+65st data
+Would someone go to San Francisco for a nature escape? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+66st data
+Can COVID-19 spread to maritime pilots? The answer (Yes or No) is
+Yes, COVID-19 can spread to maritime pilots if they come into contact with someone who is infected with the virus. It is important for maritime pilots to follow proper safety protocols and guidelines to minimize the risk of transmission.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+67st data
+Would Mickey Mouse blend in with the American flag? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+68st data
+Are rainbows devoid of color made by mixing yin and yang colors? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+69st data
+Does Northern fur seal make good pet for six year old? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+70st data
+Does Olympia Washington share name with Hephaestus's workshop location? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+71st data
+Will Chick-fil-A hypothetically refuse to sponsor a Pride parade? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+72st data
+Is it understandable to compare a blood spatter pattern to a Jackson Pollock piece? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+73st data
+Did Polar Bears roam around in Ancient Greece? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+74st data
+Could a camel fit in a dog house? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+75st data
+Could Barron Trump have lived through the Mexican Revolution? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+76st data
+Has numerology helped shape hotel layouts? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+77st data
+Does Jack Sparrow know any sea shantys? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+78st data
+Are there any official American knights? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+79st data
+Do people associate greyhounds with the movie 'Homeward Bound'? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+80st data
+Was Noah concerned with buoyancy? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+81st data
+Was a Tiny House ceiling out of Osama bin Laden's reach? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+82st data
+Does Santa Claus work during summer? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+83st data
+Did Sojourner Truth use the elevator at the Washington Monument? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+84st data
+Would a week be enough time to watch every episode of Ugly Betty? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+85st data
+Is Christmas always celebrated on a Sunday? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+86st data
+Is radioactive waste a plot device for many shows? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+87st data
+Did Medieval English lords engage in fair trade with peasants? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+88st data
+Would a snakebite hypothetically be a threat to T-1000? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+89st data
+Would an Olympic athlete be tired out after running a mile? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+90st data
+Could Larry King's marriages be counted on two feet? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+91st data
+Should wool be hand washed only? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+92st data
+Was United Airlines blameless in worst crash in history? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+93st data
+Is greed the most prevalent of the Seven Deadly Sins? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+94st data
+Does crucifixion violate US eighth amendment? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+95st data
+Did the death of Helen Palmer have a significant effect on Dr. Seuss? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+96st data
+Does 50 Cent get along with Jeffrey Atkins? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+97st data
+Is an ammonia fighting cleaner good for pet owners? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+98st data
+Is it safe to eat kidney? The answer (Yes or No) is
+Yes, it is safe to eat kidney as long as it is properly cooked and prepared.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+99st data
+Would someone with a nosebleed benefit from Coca? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+100st data
+Is the Very Large Telescope the most productive telescope in the world? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+101st data
+Would Constitution of the United States paper offend PETA? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+102st data
+Is it normal to find parsley in multiple sections of the grocery store? The answer (Yes or No) is
+Yes, it is normal to find parsley in multiple sections of the grocery store. It can be found in the produce section, the fresh herbs section, and sometimes in the international foods section.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+103st data
+Would a compass attuned to Earth's magnetic field be a bad gift for a Christmas elf?? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+104st data
+Could B be mistaken for an Arabic numeral? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+105st data
+Does giant panda have colors that differ from yin yang? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+106st data
+Do more anchovy live in colder temperature waters than warmer? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+107st data
+Would an anxious person benefit from receiving courage from the Wizard of Oz? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+108st data
+Has Burger King  contributed to a decrease in need for snowshoes? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+109st data
+Is surfing popular in Des Moines, Iowa? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+110st data
+Did Al Pacino act in a movie during World War II? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+111st data
+Can a strawberry get worms similar to dogs? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+112st data
+Does the word swastika have meaning in sanskrit? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+113st data
+Could a nymph tick pass through a standard hole punch? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+114st data
+Did Al Unser Jr. win the Space Race? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+115st data
+Did the Nazis use the Hammer and sickle flag? The answer (Yes or No) is
+No. The Hammer and Sickle flag was the official flag of the Soviet Union, which was the main enemy of Nazi Germany during World War II. The Nazis used their own flag, which featured a black swastika on a white circle surrounded by a red background.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+116st data
+Does Paulo Coelho's wife make a living through speech? The answer (Yes or No) is
+I'm sorry, but I cannot provide a definitive answer without more context. Could you please provide more information or rephrase your question?
+(pred_after : )
+pred : 
+GT : no
+*************************
+*************************
+117st data
+Is Poseidon similar to the god Vulcan? The answer (Yes or No) is
+No. Poseidon and Vulcan are two different gods in Greek and Roman mythology, respectively. Poseidon is the god of the sea, earthquakes, and horses, while Vulcan is the god of fire, metalworking, and craftsmanship.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+118st data
+Can Spartina Patens thrive in the Sahara Desert? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+119st data
+Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family? The answer (Yes or No) is
+Yes, Maruti Suzuki Baleno is an efficient car for Linus Torvald's family.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+120st data
+Is SnapCap an example of a retail store? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+121st data
+Do Elementary School students typically need graphing calculators? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+122st data
+Was the Euro used in Prussia? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+123st data
+Are there people who are men who experience menstruation? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+124st data
+Do the anchors on Rede Globo speak Chinese? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+125st data
+Is the skull formed as one whole bone? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+126st data
+Are flag of Gabon colors found in rainbow? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+127st data
+Is Ganymede in the Milky Way galaxy? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+128st data
+Do worshipers of Shiva make a pilgrimage to the Holy Land? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+129st data
+Does Osama bin Laden put a wafer on his tongue every Sunday? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+130st data
+Is Michael an unpopular name in the United States? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+131st data
+Was a nuclear bomb used in the Napoleonic Wars? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+132st data
+Is there a Marvel villain with the same name as a kind of citrus fruit? The answer (Yes or No) is
+Yes. The Marvel villain with the same name as a kind of citrus fruit is called "Mandarin".
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+133st data
+Is Cambodia too expensive for 2020 richest billionaire to own? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+134st data
+Does a dentist treat Bluetooth problems? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+135st data
+Is dyslexia the most common intellectual disability in US? The answer (Yes or No) is
+No. Dyslexia is not an intellectual disability, but a learning disorder that affects reading and language processing. The most common intellectual disabilities in the US are Down syndrome and autism spectrum disorder.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+136st data
+Is it expected that Charla Nash would be anxious near a gorilla? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+137st data
+Is Nicole Kidman ideal choice to play Psylocke based on height and weight? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+138st data
+Would a Common warthog starve in a greenhouse? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+139st data
+Is Krishna similar to Holy Spirit? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+140st data
+Does Justin Bieber vote in October? The answer (Yes or No) is
+unknown as Justin Bieber's voting preferences and habits have not been publicly disclosed.
+(pred_after : )
+pred : 
+GT : yes
+*************************
+*************************
+141st data
+Can you conduct surveillance from a teddy bear? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+142st data
+Are the names of The Powerpuff Girls alliterative? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+143st data
+Can you order an Alfa Romeo at Starbucks? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+144st data
+Walt Disney dominated his amusement park peers at Academy Awards? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+145st data
+Is blonde hair green eyed Sara Paxton considered a Latino? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+146st data
+Do most religious people in Quebec refer to the Quran? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+147st data
+Does taking ukemi halt kinetic energy? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+148st data
+Are Durian fruits an olfactory delight? The answer (Yes or No) is
+Yes, Durian fruits are considered an olfactory delight by some people due to their strong and unique aroma.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+149st data
+Is entire Common Era minuscule to lifespan of some trees? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+150st data
+If you were at an Apple store, would most of the computers be running Ubuntu? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+151st data
+Is shoe soup innocuous? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+152st data
+Do the Ubuntu people speak Ubuntu? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+153st data
+Do people with swallowing disorders need high viscosity drinks? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+154st data
+Do Snow White dwarves best The Hobbit dwarves in battle? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+155st data
+Do oak trees have leaves during winter? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+156st data
+Does the Boy Who Cried Wolf hypothetically have reason to pray to Pan? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+157st data
+Did Easy Rider make a profit at the theater when it was released? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+158st data
+Can Curiosity (rover) kill a cat? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+159st data
+Does highest US Court have enough seats for every Prime Minister of the United Kingdom since 1952? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+160st data
+Was a person sold a Creative Commons License for Boticelli's The Birth of Venus ripped off? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+161st data
+Are banana trees used by judges for maintaining order? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+162st data
+Did John Lennon listen to Compact discs? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+163st data
+Can ham make a cut seal up quicker? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+164st data
+Are any letters directly before and after H missing from Roman numerals? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+165st data
+Is The Joy of Painting TV show still producing new episodes? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+166st data
+Is the Holy Land important to Eastern religions? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+167st data
+Are human footprints absent from Mount Sharp? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+168st data
+Is it hard to get a BLT in Casablanca? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+169st data
+Are the headquarters of All Nippon Airways near a beach? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+170st data
+Are Disney's seven dwarves the original ones? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+171st data
+Can furniture be made of hair? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+172st data
+Is immersion in virtual reality testable on cnidarians before humans? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+173st data
+Is Rick and Morty considered an anime? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+174st data
+Does the letter B's place in alphabet exceed number of 2008 total lunar eclipses? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+175st data
+Did Teri Hatcher last twice as many episodes on Desperate Housewives as her Superman show? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+176st data
+Can pancreas removal cause bankruptcy? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+177st data
+Was Moon Jae-in born outside of Khanbaliq? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+178st data
+Can you hide a basketball in a sand cat's ear? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+179st data
+Did Jesus know anyone who spoke Estonian? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+180st data
+Would Taylor Swift refer to Snoopy as oppa? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+181st data
+Would a diet of ice eventually kill a person? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+182st data
+Is capsaicin associated with cooking? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+183st data
+Can the Toyota Hilux tip the scales against Mr. Ed? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+184st data
+Does the Taco Bell kitchen contain cinnamon? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+185st data
+Can you see the moon in Wembley Arena? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+186st data
+Did Francois Mitterrand ever meet Barak Obama while they both held the position of President? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+187st data
+Does the judo rank system reach the triple digits? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+188st data
+Will Queen Elizabeth be buried in the Pantheon? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+189st data
+Does Pantheon in Paris have a unique name? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+190st data
+Would General Zod prefer an iPhone over a Samsung Galaxy S4? The answer (Yes or No) is
+unknown as there is no information available on General Zod's smartphone preferences.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+191st data
+Was Pope Alexander VI's origin country least represented in papal history? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+192st data
+Are the events of Star Trek: The Next Generation in the history of the world? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+193st data
+If Martin Luther did one theses a day would he run out in half a year? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+194st data
+Is Rand Paul guilty of catch-phrase used to attack John Kerry in 2004? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+195st data
+Would a geographer use biochemistry in their work? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+196st data
+Did Richard Wagner compose the theme songs for two television series? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+197st data
+Can dementia be cured with a cast? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+198st data
+Could the Atlantic readers fill 500 battalions? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+199st data
+Did Northwest Airlines' longevity surpass Betty White? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+200st data
+Does the Red Sea have biblical significance? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+201st data
+Does Capricorn astrology symbol have all of the parts of a chimera? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+202st data
+Did the Presidency of Bill Clinton conclude with his impeachment? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+203st data
+Does ABBA have similar gender configuration to The Mamas & The Papas? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+204st data
+Is the Matrix a standalone movie? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+205st data
+Did Julio Gonzalez like acetylene? The answer (Yes or No) is
+unknown. Could you please provide more context or information about Julio Gonzalez and his relationship with acetylene?
+(pred_after : )
+pred : 
+GT : yes
+*************************
+*************************
+206st data
+Is Edgar Allan Poe obscure in the world of horror fiction? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+207st data
+Is Final Fantasy VI closer to beginning than end of its franchise? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+208st data
+Is a doctorate required to teach at a SUNY School? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+209st data
+Is Christopher Walken close to achieving EGOT status? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+210st data
+Does chlorine inhibit photosynthesis? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+211st data
+Is Norman Oklahoma named after a viking? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+212st data
+Does cell biology teach about the life cycle of Al Qaeda? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+213st data
+Do Bing (search engine) searches earn the searcher more than competitors do? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+214st data
+Did Ivan the Terrible use the Byzantine calendar? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+215st data
+Were Greeks essential to crafting Egyptian Lighthouse of Alexandria? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+216st data
+Was Mercedes-Benz associated with the Nazis? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+217st data
+Would New Year's Eve hypothetically be Bacchus's favorite holiday? The answer (Yes or No) is
+Yes, New Year's Eve would hypothetically be Bacchus's favorite holiday.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+218st data
+Did King of Portuguese people in 1515 have familial ties to the Tudors? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+219st data
+Would a vegetarian be able to eat something at Chick-fil-A? The answer (Yes or No) is
+Yes. Chick-fil-A offers vegetarian options such as their Grilled Market Salad, Superfood Side, and Waffle Potato Fries.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+220st data
+Do guitarists need both hands to play? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+221st data
+Are the knights in the Medieval Times show not authentic knights? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+222st data
+Would you find olives at a heladeria? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+223st data
+Can you find Bugs Bunny at Space Mountain? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+224st data
+Did the writer of Christmas carol fast during Ramadan? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+225st data
+Is hanging a viable execution method on a ship at sea? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+226st data
+Does meat from cows fed only grass taste more like wild game? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+227st data
+Is a spice grinder ueseless for the cheapest cinnamon sticks? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+228st data
+Was 1941 Operation Barbarossa related to The Crusades? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+229st data
+Did the band Led Zeppelin own a prime number of gilded gramophones? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+230st data
+Did Pedubastis I know Japanese people? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+231st data
+Was Darth Vader monogamous? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+232st data
+Is Cantonese spoken in Japan? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+233st data
+Did Christina Aguilera turn her chair around for Kelly Clarkson on The Voice? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+234st data
+Was the 1980 presidential election won by a member of the Grand Old Party? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+235st data
+Were deaths from Apollo 13 mission eclipsed by other space missions? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+236st data
+Could Quartz be useful to humans if plants died off and there was no oxygen? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+237st data
+Does Family Guy take place on the American West Coast? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+238st data
+Did Wednesday have something to do with Thor? The answer (Yes or No) is
+Yes, Wednesday is named after the Norse god Odin, who is also known as Woden or Wotan. In Norse mythology, Odin's son Thor is associated with thunder and lightning.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+239st data
+If it socially acceptable to wear an icon depicting crucifixion? The answer (Yes or No) is
+Yes, it is socially acceptable to wear an icon depicting crucifixion, especially for those who follow the Christian faith.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+240st data
+Could a white cockatoo have lived through the entire Thirty Years' War? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+241st data
+Would drinking a glass of lemonade provide Vitamin C? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+242st data
+Was Charles Manson's body unwanted? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+243st data
+Would Dave Chappelle pray over a Quran? The answer (Yes or No) is
+unknown as it depends on Dave Chappelle's personal beliefs and practices.
+(pred_after : )
+pred : 
+GT : yes
+*************************
+*************************
+244st data
+Would a model be appropriate to star in a LA Femme Nikita remake? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+*************************
+245st data
+Is "A Tale of Two Cities" a parody of the Bible? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+246st data
+Were paparazzi involved in the death of a member of the royal family? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : yes
+*************************
+*************************
+247st data
+Could a dandelion suffer from hepatitis? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+248st data
+Were Depeche Mode heavily influenced by blues music? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+249st data
+Does Amtrak run from NYC directly to the Moai location? The answer (Yes or No) is
+No, Amtrak does not run directly from NYC to the Moai location.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+250st data
+Is Autumn a good time to collect bear pelts in US? The answer (Yes or No) is
+Yes, Autumn is a good time to collect bear pelts in the US.
+(pred_after : yes)
+pred : yes
+GT : no
+*************************
+*************************
+251st data
+Would the Cookie Monster decline an offer of free Keebler products? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+252st data
+Can Iowa be hidden in the English Channel? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+253st data
+Is a cory catfish likely to eat another living fish? The answer (Yes or No) is
+No.
+(pred_after : no)
+pred : no
+GT : no
+*************************
+*************************
+254st data
+Are there multiple Disney Zorro? The answer (Yes or No) is
+Yes.
+(pred_after : yes)
+pred : yes
+GT : yes
+*************************
+accuracy : 66.14173228346458

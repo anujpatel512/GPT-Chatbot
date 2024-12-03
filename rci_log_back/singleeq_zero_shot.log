@@ -1,0 +1,2062 @@
+*****************************
+Namespace(random_seed=1, dataset='singleeq', model='chatgpt', method='zero_shot', rci=False, nofeedback=False, max_length_cot=256, max_length_direct=256, limit_dataset_size=254, api_time_interval=0.25, dataset_path='./dataset/SingleEq/questions.json', direct_answer_trigger='\nTherefore, the answer (arabic numerals) is', direct_answer_trigger_for_zeroshot='The answer (arabic numerals) is', direct_answer_trigger_for_zeroshot_cot='\nTherefore, the answer (arabic numerals) is', direct_answer_trigger_for_fewshot='The answer is', cot_trigger="Let's think step by step.")
+*****************************
+2023/04/06 14:58:20
+setup data loader ...
+worker_seed : 1
+dataloader_num_workers: 3
+dataset : singleeq
+data size : 508
+average num of words for each sample : 27.37204724409449
+2023/04/06 14:58:20
+*************************
+1st data
+A spaceship traveled 0.5 of a light-year from Earth to Planet X and 0.1 of a light-year from Planet X to Planet Y. Then it traveled 0.1 of a light-year from Planet Y back to Earth. How many light-years did the spaceship travel in all? The answer (arabic numerals) is
+0.7 light-years.
+(pred_after : 0.7)
+pred : 0.7
+GT : 0.7
+*************************
+*************************
+2st data
+During a visit to an orchard, Charlie picked 0.16666666666666666 of a bag of Golden Delicious apples, 0.16666666666666666 of a bag of Macintosh apples, and 0.3333333333333333 of a bag of Cortland apples. How many bags of fruit did Charlie pick in total? The answer (arabic numerals) is
+0.6666666666666666, which is equivalent to 2/3 of a bag of fruit.
+(pred_after : 3.0)
+pred : 3.0
+GT : 0.6666666666666666
+*************************
+*************************
+3st data
+Megan had 217 markers. Robert gave her 109 more markers. How many markers does Megan have altogether? The answer (arabic numerals) is
+326.
+(pred_after : 326.0)
+pred : 326.0
+GT : 326.0
+*************************
+*************************
+4st data
+The first act included 5 clown mobiles, each stuffed with 28 clowns. How many clowns are inside all the clown mobiles combined? The answer (arabic numerals) is
+140 clowns in total.
+(pred_after : 140.0)
+pred : 140.0
+GT : 140.0
+*************************
+*************************
+5st data
+It rained 0.9 inches on Monday. On Tuesday, it rained 0.7 inches less than on Monday. How much did it rain on Tuesday? The answer (arabic numerals) is
+0.2 inches.
+(pred_after : 0.2)
+pred : 0.2
+GT : 0.2
+*************************
+*************************
+6st data
+While making desserts for a bake sale, Victor used 0.625 of a scoop of brown sugar as well as 0.25 of a scoop of white sugar. How much more brown sugar did Victor use? The answer (arabic numerals) is
+0.375.
+(pred_after : 0.375)
+pred : 0.375
+GT : 0.375
+*************************
+*************************
+7st data
+Last week Tom had 74 dollars. He washed cars over the weekend and now has 86 dollars. How much money did he make washing cars ? The answer (arabic numerals) is
+Tom made 12 dollars washing cars.
+(pred_after : 12.0)
+pred : 12.0
+GT : 12.0
+*************************
+*************************
+8st data
+The value of a sport utility vehicle this year is 16,000 dollars , which is 0.8 of what its value was last year. How much is the value of the vehicle last year? The answer (arabic numerals) is
+20,000 dollars.
+(pred_after : 20000.0)
+pred : 20000.0
+GT : 20000.0
+*************************
+*************************
+9st data
+Jonathan wants to buy a dictionary that costs $11, a dinosaur book that costs $19, and a children's cookbook that costs $7. He has saved $8 from his allowance. How much more money does Jonathan need to buy all three books? The answer (arabic numerals) is
+Jonathan needs $29 more to buy all three books.
+(pred_after : 29.0)
+pred : 29.0
+GT : 29.0
+*************************
+*************************
+10st data
+Mary had 8 potatoes in the garden. The rabbits ate 3 of the potatoes. How many potatoes does Mary now have ? The answer (arabic numerals) is
+Mary now has 5 potatoes.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+11st data
+Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk? The answer (arabic numerals) is
+0.2 miles.
+(pred_after : 0.2)
+pred : 0.2
+GT : 0.2
+*************************
+*************************
+12st data
+Melanie, Benny, Sandy, and Jessica each have 9 dozen Pokemon cards.  How many Pokemon cards do they have in all ? The answer (arabic numerals) is
+1080.
+(pred_after : 1080.0)
+pred : 1080.0
+GT : 432.0
+*************************
+*************************
+13st data
+Nancy has saved 4900 cents from selling lemonade.  How many dollars does Nancy have? The answer (arabic numerals) is
+Nancy has 49 dollars.
+(pred_after : 49.0)
+pred : 49.0
+GT : 49.0
+*************************
+*************************
+14st data
+58 children are taking a bus to the zoo. They sit 2 children in every seat. How many seats will the children need in all? The answer (arabic numerals) is
+29 seats.
+(pred_after : 29.0)
+pred : 29.0
+GT : 29.0
+*************************
+*************************
+15st data
+A large bag of balls was kept under Haley’s bed. Her mom placed the balls in bags for children in foster homes. If every bag can contain 4 balls and Haley has 36 balls, how many bags will be used? The answer (arabic numerals) is
+9 bags will be used.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+16st data
+Bert runs 2 miles every day. How many miles will Bert run in 3 weeks? The answer (arabic numerals) is
+42 miles.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+17st data
+Melanie had 7 dimes in her bank. Her dad gave her 8 dimes and her mother gave her 4 dimes. How many dimes does Melanie have now ? The answer (arabic numerals) is
+19 dimes.
+(pred_after : 19.0)
+pred : 19.0
+GT : 19.0
+*************************
+*************************
+18st data
+Michelle began her pizza delivery route with 0.5 of a tank of gas in her car. When she made it back to the pizzeria, 0.16666666666666666 of a tank of gas was left. How much gas did Michelle use? The answer (arabic numerals) is
+0.3333333333333333 of a tank of gas.
+(pred_after : 0.3333333333333333)
+pred : 0.3333333333333333
+GT : 0.3333333333333333
+*************************
+*************************
+19st data
+Dan has 29 violet balloons. Tim has 7 times more violet balloons than Dan. How many violet balloons does Tim have ? The answer (arabic numerals) is
+203 violet balloons.
+(pred_after : 203.0)
+pred : 203.0
+GT : 203.0
+*************************
+*************************
+20st data
+Ezra drew a white line that was 7.666666666666667 inches long. Then he drew a blue line that was 3.3333333333333335 inches long. How much longer was the white line than the blue line? The answer (arabic numerals) is
+4.333333333333334 inches.
+(pred_after : 4.333333333333334)
+pred : 4.333333333333334
+GT : 4.333333333333333
+*************************
+*************************
+21st data
+Sandy worked 45 hours in the last 5 days. Assuming that she worked the same amount of hours each day, how long did she work each day ? The answer (arabic numerals) is
+Sandy worked 9 hours each day.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+22st data
+Dan found 7 seashells but 3 were broken.  How many unbroken seashells did Dan find ? The answer (arabic numerals) is
+4.
+(pred_after : 4.0)
+pred : 4.0
+GT : 4.0
+*************************
+*************************
+23st data
+A worker at a medical lab is studying blood samples. Two samples contained a total of 7,341 blood cells. The first sample contained 4,221 blood cells. How many blood cells were in the second sample? The answer (arabic numerals) is
+3,120.
+(pred_after : 3120.0)
+pred : 3120.0
+GT : 3120.0
+*************************
+*************************
+24st data
+A waitress put leftover tarts into the fridge on Thursday night. She noticed that the restaurant had 0.08333333333333333 of a tart filled with cherries, 0.75 of a tart filled with blueberries, and 0.08333333333333333 of a tart filled with peaches. How many leftover tarts did the restaurant have in all? The answer (arabic numerals) is
+1.
+(pred_after : 1.0)
+pred : 1.0
+GT : 0.9166666666666666
+*************************
+*************************
+25st data
+Lewis saved checking on the grapevines for his last stop. He was told by one of the pickers that they fill 324 drums of grapes per day. How many drums of grapes would be filled in 9 days? The answer (arabic numerals) is
+2,916 drums of grapes would be filled in 9 days.
+(pred_after : 9.0)
+pred : 9.0
+GT : 2916.0
+*************************
+*************************
+26st data
+Sandy has 10 books, Benny has 24 books, and Tim has  33 books. How many books do they have together ? The answer (arabic numerals) is
+67 books.
+(pred_after : 67.0)
+pred : 67.0
+GT : 67.0
+*************************
+*************************
+27st data
+Sam grew 4 watermelons, but the rabbits ate 3 watermelons. How many watermelons does Sam have left ? The answer (arabic numerals) is
+1.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+28st data
+Sara picked 6 pears and Tim picked 5 pears from the pear tree. How many pears were picked in total ? The answer (arabic numerals) is
+11 pears were picked in total.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+29st data
+Wendy ran 19.833333333333332 miles and walked 9.166666666666666 miles. How much farther did Wendy run than walk? The answer (arabic numerals) is
+10.666666666666666 miles.
+(pred_after : 10.666666666666666)
+pred : 10.666666666666666
+GT : 10.666666666666666
+*************************
+*************************
+30st data
+The junior ranger asked Christian to help him place 420 seedlings in packets. If every packet needs to contain 7 seeds, how many packets do they need? The answer (arabic numerals) is
+60 packets.
+(pred_after : 60.0)
+pred : 60.0
+GT : 60.0
+*************************
+*************************
+31st data
+Oceanside Bike Rental Shop charges 17 dollars plus 7 dollars an hour for renting a bike. Tom paid 80 dollars to rent a bike. How many hours did he pay to have the bike checked out ? The answer (arabic numerals) is
+Tom paid for 9 hours of bike rental.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+32st data
+Mrs. Hilt went to a concert. A total of 65899 people attended the concert. The next week, Mrs. Hilt went to a second concert, which had 119 more people in attendance. How many people were at the second concert? The answer (arabic numerals) is
+66018.
+(pred_after : 66018.0)
+pred : 66018.0
+GT : 66018.0
+*************************
+*************************
+33st data
+Lucy has an aquarium with 212 fish. Lucy wants to buy 68 more fish. How many fish would Lucy have then? The answer (arabic numerals) is
+280 fish.
+(pred_after : 280.0)
+pred : 280.0
+GT : 280.0
+*************************
+*************************
+34st data
+There are 390 students at a school. If each classroom holds 30 students, how many classrooms are needed at the school? The answer (arabic numerals) is
+13 classrooms are needed at the school.
+(pred_after : 13.0)
+pred : 13.0
+GT : 13.0
+*************************
+*************************
+35st data
+Haley has 63 magazines in her cabinet. She plans to send it to the recycling office in their area. If she places it in boxes which can contain 9 magazines, how many boxes will Hayley use? The answer (arabic numerals) is
+7 boxes.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+36st data
+Sally had 760 quarters in her bank. She spent 418 of her quarters. How many quarters does she have now ? The answer (arabic numerals) is
+342 quarters.
+(pred_after : 342.0)
+pred : 342.0
+GT : 342.0
+*************************
+*************************
+37st data
+Brenda’s mother made cookies for 5. If she prepared 35 cookies and each of them had the same number of cookies, how many did each of them have? The answer (arabic numerals) is
+7.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+38st data
+On Friday, Fred paid $5.92 each on 2 tickets to a movie theater. He also borrowed a movie for $6.79. Fred paid with a $20 bill. How much change did Fred receive? The answer (arabic numerals) is
+$7.49.
+(pred_after : 7.49)
+pred : 7.49
+GT : 1.37
+*************************
+*************************
+39st data
+During a school play, Jonah staffed the snack bar. He served 0.25 of a pitcher of lemonade during the first intermission, 0.4166666666666667 of a pitcher during the second, and 0.25 of a pitcher during the third. How many pitchers of lemonade did Jonah pour in all? The answer (arabic numerals) is
+0.25 + 0.4166666666666667 + 0.25 = 0.9166666666666667. Therefore, Jonah poured 0.9166666666666667 pitchers of lemonade in all.
+(pred_after : 0.9166666666666667)
+pred : 0.9166666666666667
+GT : 0.9166666666666666
+*************************
+*************************
+40st data
+Sara goes fishing with Melanie. Sara catches 5 trout. Melanie catches 2 times as many trout as Sara. How many trout did Melanie catch ? The answer (arabic numerals) is
+10.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+41st data
+Sandy grew 51 pumpkins. Mike grew 23 pumpkins. How many pumpkins did they grow in total ? The answer (arabic numerals) is
+74.
+(pred_after : 74.0)
+pred : 74.0
+GT : 74.0
+*************************
+*************************
+42st data
+Jessica, Sandy, and Jason each have 8 pencils. How many pencils do they have have in all ? The answer (arabic numerals) is
+24.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+43st data
+This afternoon Craig left school, rode the bus 3.8333333333333335 miles, and then walked 0.16666666666666666 of a mile to get home. How much farther did Craig ride than walk? The answer (arabic numerals) is
+3.6666666666666665 miles.
+(pred_after : 3.6666666666666665)
+pred : 3.6666666666666665
+GT : 3.6666666666666665
+*************************
+*************************
+44st data
+Jason had 49 quarters in his bank. His dad gave him 25 more quarters. How many quarters does he have now ? The answer (arabic numerals) is
+74 quarters.
+(pred_after : 74.0)
+pred : 74.0
+GT : 74.0
+*************************
+*************************
+45st data
+A construction company ordered 0.16666666666666666 of a ton of concrete, 0.16666666666666666 of a ton of bricks, and 0.5 of a ton of stone. How many tons of material did the company order in all? The answer (arabic numerals) is
+0.8333333333333333 tons.
+(pred_after : 0.8333333333333333)
+pred : 0.8333333333333333
+GT : 0.8333333333333334
+*************************
+*************************
+46st data
+There are 7.75 gallons of water in Becky's fish tank. If Becky adds 7 gallons more, how many gallons will there be in all? The answer (arabic numerals) is
+There will be 14.75 gallons in all.
+(pred_after : 14.75)
+pred : 14.75
+GT : 14.75
+*************************
+*************************
+47st data
+There were 3409 pieces of candy in a jar. If 145 pieces were red and the rest were blue, how many were blue? The answer (arabic numerals) is
+3264.
+(pred_after : 3264.0)
+pred : 3264.0
+GT : 3264.0
+*************************
+*************************
+48st data
+Keith grew 6 turnips. Alyssa grew 9 turnips. How many turnips did they grow in all ? The answer (arabic numerals) is
+15.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+49st data
+Tyler had 15 dogs. Each dog had 5 puppies. How many puppies does Tyler now have? The answer (arabic numerals) is
+75 puppies.
+(pred_after : 75.0)
+pred : 75.0
+GT : 75.0
+*************************
+*************************
+50st data
+Sally picked 7 lemons and Mary picked 9 lemons from the lemon tree. How many lemons were picked in total ? The answer (arabic numerals) is
+16.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+51st data
+Seth bought 20 cartons of ice cream and 2 cartons of yogurt. Each carton of ice cream cost $6 and each carton of yogurt cost $1. How much more did Seth spend on ice cream than on yogurt? The answer (arabic numerals) is
+Seth spent $120 on ice cream (20 cartons x $6 per carton) and $2 on yogurt (2 cartons x $1 per carton). Therefore, Seth spent $118 more on ice cream than on yogurt.
+(pred_after : 118.0)
+pred : 118.0
+GT : 118.0
+*************************
+*************************
+52st data
+Melanie had 19 dimes in her bank. Her dad gave her 39 dimes and her mother gave her 25 dimes. How many dimes does Melanie have now ? The answer (arabic numerals) is
+83 dimes.
+(pred_after : 83.0)
+pred : 83.0
+GT : 83.0
+*************************
+*************************
+53st data
+Tori was 4.4 feet tall. Then she grew 2.86 feet taller. How tall is Tori now? The answer (arabic numerals) is
+7.26 feet.
+(pred_after : 7.26)
+pred : 7.26
+GT : 7.26
+*************************
+*************************
+54st data
+There are 60 calories in a candy bar. How many dozen calories are there in 45 candy bars? The answer (arabic numerals) is
+648.
+(pred_after : 648.0)
+pred : 648.0
+GT : 225.0
+*************************
+*************************
+55st data
+Last year at Newberg's airport, 14,507 passengers landed on time. Unfortunately, 213 passengers landed late. In all, how many passengers landed in Newberg last year? The answer (arabic numerals) is
+14,720 passengers landed in Newberg last year.
+(pred_after : 14720.0)
+pred : 14720.0
+GT : 14720.0
+*************************
+*************************
+56st data
+Johnny saved $30 in September. He saved $49 in October and $46 in November. Then Johnny spent $58 on a video game. How much money does Johnny have left? The answer (arabic numerals) is
+$67.
+(pred_after : 67.0)
+pred : 67.0
+GT : 67.0
+*************************
+*************************
+57st data
+Benny's high school played 39 baseball games this year. He attended  14 games. How many baseball games did Benny miss ? The answer (arabic numerals) is
+Benny missed 25 baseball games.
+(pred_after : 25.0)
+pred : 25.0
+GT : 25.0
+*************************
+*************************
+58st data
+How many cookies would you have if you had 37 bags of cookies with 19 cookies in each bag? The answer (arabic numerals) is
+703 cookies.
+(pred_after : 703.0)
+pred : 703.0
+GT : 703.0
+*************************
+*************************
+59st data
+The library is divided into different sections for different type of books. The science fiction section has 8 books. If each book has 478 pages, how many pages do all the books have in total? The answer (arabic numerals) is
+3824 pages.
+(pred_after : 3824.0)
+pred : 3824.0
+GT : 3824.0
+*************************
+*************************
+60st data
+Alyssa spent half of her allowance going to the movies. She washed the family car and earned 8 dollars. What is her weekly allowance if she ended with 12 dollars ? The answer (arabic numerals) is
+Her weekly allowance is 32 dollars.
+(pred_after : 32.0)
+pred : 32.0
+GT : 8.0
+*************************
+*************************
+61st data
+There are 22 walnut trees currently in the park. Park workers will plant more walnut trees today. When the workers are finished there will be 55 walnut trees in the park. How many walnut trees did the workers plant today ? The answer (arabic numerals) is
+The workers planted 33 walnut trees today.
+(pred_after : 33.0)
+pred : 33.0
+GT : 33.0
+*************************
+*************************
+62st data
+Mrs. Hilt saw a rollercoaster. 7 students rode the rollercoaster every 5 minutes. How many students rode the rollercoaster in 15 minutes? The answer (arabic numerals) is
+21 students rode the rollercoaster in 15 minutes.
+(pred_after : 15.0)
+pred : 15.0
+GT : 21.0
+*************************
+*************************
+63st data
+Students went to a concert in 8 buses. Each bus took 45 students. How many students went to the concert? The answer (arabic numerals) is
+360 students went to the concert.
+(pred_after : 360.0)
+pred : 360.0
+GT : 360.0
+*************************
+*************************
+64st data
+Shiela has 6 neighbors who like to collect animal drawings. Shiela drew 54 animals on small pieces of paper. If she plans to give the same number of animal drawings to her neighbors, how many will each of them receive? The answer (arabic numerals) is
+9.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+65st data
+On Wednesday, Joan spent 4 half-dollars playing pinball. The next day, she spent 14 half-dollars on pinball. What was the total amount Joan spent playing pinball? The answer (arabic numerals) is
+$9.00.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+66st data
+Bonnie's science class recorded the rainfall each day. They recorded 0.16666666666666666 of a centimeter of rain on Monday, 0.4166666666666667 of a centimeter of rain on Tuesday, and 0.08333333333333333 of a centimeter of rain on Wednesday. How many centimeters of rain did the class record in all? The answer (arabic numerals) is
+0.6666666666666666 centimeters of rain.
+(pred_after : 0.6666666666666666)
+pred : 0.6666666666666666
+GT : 0.6666666666666666
+*************************
+*************************
+67st data
+On Friday, Sam spent 2 pennies on ice cream. The next day, Sam spent 12 dimes on baseball cards. All in all, how much money did Sam spend? The answer (arabic numerals) is
+$2.20.
+(pred_after : 2.2)
+pred : 2.2
+GT : 1.22
+*************************
+*************************
+68st data
+Mrs. Hilt measured the distance from her desk to the water fountain. It was 30 feet. How many feet will Mrs. Hilt walk on her trips to the fountain if she goes to the water fountain 4 times today? The answer (arabic numerals) is
+Mrs. Hilt will walk 120 feet on her trips to the fountain if she goes to the water fountain 4 times today.
+(pred_after : 4.0)
+pred : 4.0
+GT : 120.0
+*************************
+*************************
+69st data
+A car company produced 3,884 cars in North America and 2,871 cars in Europe. How many cars is that in all? The answer (arabic numerals) is
+6,755 cars in total.
+(pred_after : 6755.0)
+pred : 6755.0
+GT : 6755.0
+*************************
+*************************
+70st data
+Shannon, Brenda’s neighbor, joined Brenda in making bracelets. She brought 48 heart-shaped stones and wanted to have 8 of this type of stone in each of the bracelet she makes. How many bracelets with heart-shaped stones can Shannon make? The answer (arabic numerals) is
+Shannon can make 6 bracelets with heart-shaped stones.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+71st data
+John can read 4 books a day. John reads every Monday and Tuesday. How many books would John read in 6 weeks? The answer (arabic numerals) is
+In 1 week, John can read 4 x 2 = 8 books.
+So in 6 weeks, he can read 8 x 6 = 48 books.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+72st data
+Trenton sells electronic supplies. Each week he earns 190 dollars plus commission equal to 0.04 of his sales. This week his goal is to earn no less than 500 dollars. How much sales  he must make to reach his goal? The answer (arabic numerals) is
+To find out how much sales Trenton must make to reach his goal, we can set up an equation:
+
+Total earnings = 190 + 0.04(sales)
+
+We want to find out when the total earnings will be at least 500 dollars, so we can set up an inequality:
+
+190 + 0.04(sales) ≥ 500
+
+Subtracting 190 from both sides, we get:
+
+0.04(sales) ≥ 310
+
+Dividing both sides by 0.04, we get:
+
+sales ≥ 7750
+
+Therefore, Trenton must make at least 7750 dollars in sales to reach his goal of earning no less than 500 dollars.
+(pred_after : 500.0)
+pred : 500.0
+GT : 7750.0
+*************************
+*************************
+73st data
+Freeport McMoran projects the world grain supply will be 1800000 metric tons and the supply will be only 0.75 of the world grain demand. What will the world grain demand be? The answer (arabic numerals) is
+2400000 metric tons.
+(pred_after : 2400000.0)
+pred : 2400000.0
+GT : 2400000.0
+*************************
+*************************
+74st data
+On Saturday, Sara spent $10.62 each on 2 tickets to a movie theater. She also rented a movie for $1.59, and bought a movie for $13.95. How much money in total did Sara spend on movies? The answer (arabic numerals) is
+$26.78.
+(pred_after : 26.78)
+pred : 26.78
+GT : 36.78
+*************************
+*************************
+75st data
+Benny has 6 blue marbles. Keith has 5 times more blue marbles than Benny. How many blue marbles does Keith have ? The answer (arabic numerals) is
+Keith has 30 blue marbles.
+(pred_after : 30.0)
+pred : 30.0
+GT : 30.0
+*************************
+*************************
+76st data
+Each year, salmon travel upstream, going from the ocean to the rivers where they were born. This year, 712,261 male and 259,378 female salmon returned to their rivers. How many salmon made the trip? The answer (arabic numerals) is
+971,639 salmon made the trip.
+(pred_after : 971639.0)
+pred : 971639.0
+GT : 971639.0
+*************************
+*************************
+77st data
+Tim has 13 dozen golf balls. How many golf balls does he have ? The answer (arabic numerals) is
+156 golf balls.
+(pred_after : 156.0)
+pred : 156.0
+GT : 156.0
+*************************
+*************************
+78st data
+A marine biologist measured one fish that was 0.3 of a foot long and a second fish that was 0.2 of a foot long. How much longer was the first fish? The answer (arabic numerals) is
+0.1 feet longer.
+(pred_after : 0.1)
+pred : 0.1
+GT : 0.1
+*************************
+*************************
+79st data
+Fred has 40 baseball cards. Keith bought 22 of Fred's  baseball cards. How many baseball cards does Fred have now ? The answer (arabic numerals) is
+Fred now has 18 baseball cards.
+(pred_after : 18.0)
+pred : 18.0
+GT : 18.0
+*************************
+*************************
+80st data
+Last Saturday, Spencer walked all over town running errands. First, he walked 0.3 of a mile from his house to the library and 0.1 of a mile from the library to the post office. Then he walked 0.4 of a mile from the post office back home. How many miles did Spencer walk in all? The answer (arabic numerals) is
+Spencer walked a total of 0.8 miles.
+(pred_after : 0.8)
+pred : 0.8
+GT : 0.8
+*************************
+*************************
+81st data
+Sara has 9 dozen golf balls. How many golf balls does she have ? The answer (arabic numerals) is
+1080 golf balls.
+(pred_after : 1080.0)
+pred : 1080.0
+GT : 108.0
+*************************
+*************************
+82st data
+Mark's father gave him $85. Mark bought 10 books, each of which cost $5. How much money does Mark have left? The answer (arabic numerals) is
+Mark spent $50 on books (10 books x $5 each), so he has $35 left.
+(pred_after : 35.0)
+pred : 35.0
+GT : 35.0
+*************************
+*************************
+83st data
+In Yardley it snowed 0.125 of an inch in the morning and 0.5 of an inch in the afternoon. What was the total amount of snowfall? The answer (arabic numerals) is
+0.625 inches.
+(pred_after : 0.625)
+pred : 0.625
+GT : 0.625
+*************************
+*************************
+84st data
+There are 24 bicycles and 14 tricycles in the storage area at Danny's apartment building. Each bicycle has 2 wheels and each tricycle has 3 wheels. How many wheels are there in all? The answer (arabic numerals) is
+86 wheels in total.
+(pred_after : 86.0)
+pred : 86.0
+GT : 90.0
+*************************
+*************************
+85st data
+Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all ? The answer (arabic numerals) is
+44 games.
+(pred_after : 44.0)
+pred : 44.0
+GT : 44.0
+*************************
+*************************
+86st data
+The Spurs basketball team has 22 players. Each player has 11 basketballs. How many basketballs do they have in all? The answer (arabic numerals) is
+242 basketballs.
+(pred_after : 242.0)
+pred : 242.0
+GT : 242.0
+*************************
+*************************
+87st data
+For his long distance phone service Milan pays a 2 dollars monthly fee plus 12 cents per minute. Last month , Milan 's long distance bill was 23.36 dollars. For how many minutes was Milan billed for ? The answer (arabic numerals) is
+178 minutes.
+(pred_after : 178.0)
+pred : 178.0
+GT : 178.0
+*************************
+*************************
+88st data
+As Alyssa was searching through her couch cushions, she found 12 quarters, and 7 pennies in the couch. How much money in total does Alyssa have? The answer (arabic numerals) is
+Alyssa has $3.07 in total.
+(pred_after : 3.07)
+pred : 3.07
+GT : 3.07
+*************************
+*************************
+89st data
+Dale's Vegetarian Restaurant bought 2.8333333333333335 pounds of green peppers and 2.8333333333333335 pounds of red peppers. How many pounds of peppers did Dale's Vegetarian Restaurant buy in all? The answer (arabic numerals) is
+5.666666666666667 pounds.
+(pred_after : 5.666666666666667)
+pred : 5.666666666666667
+GT : 5.666666666666667
+*************************
+*************************
+90st data
+There were a total of 7 baseball games a month.  The season is played for 2 months. How many baseball games are in a season ? The answer (arabic numerals) is
+14 baseball games are in a season.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+91st data
+Mika had 20 stickers. She bought 26 stickers from a store in the mall and got 20 stickers for her birthday. Then Mika gave 6 of the stickers to her sister and used 58 to decorate a greeting card. How many stickers does Mika have left? The answer (arabic numerals) is
+48 stickers.
+(pred_after : 48.0)
+pred : 48.0
+GT : 2.0
+*************************
+*************************
+92st data
+Kenji and his classmates placed colored blocks on a scale during a science lab. The yellow block weighed 0.6 pounds and the green block weighed 0.4 pounds. How much more did the yellow block weigh than the green block? The answer (arabic numerals) is
+0.2 pounds.
+(pred_after : 0.2)
+pred : 0.2
+GT : 0.2
+*************************
+*************************
+93st data
+9 of Hayley’s closest friends like stickers. If she plans to give all of them an equal number of stickers, how many will each receive if she has 72 stickers? The answer (arabic numerals) is
+Each friend will receive 8 stickers.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+94st data
+Mr. Guzman bought 48 doughnuts packed equally into 4 boxes. How many doughnuts were in each box? The answer (arabic numerals) is
+12.
+(pred_after : 12.0)
+pred : 12.0
+GT : 12.0
+*************************
+*************************
+95st data
+Ron weighed two colored metal balls during a science class. The blue ball weighed 6 pounds and the brown ball weighed 3.12 pounds. If Ron places both balls on the scale at the same time, what will the scale read? The answer (arabic numerals) is
+9.12 pounds.
+(pred_after : 9.12)
+pred : 9.12
+GT : 9.12
+*************************
+*************************
+96st data
+Joan has 40 blue balloons Melanie has 41 blue balloons. How many blue balloons do they have in total ? The answer (arabic numerals) is
+81.
+(pred_after : 81.0)
+pred : 81.0
+GT : 81.0
+*************************
+*************************
+97st data
+There are 5 oak trees currently in the park. Park workers will plant 4 more oak trees today. How many oak trees will the park have when the workers are finished ? The answer (arabic numerals) is
+The park will have 9 oak trees when the workers are finished.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+98st data
+At the beach, Janet and her sister both built sandcastles and then measured their heights. Janet's sandcastle was 3.6666666666666665 feet tall and her sister's was 2.3333333333333335 feet tall. How much taller was Janet's sandcastle than her sister's? The answer (arabic numerals) is
+1.333333333333333.
+(pred_after : 1.333333333333333)
+pred : 1.333333333333333
+GT : 1.3333333333333333
+*************************
+*************************
+99st data
+Nancy has 7 black balloons. Mary has 4 times more  black balloons than Nancy. How many black balloons does Mary have now ? The answer (arabic numerals) is
+Mary has 28 black balloons.
+(pred_after : 28.0)
+pred : 28.0
+GT : 28.0
+*************************
+*************************
+100st data
+There are 8 calories in a candy bar. How many calories are there in 3 candy bars ? The answer (arabic numerals) is
+24 calories.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+101st data
+Jason has 676 Pokemon cards. Alyssa bought 224 of Jason's  Pokemon cards. How many Pokemon cards does Jason have now ? The answer (arabic numerals) is
+452.
+(pred_after : 452.0)
+pred : 452.0
+GT : 452.0
+*************************
+*************************
+102st data
+Sara has 192 golf balls. How many dozen golf balls does she have? The answer (arabic numerals) is
+16 dozen golf balls.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+103st data
+Sara has saved 11 quarters from washing cars.  How many cents does Sara have ? The answer (arabic numerals) is
+Sara has 275 cents.
+(pred_after : 275.0)
+pred : 275.0
+GT : 275.0
+*************************
+*************************
+104st data
+A dust storm sweeps across the prairie. It covers 64,535 acres of the prairie in dust, but leaves 522 acres untouched. How many acres does the prairie cover? The answer (arabic numerals) is
+The total area of the prairie is 65,057 acres.
+(pred_after : 65057.0)
+pred : 65057.0
+GT : 65057.0
+*************************
+*************************
+105st data
+Alyssa picked 42 pears and Nancy picked 17 pears from the pear tree. How many pears were picked in all ? The answer (arabic numerals) is
+59.
+(pred_after : 59.0)
+pred : 59.0
+GT : 59.0
+*************************
+*************************
+106st data
+Brenda, Betty’s sister, wanted to have 3 bracelets with star-shaped stones. She also bought 36 star-shaped stones from the local store and gave it to Betty. How many star-shaped stones will there be in each of the bracelet Betty makes for Brenda? The answer (arabic numerals) is
+There will be 12 star-shaped stones in each of the bracelets that Betty makes for Brenda.
+(pred_after : 12.0)
+pred : 12.0
+GT : 12.0
+*************************
+*************************
+107st data
+When relatives visit Haley and her family, she and her cousins do origami. If she has 48 origami papers to give away to her 6 cousins, how many will each receive if she gives everyone the same number of origami papers? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+108st data
+There is 0.16666666666666666 of a cup of oil in Scarlett's measuring cup. If Scarlett adds 0.6666666666666666 of a cup more, how much oil will be in the measuring cup? The answer (arabic numerals) is
+0.8333333333333333.
+(pred_after : 0.8333333333333333)
+pred : 0.8333333333333333
+GT : 0.8333333333333334
+*************************
+*************************
+109st data
+Chris has been saving his allowance to buy a new pair of soccer cleats and a ball. His grandmother gave Chris $25 for his birthday. His aunt and uncle gave Chris $20 and his parents gave him $75. Now Chris had $279. How much money did Chris have before his birthday? The answer (arabic numerals) is
+Chris had $159 before his birthday.
+(pred_after : 159.0)
+pred : 159.0
+GT : 159.0
+*************************
+*************************
+110st data
+Mike bought some toys. He bought marbles for $9.05, a football for $4.95, and spent $6.52 on a baseball. In total, how much did Mike spend on toys? The answer (arabic numerals) is
+$20.52.
+(pred_after : 20.52)
+pred : 20.52
+GT : 20.52
+*************************
+*************************
+111st data
+At Lindsey's Vacation Wear, 0.375 of the garments are bikinis and 0.25 are trunks. What fraction of the garments are either bikinis or trunks? The answer (arabic numerals) is
+0.625.
+(pred_after : 0.625)
+pred : 0.625
+GT : 0.625
+*************************
+*************************
+112st data
+There are 107 walnut trees currently in the park. Park workers will plant  104 more walnut trees today. How many walnut trees will the park have when the workers are finished ? The answer (arabic numerals) is
+211.
+(pred_after : 211.0)
+pred : 211.0
+GT : 211.0
+*************************
+*************************
+113st data
+Dan has 5 blue marbles. Mary has 2 times more blue marbles than Dan. How many blue marbles does Mary have ? The answer (arabic numerals) is
+Mary has 10 blue marbles.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+114st data
+A renovation project required 0.16666666666666666 of a truck-load of sand, 0.3333333333333333 of a truck-load of dirt, and 0.16666666666666666 of a truck-load of cement. How many truck-loads of material were needed in all? The answer (arabic numerals) is
+1 truck-load of material was needed in all.
+(pred_after : 1.0)
+pred : 1.0
+GT : 0.6666666666666666
+*************************
+*************************
+115st data
+Joan found 6 seashells and Jessica found 8 seashells on the beach. How many seashells did they find together ? The answer (arabic numerals) is
+14.
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+116st data
+Jessica has 3 dozen red marbles. Sandy has 4 times more red marbles than Jessica. How many red marbles does Sandy have ? The answer (arabic numerals) is
+144 red marbles.
+(pred_after : 144.0)
+pred : 144.0
+GT : 144.0
+*************************
+*************************
+117st data
+Mrs. Hilt has 40 markers. They are divided equally into 7 packages. Mrs. Hilt wants to know how many markers are in each package? The answer (arabic numerals) is
+5.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+118st data
+Christina just transferred $69 out of her bank account. As a result, the account now has $26,935 left in it. How much money was in the account before the transfer? The answer (arabic numerals) is
+$27,004.
+(pred_after : 27004.0)
+pred : 27004.0
+GT : 27004.0
+*************************
+*************************
+119st data
+Sam had 9 dimes in his bank. His dad gave him 7 more dimes. How many dimes does Sam have now ? The answer (arabic numerals) is
+16.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+120st data
+Marcia spent 300 minutes working on her science project. How many hours did Marcia spend on her science project? The answer (arabic numerals) is
+5 hours.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+121st data
+Benny bought 7 dozen eggs from the grocery store to bake some cakes.  How many eggs did Benny buy ? The answer (arabic numerals) is
+84.
+(pred_after : 84.0)
+pred : 84.0
+GT : 84.0
+*************************
+*************************
+122st data
+In Haley’s class, 5 are boys who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive? The answer (arabic numerals) is
+Each boy will receive 7 marbles.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+123st data
+Fred, Benny, and Jason have 24 crayons all together. If the crayons are equally divided, how many will each person get ? The answer (arabic numerals) is
+8.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+124st data
+There are 41 pencils in the drawer. Mike placed 30 more  pencils in the drawer. How many pencils are now there in total ? The answer (arabic numerals) is
+71.
+(pred_after : 71.0)
+pred : 71.0
+GT : 71.0
+*************************
+*************************
+125st data
+Marta picked two pumpkins. The first pumpkin weighed 4 pounds, and the second pumpkin weighed 8.7 pounds. How much did the two pumpkins weigh all together? The answer (arabic numerals) is
+12.7 pounds.
+(pred_after : 12.7)
+pred : 12.7
+GT : 12.7
+*************************
+*************************
+126st data
+Karin's science class weighed plastic rings for an experiment. They found that the orange ring weighed 0.08333333333333333 of an ounce, the purple ring weighed 0.3333333333333333 of an ounce, and the white ring weighed 0.4166666666666667 of an ounce. What was the total weight of the plastic rings? The answer (arabic numerals) is
+0.8333333333333333 ounces.
+(pred_after : 0.8333333333333333)
+pred : 0.8333333333333333
+GT : 0.8333333333333334
+*************************
+*************************
+127st data
+Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now ? The answer (arabic numerals) is
+5.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+128st data
+Tom found 7 seashells but 4 were broken.  How many unbroken seashells did Tom find ? The answer (arabic numerals) is
+Tom found 3 unbroken seashells.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+129st data
+Tim has 22 books. Mike has 20 books.  How many books do they have together ? The answer (arabic numerals) is
+42.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+130st data
+At a pie-eating contest, Erik got through 0.6666666666666666 of a pie before time was called; Frank finished just 0.3333333333333333 of a pie. How much more pie did Erik eat than Frank? The answer (arabic numerals) is
+0.3333333333333333.
+(pred_after : 0.3333333333333333)
+pred : 0.3333333333333333
+GT : 0.3333333333333333
+*************************
+*************************
+131st data
+Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total ? The answer (arabic numerals) is
+65 cantelopes.
+(pred_after : 65.0)
+pred : 65.0
+GT : 65.0
+*************************
+*************************
+132st data
+There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons ? The answer (arabic numerals) is
+182 hockey games are in the season.
+(pred_after : 182.0)
+pred : 182.0
+GT : 182.0
+*************************
+*************************
+133st data
+It has been tradition in Shiela’s home to hang a sock above the fireplace for each member of the family. This year, she placed a cinnamon ball every day in the socks for 5 of her family members. How long can she do this if she bought 50 cinnamon balls? The answer (arabic numerals) is
+She can do this for 10 days.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+134st data
+Keith loves trading cards. She bought 4 packs of Digimon cards for $4.45 each, and a deck of baseball cards for $6.06. How much did Keith spend on cards? The answer (arabic numerals) is
+Keith spent $23.26 on cards.
+(pred_after : 23.26)
+pred : 23.26
+GT : 23.86
+*************************
+*************************
+135st data
+Joan had 5 dimes in her bank. She spent 2 of her dimes. How many dimes does she have now ? The answer (arabic numerals) is
+3.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+136st data
+0.5 of the students in the band are in the trumpet section. 0.125 of the students in the band are in the trombone section. What fraction of the students in the band are in either the trumpet section or the trombone section? The answer (arabic numerals) is
+0.625 or 5/8
+(pred_after : 8.0)
+pred : 8.0
+GT : 0.625
+*************************
+*************************
+137st data
+A restaurant served 9 pizzas during lunch and 6 during dinner today. How many pizzas were served today ? The answer (arabic numerals) is
+15 pizzas were served today.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+138st data
+Joan paid $8.77 on a cat toy, and a cage cost her $10.97 with a $20 bill. How much change did Joan receive? The answer (arabic numerals) is
+Joan received $0.26 in change.
+(pred_after : 0.26)
+pred : 0.26
+GT : 0.26
+*************************
+*************************
+139st data
+Jason went to the mall on Saturday to buy clothes. He spent $14.28 on shorts and $4.74 on a jacket. In total, how much money did Jason spend on clothing? The answer (arabic numerals) is
+$19.02.
+(pred_after : 19.02)
+pred : 19.02
+GT : 19.02
+*************************
+*************************
+140st data
+There were a total of 6 soccer games this year. Jessica missed 4 of the games. How many soccer games did Jessica go to in all ? The answer (arabic numerals) is
+Jessica went to 2 soccer games in all.
+(pred_after : 2.0)
+pred : 2.0
+GT : 2.0
+*************************
+*************************
+141st data
+Mrs. Hilt is baking bread. She needs 5 cups of flour to bake 2 loaves of bread. How much flour will she need to make one loaf of bread? The answer (arabic numerals) is
+2.5 cups of flour.
+(pred_after : 2.5)
+pred : 2.5
+GT : 2.5
+*************************
+*************************
+142st data
+Benny received 67 dollars for his birthday. He went to a sporting goods store and bought a baseball glove, baseball, and bat. He had 33 dollars left over. How much did he spent on the baseball gear ? The answer (arabic numerals) is
+Benny spent 34 dollars on the baseball gear.
+(pred_after : 34.0)
+pred : 34.0
+GT : 34.0
+*************************
+*************************
+143st data
+It snowed 0.32 inches on Monday and 0.21 inches on Tuesday. How much did it snow on Monday and Tuesday combined? The answer (arabic numerals) is
+0.53 inches.
+(pred_after : 0.53)
+pred : 0.53
+GT : 0.53
+*************************
+*************************
+144st data
+White t-shirts can be purchased in packages of 6. If Mom buys 71 packages, how many white t-shirts will Mom have? The answer (arabic numerals) is
+426.
+(pred_after : 426.0)
+pred : 426.0
+GT : 426.0
+*************************
+*************************
+145st data
+Tom has 9 yellow balloons. Sara has 8 yellow balloons. How many yellow balloons do they have in total ? The answer (arabic numerals) is
+17.
+(pred_after : 17.0)
+pred : 17.0
+GT : 17.0
+*************************
+*************************
+146st data
+Tanner saved $17 in September. He saved $48 in October and $25 in November. Then Tanner spent $49 on a video game. How much money does Tanner have left? The answer (arabic numerals) is
+$41.
+(pred_after : 41.0)
+pred : 41.0
+GT : 41.0
+*************************
+*************************
+147st data
+In one week, an airplane pilot flew 1134 miles on Tuesday and 1475 miles on Thursday. If the pilot flies the same number of miles 3 weeks in a row, how many miles does the pilot fly in all? The answer (arabic numerals) is
+The pilot flew a total of 5,607 miles in three weeks.
+(pred_after : 5607.0)
+pred : 5607.0
+GT : 7827.0
+*************************
+*************************
+148st data
+Mike has 48 books. Alyssa has 8 times more books than  Mike. How many dozen books does Alyssa have? The answer (arabic numerals) is
+Alyssa has 384 books (48 x 8 = 384). To convert this to dozen books, we divide 384 by 12, which gives us 32 dozen books.
+(pred_after : 32.0)
+pred : 32.0
+GT : 32.0
+*************************
+*************************
+149st data
+The sum of three consecutive odd numbers is 69. What is the smallest of the three numbers ? The answer (arabic numerals) is
+23.
+(pred_after : 23.0)
+pred : 23.0
+GT : 21.0
+*************************
+*************************
+150st data
+There were a total of 27 soccer games during the 3 month season.  If the games are equally divided, how many soccer games are played a month ? The answer (arabic numerals) is
+9 soccer games are played a month.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+151st data
+Blake filled a bucket with 0.8 of a gallon of water. Later, he poured out 0.2 of a gallon of the water. How much water is left in the bucket? The answer (arabic numerals) is
+0.6 gallons.
+(pred_after : 0.6)
+pred : 0.6
+GT : 0.6
+*************************
+*************************
+152st data
+When Jake had one cat, he needed to serve 0.5 of a can of cat food each day. Now that Jake has adopted a second cat, he needs to serve a total of 0.9 of a can each day. How much extra food is needed to feed the second cat? The answer (arabic numerals) is
+0.4 of a can.
+(pred_after : 0.4)
+pred : 0.4
+GT : 0.4
+*************************
+*************************
+153st data
+Kendall is learning to drive, so this weekend she practiced driving 0.16666666666666666 of a mile with her mother and another 0.5 of a mile with her father. How far did Kendall drive in all? The answer (arabic numerals) is
+0.6666666666666666 miles.
+(pred_after : 0.6666666666666666)
+pred : 0.6666666666666666
+GT : 0.6666666666666666
+*************************
+*************************
+154st data
+Sara grew 4 onions, Sally grew 5 onions, and Fred grew  9 onions. How many onions did they grow in all ? The answer (arabic numerals) is
+18 onions in total.
+(pred_after : 18.0)
+pred : 18.0
+GT : 18.0
+*************************
+*************************
+155st data
+David has 7 boxes of stuffed toy dogs. Each box has 4 dogs in it. How many dogs are there in all? The answer (arabic numerals) is
+28 dogs in total.
+(pred_after : 28.0)
+pred : 28.0
+GT : 28.0
+*************************
+*************************
+156st data
+On Friday, 1250 people visited the zoo. 3 times as many people visited on Saturday than on Friday. How many people visited the zoo on Saturday? The answer (arabic numerals) is
+3750 people visited the zoo on Saturday.
+(pred_after : 3750.0)
+pred : 3750.0
+GT : 3750.0
+*************************
+*************************
+157st data
+There are 2 pencils in the drawer. Tim placed 3 more pencils in the drawer. How many pencils are now there in total ? The answer (arabic numerals) is
+5.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+158st data
+There are 46 rulers in the drawer. Tim took 25  rulers from the drawer. How many rulers are now in the drawer ? The answer (arabic numerals) is
+21 rulers.
+(pred_after : 21.0)
+pred : 21.0
+GT : 21.0
+*************************
+*************************
+159st data
+Sally has 6 blue balloons. Fred has 3 times more  blue balloons than Sally. How many blue balloons does Fred have now ? The answer (arabic numerals) is
+Fred has 18 blue balloons.
+(pred_after : 18.0)
+pred : 18.0
+GT : 18.0
+*************************
+*************************
+160st data
+In Mr. Olsen's mathematics class, 0.7 of the students received A's and 0.2 received B's. What fraction of the students received either A's or B's? The answer (arabic numerals) is
+0.9
+(pred_after : 0.9)
+pred : 0.9
+GT : 0.9
+*************************
+*************************
+161st data
+There are 9 oak trees currently in the park. Park workers had to cut down 2  oak trees that were damaged. How many oak trees will the park have when the workers are finished ? The answer (arabic numerals) is
+The park will have 7 oak trees when the workers are finished.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+162st data
+Joan has 9 blue balloons  but lost 2 of them. How many blue balloons does Joan have now ? The answer (arabic numerals) is
+Joan now has 7 blue balloons.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+163st data
+The town of Milburg has 5256 grown-ups and 2987 children. How many people live in Milburg? The answer (arabic numerals) is
+8243 people live in Milburg.
+(pred_after : 8243.0)
+pred : 8243.0
+GT : 8243.0
+*************************
+*************************
+164st data
+There are 37 baskets. There are 17 apples in each basket. How many apples are there in all? The answer (arabic numerals) is
+629.
+(pred_after : 629.0)
+pred : 629.0
+GT : 629.0
+*************************
+*************************
+165st data
+One stamp costs 34 cents. If the cost of each stamp remains the same, how much would 4 stamps cost? The answer (arabic numerals) is
+The cost of 4 stamps would be $1.36.
+(pred_after : 1.36)
+pred : 1.36
+GT : 134.0
+*************************
+*************************
+166st data
+Abe's family moved from the Bahamas to Japan, so they had convert their money into Japanese yen. Their checking account now has 6,359 yen and their savings account now has 3,485 yen. How many yen do they have? The answer (arabic numerals) is
+9,844 yen.
+(pred_after : 9844.0)
+pred : 9844.0
+GT : 9844.0
+*************************
+*************************
+167st data
+Sam got 9 pennies for washing clothes, and 7 quarters for mowing lawns. How much money does Sam have? The answer (arabic numerals) is
+$2.08.
+(pred_after : 2.08)
+pred : 2.08
+GT : 1.84
+*************************
+*************************
+168st data
+Fred has 709 green balloons, he gave Sandy 221 of the balloons. How many green balloons does he now have ? The answer (arabic numerals) is
+Fred now has 488 green balloons.
+(pred_after : 488.0)
+pred : 488.0
+GT : 488.0
+*************************
+*************************
+169st data
+There are 53 maple trees currently in the park. Park workers will plant more maple trees today. When the workers are finished there will be 64 maple trees in the park. How many maple trees did the workers plant today ? The answer (arabic numerals) is
+The workers planted 11 maple trees today.
+(pred_after : 11.0)
+pred : 11.0
+GT : 11.0
+*************************
+*************************
+170st data
+Sara grew 43 pumpkins, but the rabbits ate 23 pumpkins. How many pumpkins does Sara have left ? The answer (arabic numerals) is
+20 pumpkins.
+(pred_after : 20.0)
+pred : 20.0
+GT : 20.0
+*************************
+*************************
+171st data
+Each day, the polar bear at Richmond's zoo eats 0.2 of a bucket of trout and 0.4 of a bucket of salmon. How many buckets of fish does the polar bear eat daily? The answer (arabic numerals) is
+The polar bear at Richmond's zoo eats 0.6 buckets of fish daily.
+(pred_after : 0.6)
+pred : 0.6
+GT : 0.6
+*************************
+*************************
+172st data
+There are 31 calories in a candy bar. How many calories are there in 11 candy bars ? The answer (arabic numerals) is
+341 calories.
+(pred_after : 341.0)
+pred : 341.0
+GT : 341.0
+*************************
+*************************
+173st data
+There are 7 dogwood trees currently in the park. Park workers will plant 3 more dogwood trees today and 2 more dogwood trees tomorrow. How many dogwood trees will the park have when the workers are finished ? The answer (arabic numerals) is
+The park will have a total of 12 dogwood trees when the workers are finished.
+(pred_after : 12.0)
+pred : 12.0
+GT : 12.0
+*************************
+*************************
+174st data
+One evening, a restaurant served a total of 0.2 of a loaf of wheat bread and 0.4 of a loaf of white bread. How many loaves were served in all? The answer (arabic numerals) is
+The total amount of bread served is 0.6 of a loaf.
+(pred_after : 0.6)
+pred : 0.6
+GT : 0.6
+*************************
+*************************
+175st data
+The tallest player on the basketball team is 77.75 inches tall. This is 9.5 inches taller than the shortest player. How tall is the shortest player , in inches? The answer (arabic numerals) is
+68.25 inches.
+(pred_after : 68.25)
+pred : 68.25
+GT : 68.25
+*************************
+*************************
+176st data
+Sandy has 8 dozen books. Fred has 5 times more books than  Sandy. How many books does Fred have ? The answer (arabic numerals) is
+Fred has 480 books.
+(pred_after : 480.0)
+pred : 480.0
+GT : 480.0
+*************************
+*************************
+177st data
+A 12 ounce can of cranberry juice sells for 84 cents. What is the cost in cents per ounce. The answer (arabic numerals) is
+7 cents per ounce.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+178st data
+Fred earns $12.50 an hour cleaning houses. If he works for 8 hours, how much money will he make ? The answer (arabic numerals) is
+Fred will make $100.
+(pred_after : 100.0)
+pred : 100.0
+GT : 100.0
+*************************
+*************************
+179st data
+A DVD book holds 126 DVDs. There are 81 DVDs already in the book. How many more DVDs can be put in the book? The answer (arabic numerals) is
+45 more DVDs can be put in the book.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+180st data
+Nancy has 9 five dollars bills.  How much money does she have ? The answer (arabic numerals) is
+Nancy has $45.
+(pred_after : 45.0)
+pred : 45.0
+GT : 45.0
+*************************
+*************************
+181st data
+Benny bought 4 new baseball trading cards to add to his collection. The next day his dog ate half of his collection. There are now only 34 cards left. How many cards did Benny start with ? The answer (arabic numerals) is
+Benny started with 72 baseball trading cards.
+(pred_after : 72.0)
+pred : 72.0
+GT : 64.0
+*************************
+*************************
+182st data
+On a hot day, Sam poured 1 bucket of water into a plastic wading pool. A few minutes later he added another 8.8 buckets. How much water did Sam pour into the pool? The answer (arabic numerals) is
+The total amount of water that Sam poured into the pool is 9.8 buckets.
+(pred_after : 9.8)
+pred : 9.8
+GT : 9.8
+*************************
+*************************
+183st data
+Before the recent housing boom, there were 1,426 houses in Lawrence County. Now, there are 2,000 houses. How many houses did developers build during the housing boom? The answer (arabic numerals) is
+574 houses.
+(pred_after : 574.0)
+pred : 574.0
+GT : 574.0
+*************************
+*************************
+184st data
+The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food? The answer (arabic numerals) is
+0.8.
+(pred_after : 0.8)
+pred : 0.8
+GT : 0.8
+*************************
+*************************
+185st data
+Benny bought a soft drink for 2 dollars and 5 candy bars. He spent a total of 27 dollars. How much did each candy bar cost ? The answer (arabic numerals) is
+5 dollars.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+186st data
+Nancy has saved 1 dozen quarters from washing cars.  How much money does Nancy have ? The answer (arabic numerals) is
+Nancy has saved 12 x 0.25 = 3 dollars.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+187st data
+Sandy went to the mall to buy clothes. She spent $13.99 on shorts, $12.14 on a shirt, and $7.43 on a jacket. How much money did Sandy spend on clothes? The answer (arabic numerals) is
+$33.56.
+(pred_after : 33.56)
+pred : 33.56
+GT : 33.56
+*************************
+*************************
+188st data
+Sally earns $25.00 for each house she cleans. If she cleans 96 houses, how many dozens of dollars will she make? The answer (arabic numerals) is
+She will make $300.00, which is 25 dozen dollars.
+(pred_after : 25.0)
+pred : 25.0
+GT : 200.0
+*************************
+*************************
+189st data
+Mary, Sam, Keith, and Alyssa each have 6 baseball cards.  How many baseball cards do they have in all ? The answer (arabic numerals) is
+24.
+(pred_after : 24.0)
+pred : 24.0
+GT : 24.0
+*************************
+*************************
+190st data
+Oscar's bus ride to school is 0.75 of a mile and Charlie's bus ride is 0.25 of a mile. How much longer is Oscar's bus ride than Charlie's? The answer (arabic numerals) is
+0.5.
+(pred_after : 0.5)
+pred : 0.5
+GT : 0.5
+*************************
+*************************
+191st data
+There are 39 dogwood trees currently in the park. Park workers will plant  41 more dogwood trees today and 20 more dogwood trees tomorrow. How many dogwood trees will the park have when the workers are finished ? The answer (arabic numerals) is
+100.
+(pred_after : 100.0)
+pred : 100.0
+GT : 100.0
+*************************
+*************************
+192st data
+The next act involved several jugglers. If each juggler is juggling 6 balls at a time, how many balls are needed if there are 378 jugglers putting a show at the same time? The answer (arabic numerals) is
+2,268 balls are needed if there are 378 jugglers juggling 6 balls each.
+(pred_after : 6.0)
+pred : 6.0
+GT : 2268.0
+*************************
+*************************
+193st data
+Professor Ellison weighed two pieces of metal for an experiment. The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 of a pound. How much more did the piece of iron weigh than the piece of aluminum? The answer (arabic numerals) is
+10.333333333333332 pounds.
+(pred_after : 10.333333333333332)
+pred : 10.333333333333332
+GT : 10.333333333333334
+*************************
+*************************
+194st data
+Kylie was collecting coins. She got 15 coins from her piggy bank and 13 coins from her brother. Her father gave Kylie 8 coins. Kylie gave 21 of the coins to her friend Laura. How many coins did Kylie have left? The answer (arabic numerals) is
+15 + 13 + 8 = 36 coins Kylie had in total.
+After giving 21 coins to Laura, Kylie had 36 - 21 = 15 coins left.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+195st data
+There are 33 walnut trees currently in the park. Park workers will plant  44 more walnut trees today. How many walnut trees will the park have when the workers are finished ? The answer (arabic numerals) is
+77.
+(pred_after : 77.0)
+pred : 77.0
+GT : 77.0
+*************************
+*************************
+196st data
+Melanie has 84 blue marbles. Sandy has 8 times more blue marbles than Melanie. How many dozen blue marbles does Sandy have? The answer (arabic numerals) is
+672 dozen blue marbles.
+(pred_after : 672.0)
+pred : 672.0
+GT : 56.0
+*************************
+*************************
+197st data
+Joan purchased a basketball game for $5.20, and a racing game for $4.23. How much did Joan spend on video games? The answer (arabic numerals) is
+$9.43.
+(pred_after : 9.43)
+pred : 9.43
+GT : 9.43
+*************************
+*************************
+198st data
+There are 33 oak trees currently in the park. Park workers had to cut down  18 oak trees that were damaged. How many oak trees will be in the park when the workers are finished ? The answer (arabic numerals) is
+There will be 15 oak trees left in the park when the workers are finished.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+199st data
+A restaurant served 6 cakes during lunch and 9 during dinner today. How many cakes were served today ? The answer (arabic numerals) is
+15 cakes were served today.
+(pred_after : 15.0)
+pred : 15.0
+GT : 15.0
+*************************
+*************************
+200st data
+Last year, 90,171 people were born in a country, and 16,320 people immigrated to it. How many new people began living in the country last year? The answer (arabic numerals) is
+106,491.
+(pred_after : 106491.0)
+pred : 106491.0
+GT : 106491.0
+*************************
+*************************
+201st data
+They entered the circus tent and saw that there are 4 sections for the audience. If each section can accommodate 246 people, how many people can the tent accommodate in total? The answer (arabic numerals) is
+984.
+(pred_after : 984.0)
+pred : 984.0
+GT : 984.0
+*************************
+*************************
+202st data
+A pet supply store has 600 bags of dog food and 327 bags of cat food. How many more bags of dog food are there than cat food? The answer (arabic numerals) is
+273.
+(pred_after : 273.0)
+pred : 273.0
+GT : 273.0
+*************************
+*************************
+203st data
+Mary has 9 yellow marbles. Joan has 3 yellow marbles. How many yellow marbles do they have in all ? The answer (arabic numerals) is
+12.
+(pred_after : 12.0)
+pred : 12.0
+GT : 12.0
+*************************
+*************************
+204st data
+Irene just bought a new lamp for her bedside table. The old lamp was 1 foot tall and the new lamp is 2.3333333333333335 feet tall. How much taller is the new lamp than the old lamp? The answer (arabic numerals) is
+1.3333333333333335 feet taller.
+(pred_after : 1.3333333333333335)
+pred : 1.3333333333333335
+GT : 1.3333333333333333
+*************************
+*************************
+205st data
+Jessica had 8 quarters in her bank. Her sister borrowed 3 of her quarters. How many quarters does Jessica have now ? The answer (arabic numerals) is
+Jessica now has 5 quarters.
+(pred_after : 5.0)
+pred : 5.0
+GT : 5.0
+*************************
+*************************
+206st data
+There were a total of 12 basketball games in the season. The season is played for 2 months. How many basketball games were played each month, if each month has the same number of games? The answer (arabic numerals) is
+6 basketball games were played each month.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+207st data
+Keith has 20 books. Jason has 21 books.  How many books do they have together ? The answer (arabic numerals) is
+41.
+(pred_after : 41.0)
+pred : 41.0
+GT : 41.0
+*************************
+*************************
+208st data
+Fred loves trading cards. He bought 2 packs of football cards for $2.73 each, a pack of Pokemon cards for $4.01, and a deck of baseball cards for $8.95. How much did Fred spend on cards? The answer (arabic numerals) is
+$18.42.
+(pred_after : 18.42)
+pred : 18.42
+GT : 18.42
+*************************
+*************************
+209st data
+Tom purchased a football game for $14.02, a strategy game for $9.46, and a Batman game for $12.04. How much did Tom spend on video games? The answer (arabic numerals) is
+Tom spent a total of $35.52 on video games.
+(pred_after : 35.52)
+pred : 35.52
+GT : 35.52
+*************************
+*************************
+210st data
+Jose has 85 peanuts. Kenya has 48 more than Jose. How many peanuts does Kenya have? The answer (arabic numerals) is
+133.
+(pred_after : 133.0)
+pred : 133.0
+GT : 133.0
+*************************
+*************************
+211st data
+Sandy grew 6 carrots. Sam grew 3 carrots. How many carrots did they grow in total ? The answer (arabic numerals) is
+9.
+(pred_after : 9.0)
+pred : 9.0
+GT : 9.0
+*************************
+*************************
+212st data
+Jane had been saving large empty cans to serve as pots for sunflowers. If she has 54 sunflower seeds and there are 9 cans, how many seeds will be placed in each can if she places an equal number of seeds in each can? The answer (arabic numerals) is
+6 seeds will be placed in each can.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+213st data
+Elise had $8. Then she saved $13 from her allowance and spent $2 on a comic book and $18 on a puzzle. How much money does Elise have left? The answer (arabic numerals) is
+$1. Elise had $8, saved $13, and spent $2 + $18 = $20. Therefore, she has $8 + $13 - $20 = $1 left.
+(pred_after : 1.0)
+pred : 1.0
+GT : 1.0
+*************************
+*************************
+214st data
+When Joan was visited by the toothfairy, she received 14 each of quarters, half-dollars, and dimes. How much money did the toothfairy leave Joan? The answer (arabic numerals) is
+The toothfairy left Joan a total of $7.30.
+(pred_after : 7.3)
+pred : 7.3
+GT : 11.9
+*************************
+*************************
+215st data
+On Saturday, Sara spent $10.62 each on 2 tickets to a movie theater. Sara also rented a movie for $1.59, and bought a movie for $13.95. How much money in total did Sara spend on movies? The answer (arabic numerals) is
+Sara spent a total of $26.78 on movies.
+(pred_after : 26.78)
+pred : 26.78
+GT : 36.78
+*************************
+*************************
+216st data
+Joan picked 43 apples from the orchard, and gave 27 apples  to  Melanie. How many apples does Joan have now ? The answer (arabic numerals) is
+Joan would have 16 apples left after giving 27 to Melanie.
+(pred_after : 27.0)
+pred : 27.0
+GT : 16.0
+*************************
+*************************
+217st data
+Keith bought 72 eggs from the store to bake some cakes.  How many dozen eggs did Keith buy? The answer (arabic numerals) is
+Keith bought 6 dozen eggs.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+218st data
+Joan has 10 books. Tom has 38 books.  How many books do they have together ? The answer (arabic numerals) is
+48.
+(pred_after : 48.0)
+pred : 48.0
+GT : 48.0
+*************************
+*************************
+219st data
+532 people are watching a movie in a theater. The theater has 750 seats. How many seats are empty in the theater? The answer (arabic numerals) is
+218 seats are empty in the theater.
+(pred_after : 218.0)
+pred : 218.0
+GT : 218.0
+*************************
+*************************
+220st data
+Allen, Shiela’s brother, likes to play with blocks. Shiela repainted Allen’s old blocks in different colors. If Allen has 49 identical blocks and there are 7 blocks for every color of paint used, how many colors did Shiela use? The answer (arabic numerals) is
+7 colors.
+(pred_after : 7.0)
+pred : 7.0
+GT : 7.0
+*************************
+*************************
+221st data
+Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all ? The answer (arabic numerals) is
+252 turnips.
+(pred_after : 252.0)
+pred : 252.0
+GT : 252.0
+*************************
+*************************
+222st data
+Kyle jogged 1.125 laps in P.E. class and 2.125 laps during track practice. How many laps did Kyle jog in all? The answer (arabic numerals) is
+3.25 laps.
+(pred_after : 3.25)
+pred : 3.25
+GT : 3.25
+*************************
+*************************
+223st data
+Kelly's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 of a pound. How much more does the chemistry textbook weigh than the geometry textbook? The answer (arabic numerals) is
+6.5 pounds.
+(pred_after : 6.5)
+pred : 6.5
+GT : 6.5
+*************************
+*************************
+224st data
+There are 2 rose bushes currently in the park. Park workers will plant 4 more rose bushes today. How many rose bushes will the park have when the workers are finished ? The answer (arabic numerals) is
+The park will have a total of 6 rose bushes when the workers are finished planting.
+(pred_after : 6.0)
+pred : 6.0
+GT : 6.0
+*************************
+*************************
+225st data
+Mike had 34 peaches left at his roadside fruit stand. He went to the orchard and picked more peaches to stock up the stand. There are now 86 peaches at the stand, how many did he pick ? The answer (arabic numerals) is
+Mike picked 52 peaches to stock up the stand.
+(pred_after : 52.0)
+pred : 52.0
+GT : 52.0
+*************************
+*************************
+226st data
+Kelly has 121 Nintendo games. How many does Kelly need to give away so that Kelly will have 22 games left? The answer (arabic numerals) is
+99.
+(pred_after : 99.0)
+pred : 99.0
+GT : 99.0
+*************************
+*************************
+227st data
+Karen has 639 crayons. Cindy has 504 crayons. How many more crayons does Karen have than Cindy? The answer (arabic numerals) is
+Karen has 135 more crayons than Cindy.
+(pred_after : 135.0)
+pred : 135.0
+GT : 135.0
+*************************
+*************************
+228st data
+There were 6 roses in the vase. Mary cut some more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut ? The answer (arabic numerals) is
+Mary cut 10 roses from her flower garden.
+(pred_after : 10.0)
+pred : 10.0
+GT : 10.0
+*************************
+*************************
+229st data
+Melanie goes fishing with Tom. Melanie catches 8 trout. Tom catches 2 times as many trout as Melanie. How many trout did Tom catch ? The answer (arabic numerals) is
+16.
+(pred_after : 16.0)
+pred : 16.0
+GT : 16.0
+*************************
+*************************
+230st data
+If each ball costs $1.54, how much must Kyoko pay for 3 balls? The answer (arabic numerals) is
+4.62.
+(pred_after : 4.62)
+pred : 4.62
+GT : 4.62
+*************************
+*************************
+231st data
+Sally had 13 peaches left at her roadside fruit stand. She went to the orchard and picked more peaches to stock up the stand. There are now 55 peaches at the stand, how many did she pick ? The answer (arabic numerals) is
+Sally picked 42 peaches to stock up the stand.
+(pred_after : 42.0)
+pred : 42.0
+GT : 42.0
+*************************
+*************************
+232st data
+Bryan took a look at his books as well. If Bryan has 56 books in each of his 9 bookshelves, how many books does he have in total? The answer (arabic numerals) is
+504 books in total.
+(pred_after : 504.0)
+pred : 504.0
+GT : 504.0
+*************************
+*************************
+233st data
+Tom has 30 violet balloons, he gave Fred 16 of the balloons. How many violet balloons does he now have ? The answer (arabic numerals) is
+14
+(pred_after : 14.0)
+pred : 14.0
+GT : 14.0
+*************************
+*************************
+234st data
+Robin has 27 packages of gum. There are 18 pieces in each package. How many pieces of gum does Robin have? The answer (arabic numerals) is
+486 pieces of gum.
+(pred_after : 486.0)
+pred : 486.0
+GT : 486.0
+*************************
+*************************
+235st data
+Sam went to 14 football games this year. He went to 29 games  last year. How many football games did Sam go to in all ? The answer (arabic numerals) is
+43.
+(pred_after : 43.0)
+pred : 43.0
+GT : 43.0
+*************************
+*************************
+236st data
+There are 261 fishbowls. Each fishbowl has 23 fish. How many fish are there? The answer (arabic numerals) is
+6,003 fish.
+(pred_after : 6003.0)
+pred : 6003.0
+GT : 6003.0
+*************************
+*************************
+237st data
+Kendra made punch for her friend's birthday party. She used 0.25 of a gallon of grape juice, 0.375 of a gallon of cranberry juice, and 0.125 of a gallon of club soda. How many gallons of punch did Kendra make? The answer (arabic numerals) is
+0.75 gallons of punch.
+(pred_after : 0.75)
+pred : 0.75
+GT : 0.75
+*************************
+*************************
+238st data
+Mike has 87 baseball cards. Sam bought 13 of Mike's  baseball cards. How many baseball cards does Mike have now ? The answer (arabic numerals) is
+74.
+(pred_after : 74.0)
+pred : 74.0
+GT : 74.0
+*************************
+*************************
+239st data
+Sara got fast food for lunch. Sara spent $5.36 on a hotdog and $5.10 on a salad. What was the total of the lunch bill? The answer (arabic numerals) is
+The total of the lunch bill was $10.46.
+(pred_after : 10.46)
+pred : 10.46
+GT : 10.46
+*************************
+*************************
+240st data
+Jill invited 37 people to her birthday party. They each ate 8 pieces of pizza. How many pieces of pizza did they eat? The answer (arabic numerals) is
+296 pieces of pizza.
+(pred_after : 296.0)
+pred : 296.0
+GT : 296.0
+*************************
+*************************
+241st data
+Mandy made an apple pie. She used 0.6666666666666666 of a tablespoon of cinnamon and 0.5 of a tablespoon of nutmeg. How much more cinnamon than nutmeg did Mandy use? The answer (arabic numerals) is
+0.16666666666666663.
+(pred_after : 0.16666666666666663)
+pred : 0.16666666666666663
+GT : 0.16666666666666666
+*************************
+*************************
+242st data
+A carpenter bought a piece of wood that was 0.41 meters long. Then she sawed 0.33 meters off the end. How long is the piece of wood now? The answer (arabic numerals) is
+0.08 meters.
+(pred_after : 0.08)
+pred : 0.08
+GT : 0.08
+*************************
+*************************
+243st data
+Sandy is baking a cake. The recipe wants 7 cups of flour. She already put in 4 cups. How many more cups does she need to add ? The answer (arabic numerals) is
+Sandy needs to add 3 more cups of flour.
+(pred_after : 3.0)
+pred : 3.0
+GT : 3.0
+*************************
+*************************
+244st data
+Mike has 96 muffins, which he needs to box up into dozens. How many boxes does he need? The answer (arabic numerals) is
+8 boxes.
+(pred_after : 8.0)
+pred : 8.0
+GT : 8.0
+*************************
+*************************
+245st data
+A farmer estimates that he will harvest 48,097 bushels of wheat. The weather is perfect during the growing season, so he harvests 684 more bushels of wheat than expected. How many bushels of wheat does the farmer harvest? The answer (arabic numerals) is
+48,781 bushels.
+(pred_after : 48781.0)
+pred : 48781.0
+GT : 48781.0
+*************************
+*************************
+246st data
+There were originally 20,817 houses in Lincoln County. During a housing boom, developers built 97,741 more. How many houses are there now in Lincoln County? The answer (arabic numerals) is
+118,558.
+(pred_after : 118558.0)
+pred : 118558.0
+GT : 118558.0
+*************************
+*************************
+247st data
+Tom was at the beach for 5 days and found 7 seashells every day. How many seashells did Tom find during the beach trip ? The answer (arabic numerals) is
+Tom found a total of 35 seashells during his 5-day beach trip.
+(pred_after : 5.0)
+pred : 5.0
+GT : 35.0
+*************************
+*************************
+248st data
+Connie had some marbles. Connie gave 183 to Juan. Now Connie has 593 marbles left. How many did Connie have to start with? The answer (arabic numerals) is
+776.
+(pred_after : 776.0)
+pred : 776.0
+GT : 776.0
+*************************
+*************************
+249st data
+There are 27 pencils in the drawer. Nancy placed 45 more  pencils in the drawer. How many pencils are now there in total ? The answer (arabic numerals) is
+72 pencils.
+(pred_after : 72.0)
+pred : 72.0
+GT : 72.0
+*************************
+*************************
+250st data
+So far, an orchard has sold a combined total of 9,792 pounds of fresh and frozen fruit this season. If they have sold 3,513 pounds of frozen fruit, how many pounds of fresh fruit have been sold so far? The answer (arabic numerals) is
+6,279 pounds of fresh fruit have been sold so far.
+(pred_after : 6279.0)
+pred : 6279.0
+GT : 6279.0
+*************************
+*************************
+251st data
+There are 54 scissors in the drawer. Keith placed 22 more  scissors in the drawer. How many scissors are now there in all ? The answer (arabic numerals) is
+76.
+(pred_after : 76.0)
+pred : 76.0
+GT : 76.0
+*************************
+*************************
+252st data
+A bee colony produced 0.36 pounds of honey, but bears ate 0.05 pounds of it. How much honey remains? The answer (arabic numerals) is
+0.31 pounds.
+(pred_after : 0.31)
+pred : 0.31
+GT : 0.31
+*************************
+*************************
+253st data
+Some insects called aphids attack a large farm. In response, the farmer releases ladybugs onto the fields. There are 12,170 ladybugs with spots and 54,912 ladybugs without spots. How many ladybugs are there in all? The answer (arabic numerals) is
+67,082 ladybugs in total.
+(pred_after : 67082.0)
+pred : 67082.0
+GT : 67082.0
+*************************
+*************************
+254st data
+A ship full of grain crashes into a coral reef. By the time the ship is fixed, 49,952 tons of grain have spilled into the water. Only 918 tons of grain remain onboard. How many tons of grain did the ship originally contain? The answer (arabic numerals) is
+50,870 tons.
+(pred_after : 50870.0)
+pred : 50870.0
+GT : 50870.0
+*************************
+accuracy : 84.64566929133859
